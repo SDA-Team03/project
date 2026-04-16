@@ -1,0 +1,75 @@
+@startuml
+' Prettier package diagram based on real repository folders/imports
+skinparam packageStyle rectangle
+skinparam shadowing false
+left to right direction
+
+title Prettier - Pacchetti Reali del Codice
+
+package "src" {
+  package "cli" as src_cli
+  package "common" as src_common
+  package "config" as src_config
+  package "document" as src_document
+  package "main" as src_main {
+    package "comments" as src_main_comments
+    package "front-matter" as src_main_front_matter
+    package "plugins" as src_main_plugins
+    package "utilities" as src_main_utilities
+  }
+  package "plugins" as src_plugins
+  package "utilities" as src_utilities
+
+  package "language-css" as lang_css
+  package "language-graphql" as lang_graphql
+  package "language-handlebars" as lang_handlebars
+  package "language-html" as lang_html
+  package "language-js" as lang_js
+  package "language-json" as lang_json
+  package "language-markdown" as lang_markdown
+  package "language-yaml" as lang_yaml
+
+  package "experimental-cli" as src_experimental_cli
+  package "universal" as src_universal
+}
+
+package "packages (monorepo)" {
+  package "plugin-hermes" as pkg_hermes
+  package "plugin-oxc" as pkg_oxc
+}
+
+src_cli --> src_config : resolve config/argv
+src_cli --> src_main : format pipeline
+src_cli --> src_common : error/util
+
+src_config --> src_common
+
+src_main --> src_document : doc model + printer
+src_main --> src_common
+src_main --> src_utilities
+src_main --> src_main_comments
+src_main --> src_main_front_matter
+src_main --> src_main_plugins
+src_main --> src_main_utilities
+
+src_main_plugins --> lang_css : builtin loader
+src_main_plugins --> lang_graphql : builtin loader
+src_main_plugins --> lang_handlebars : builtin loader
+src_main_plugins --> lang_html : builtin loader
+src_main_plugins --> lang_js : builtin loader
+src_main_plugins --> lang_json : builtin loader
+src_main_plugins --> lang_markdown : builtin loader
+src_main_plugins --> lang_yaml : builtin loader
+
+src_main_plugins --> src_plugins : production plugin entrypoints
+
+lang_js ..> pkg_hermes : parser integration
+lang_js ..> pkg_oxc : parser integration
+
+note bottom
+  Diagramma costruito su cartelle reali e import principali
+  (src/index.js, src/standalone.js, src/cli/index.js,
+  src/main/core.js, src/main/plugins/builtin-plugins/*)
+end note
+
+@enduml

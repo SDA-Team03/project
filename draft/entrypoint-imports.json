@@ -1,0 +1,2353 @@
+{
+  "../package.json": [],
+  "common/ast-path.js": [],
+  "common/common-options.evaluate.js": [],
+  "common/end-of-line.js": [],
+  "common/errors.js": [],
+  "common/get-file-info.js": [
+    "config/resolve-config.js",
+    "main/plugins/index.js",
+    "utilities/ignore.js",
+    "utilities/infer-parser.js"
+  ],
+  "common/mockable.js": [
+    "utilities/create-mockable.js"
+  ],
+  "common/parser-create-error.js": [],
+  "config/editorconfig/editorconfig-to-prettier.js": [],
+  "config/editorconfig/index.js": [
+    "config/editorconfig/editorconfig-to-prettier.js",
+    "config/find-project-root.js"
+  ],
+  "config/find-project-root.js": [],
+  "config/prettier-config/config-searcher.js": [
+    "config/prettier-config/loaders.js"
+  ],
+  "config/prettier-config/index.js": [
+    "common/mockable.js",
+    "config/prettier-config/config-searcher.js",
+    "config/prettier-config/load-config.js"
+  ],
+  "config/prettier-config/load-config.js": [
+    "config/prettier-config/load-external-config.js",
+    "config/prettier-config/loaders.js"
+  ],
+  "config/prettier-config/load-external-config.js": [
+    "utilities/import-from-file.js",
+    "utilities/require-from-file.js"
+  ],
+  "config/prettier-config/loaders.js": [
+    "plugins/yaml.js",
+    "utilities/read-file.js"
+  ],
+  "config/resolve-config.js": [
+    "config/editorconfig/index.js",
+    "config/prettier-config/index.js",
+    "utilities/partition.js"
+  ],
+  "constants.js": [],
+  "document/builders/align.js": [
+    "document/builders/indent.js",
+    "document/builders/types.js",
+    "document/utilities/assert-doc.js"
+  ],
+  "document/builders/break-parent.js": [
+    "document/builders/types.js"
+  ],
+  "document/builders/cursor.js": [
+    "document/builders/types.js"
+  ],
+  "document/builders/fill.js": [
+    "document/builders/types.js",
+    "document/utilities/assert-doc.js"
+  ],
+  "document/builders/group.js": [
+    "document/builders/types.js",
+    "document/utilities/assert-doc.js"
+  ],
+  "document/builders/if-break.js": [
+    "document/builders/types.js",
+    "document/utilities/assert-doc.js"
+  ],
+  "document/builders/indent-if-break.js": [
+    "document/builders/types.js",
+    "document/utilities/assert-doc.js"
+  ],
+  "document/builders/indent.js": [
+    "document/builders/types.js",
+    "document/utilities/assert-doc.js"
+  ],
+  "document/builders/index.js": [
+    "document/builders/align.js",
+    "document/builders/break-parent.js",
+    "document/builders/cursor.js",
+    "document/builders/fill.js",
+    "document/builders/group.js",
+    "document/builders/if-break.js",
+    "document/builders/indent-if-break.js",
+    "document/builders/indent.js",
+    "document/builders/join.js",
+    "document/builders/label.js",
+    "document/builders/line-suffix-boundary.js",
+    "document/builders/line-suffix.js",
+    "document/builders/line.js",
+    "document/builders/trim.js",
+    "document/builders/types.js"
+  ],
+  "document/builders/join.js": [
+    "document/utilities/assert-doc.js"
+  ],
+  "document/builders/label.js": [
+    "document/builders/types.js",
+    "document/utilities/assert-doc.js"
+  ],
+  "document/builders/line-suffix-boundary.js": [
+    "document/builders/types.js"
+  ],
+  "document/builders/line-suffix.js": [
+    "document/builders/types.js",
+    "document/utilities/assert-doc.js"
+  ],
+  "document/builders/line.js": [
+    "document/builders/break-parent.js",
+    "document/builders/types.js"
+  ],
+  "document/builders/trim.js": [
+    "document/builders/types.js"
+  ],
+  "document/builders/types.js": [],
+  "document/debug.js": [
+    "document/builders/index.js"
+  ],
+  "document/index.js": [
+    "document/builders/index.js",
+    "document/debug.js",
+    "document/printer/printer.js",
+    "document/utilities/index.js"
+  ],
+  "document/printer/indent.js": [],
+  "document/printer/print-result.js": [
+    "document/printer/trim-indentation.js"
+  ],
+  "document/printer/printer.js": [
+    "common/end-of-line.js",
+    "document/builders/index.js",
+    "document/printer/indent.js",
+    "document/printer/print-result.js",
+    "document/printer/trim-indentation.js",
+    "document/utilities/index.js",
+    "document/utilities/invalid-doc-error.js",
+    "utilities/get-string-width.js"
+  ],
+  "document/printer/trim-indentation.js": [],
+  "document/public.js": [
+    "document/builders/index.js",
+    "document/printer/printer.js",
+    "document/utilities/index.js"
+  ],
+  "document/utilities/assert-doc.js": [
+    "document/builders/types.js",
+    "document/utilities/get-doc-type.js",
+    "document/utilities/index.js",
+    "document/utilities/traverse-doc.js",
+    "utilities/noop.js"
+  ],
+  "document/utilities/get-doc-type.js": [
+    "document/builders/types.js"
+  ],
+  "document/utilities/index.js": [
+    "document/builders/index.js",
+    "document/utilities/assert-doc.js",
+    "document/utilities/get-doc-type.js",
+    "document/utilities/invalid-doc-error.js",
+    "document/utilities/traverse-doc.js"
+  ],
+  "document/utilities/invalid-doc-error.js": [
+    "document/builders/types.js",
+    "document/utilities/get-doc-type.js"
+  ],
+  "document/utilities/traverse-doc.js": [
+    "document/builders/types.js",
+    "document/utilities/get-doc-type.js",
+    "document/utilities/invalid-doc-error.js"
+  ],
+  "index.js": [
+    "common/errors.js",
+    "common/get-file-info.js",
+    "common/mockable.js",
+    "config/resolve-config.js",
+    "document/public.js",
+    "main/core.js",
+    "main/normalize-format-options.js",
+    "main/normalize-options.js",
+    "main/option-categories.js",
+    "main/plugins/index.js",
+    "main/support.js",
+    "main/version.evaluate.js",
+    "utilities/create-mockable.js",
+    "utilities/ignore.js",
+    "utilities/infer-parser.js",
+    "utilities/object-omit.js",
+    "utilities/public.js"
+  ],
+  "language-css/embed.js": [],
+  "language-css/get-visitor-keys.js": [
+    "language-css/visitor-keys.evaluate.js",
+    "utilities/create-get-visitor-keys.js"
+  ],
+  "language-css/index.js": [
+    "language-css/languages.evaluate.js",
+    "language-css/options.js",
+    "language-css/parser-postcss.js",
+    "language-css/printer-postcss.js"
+  ],
+  "language-css/languages.evaluate.js": [
+    "utilities/create-language.js"
+  ],
+  "language-css/loc.js": [
+    "utilities/is-non-empty-array.js",
+    "utilities/line-column-to-index.js",
+    "utilities/skip.js"
+  ],
+  "language-css/massage-ast/index.js": [
+    "main/front-matter/index.js"
+  ],
+  "language-css/options.js": [
+    "common/common-options.evaluate.js"
+  ],
+  "language-css/parse/parse-media-query.js": [
+    "language-css/parse/utilities.js"
+  ],
+  "language-css/parse/parse-selector.js": [
+    "language-css/parse/utilities.js"
+  ],
+  "language-css/parse/parse-value.js": [
+    "language-css/parse/parse-selector.js",
+    "language-css/parse/utilities.js",
+    "language-css/utilities/get-function-arguments-text.js",
+    "language-css/utilities/get-value-root.js",
+    "language-css/utilities/has-scss-interpolation.js",
+    "language-css/utilities/has-string-or-function.js",
+    "language-css/utilities/is-scss-variable.js",
+    "utilities/is-object.js"
+  ],
+  "language-css/parse/utilities.js": [
+    "utilities/is-object.js"
+  ],
+  "language-css/parser-postcss.js": [
+    "common/parser-create-error.js",
+    "language-css/loc.js",
+    "language-css/parse/parse-media-query.js",
+    "language-css/parse/parse-selector.js",
+    "language-css/parse/parse-value.js",
+    "language-css/parse/utilities.js",
+    "language-css/pragma.js",
+    "language-css/utilities/is-module-rule-name.js",
+    "language-css/utilities/is-scss-nested-property-node.js",
+    "main/front-matter/index.js",
+    "utilities/is-object.js",
+    "utilities/replace-non-line-breaks-with-space.js"
+  ],
+  "language-css/pragma.js": [
+    "language-js/pragma.js",
+    "main/front-matter/index.js"
+  ],
+  "language-css/print/comma-separated-value-group.js": [
+    "document/index.js",
+    "language-css/loc.js",
+    "language-css/utilities/index.js"
+  ],
+  "language-css/print/css-units.evaluate.js": [],
+  "language-css/print/misc.js": [
+    "language-css/print/css-units.evaluate.js",
+    "utilities/print-number.js",
+    "utilities/print-string.js"
+  ],
+  "language-css/print/parenthesized-value-group.js": [
+    "document/index.js",
+    "language-css/loc.js",
+    "language-css/print/misc.js",
+    "language-css/utilities/index.js",
+    "utilities/is-next-line-empty.js",
+    "utilities/is-non-empty-array.js"
+  ],
+  "language-css/print/sequence.js": [
+    "document/index.js",
+    "language-css/loc.js",
+    "main/front-matter/index.js",
+    "utilities/has-newline.js",
+    "utilities/is-next-line-empty.js"
+  ],
+  "language-css/printer-postcss.js": [
+    "document/index.js",
+    "language-css/embed.js",
+    "language-css/get-visitor-keys.js",
+    "language-css/loc.js",
+    "language-css/massage-ast/index.js",
+    "language-css/pragma.js",
+    "language-css/print/comma-separated-value-group.js",
+    "language-css/print/misc.js",
+    "language-css/print/parenthesized-value-group.js",
+    "language-css/print/sequence.js",
+    "language-css/utilities/index.js",
+    "utilities/is-non-empty-array.js",
+    "utilities/print-string.js",
+    "utilities/unexpected-node-error.js"
+  ],
+  "language-css/utilities/get-function-arguments-text.js": [
+    "language-css/utilities/get-value-root.js"
+  ],
+  "language-css/utilities/get-value-root.js": [],
+  "language-css/utilities/has-scss-interpolation.js": [
+    "utilities/is-non-empty-array.js"
+  ],
+  "language-css/utilities/has-string-or-function.js": [],
+  "language-css/utilities/index.js": [],
+  "language-css/utilities/is-module-rule-name.js": [],
+  "language-css/utilities/is-scss-nested-property-node.js": [],
+  "language-css/utilities/is-scss-variable.js": [],
+  "language-css/visitor-keys.evaluate.js": [
+    "utilities/visitor-keys.js"
+  ],
+  "language-graphql/get-visitor-keys.js": [
+    "language-graphql/visitor-keys.js",
+    "utilities/create-get-visitor-keys.js"
+  ],
+  "language-graphql/index.js": [
+    "language-graphql/languages.evaluate.js",
+    "language-graphql/options.js",
+    "language-graphql/parser-graphql.js",
+    "language-graphql/printer-graphql.js"
+  ],
+  "language-graphql/languages.evaluate.js": [
+    "utilities/create-language.js"
+  ],
+  "language-graphql/loc.js": [],
+  "language-graphql/massage-ast/index.js": [],
+  "language-graphql/options.js": [
+    "common/common-options.evaluate.js"
+  ],
+  "language-graphql/parser-graphql.js": [
+    "common/parser-create-error.js",
+    "language-graphql/loc.js",
+    "language-graphql/pragma.js"
+  ],
+  "language-graphql/pragma.js": [
+    "utilities/pragma/pragma.evaluate.js"
+  ],
+  "language-graphql/print/description.js": [
+    "document/index.js"
+  ],
+  "language-graphql/printer-graphql.js": [
+    "document/index.js",
+    "language-graphql/get-visitor-keys.js",
+    "language-graphql/loc.js",
+    "language-graphql/massage-ast/index.js",
+    "language-graphql/pragma.js",
+    "language-graphql/print/description.js",
+    "main/comments/print.js",
+    "utilities/is-next-line-empty.js",
+    "utilities/is-non-empty-array.js",
+    "utilities/unexpected-node-error.js"
+  ],
+  "language-graphql/visitor-keys.js": [],
+  "language-handlebars/embed.js": [],
+  "language-handlebars/get-visitor-keys.js": [
+    "language-handlebars/visitor-keys.js",
+    "utilities/create-get-visitor-keys.js"
+  ],
+  "language-handlebars/index.js": [
+    "language-handlebars/languages.evaluate.js",
+    "language-handlebars/parser-glimmer.js",
+    "language-handlebars/printer-glimmer.js"
+  ],
+  "language-handlebars/languages.evaluate.js": [
+    "utilities/create-language.js"
+  ],
+  "language-handlebars/loc.js": [],
+  "language-handlebars/massage-ast/index.js": [
+    "utilities/html-whitespace.js"
+  ],
+  "language-handlebars/parser-glimmer.js": [
+    "common/parser-create-error.js",
+    "language-handlebars/loc.js",
+    "main/front-matter/parse.js"
+  ],
+  "language-handlebars/printer-glimmer.js": [
+    "document/index.js",
+    "language-handlebars/embed.js",
+    "language-handlebars/get-visitor-keys.js",
+    "language-handlebars/loc.js",
+    "language-handlebars/massage-ast/index.js",
+    "language-handlebars/utilities.js",
+    "utilities/get-preferred-quote.js",
+    "utilities/html-whitespace.js",
+    "utilities/is-non-empty-array.js",
+    "utilities/unexpected-node-error.js"
+  ],
+  "language-handlebars/utilities.js": [],
+  "language-handlebars/visitor-keys.js": [],
+  "language-html/constants.evaluate.js": [],
+  "language-html/embed.js": [
+    "document/index.js",
+    "language-html/embed/angular-control-flow-block-parameters.js",
+    "language-html/embed/attribute.js",
+    "language-html/embed/utilities.js",
+    "language-html/get-node-content.js",
+    "language-html/print/tag.js",
+    "language-html/utilities/index.js",
+    "language-html/utilities/is-vue-sfc-with-typescript-script.js",
+    "utilities/html-whitespace.js"
+  ],
+  "language-html/embed/angular-attributes.js": [
+    "document/index.js",
+    "language-html/embed/angular-interpolation.js",
+    "language-html/embed/utilities.js",
+    "language-html/utilities/index.js"
+  ],
+  "language-html/embed/angular-control-flow-block-parameters.js": [
+    "language-html/embed/utilities.js"
+  ],
+  "language-html/embed/angular-interpolation.js": [
+    "document/index.js",
+    "language-html/embed/utilities.js",
+    "language-html/utilities/index.js"
+  ],
+  "language-html/embed/attribute.js": [
+    "document/index.js",
+    "language-html/embed/angular-attributes.js",
+    "language-html/embed/class-names.js",
+    "language-html/embed/event-handler.js",
+    "language-html/embed/permissions-policy.js",
+    "language-html/embed/srcset.js",
+    "language-html/embed/style.js",
+    "language-html/embed/vue-attributes.js",
+    "language-html/utilities/index.js"
+  ],
+  "language-html/embed/class-names.js": [
+    "language-html/utilities/index.js"
+  ],
+  "language-html/embed/event-handler.js": [
+    "language-html/embed/utilities.js",
+    "language-html/utilities/index.js"
+  ],
+  "language-html/embed/parse-permissions-policy.js": [
+    "utilities/html-whitespace.js"
+  ],
+  "language-html/embed/permissions-policy.js": [
+    "document/index.js",
+    "language-html/embed/parse-permissions-policy.js",
+    "language-html/embed/utilities.js",
+    "language-html/utilities/index.js"
+  ],
+  "language-html/embed/print-vue-script-generic-attribute-value.js": [
+    "language-html/embed/utilities.js",
+    "language-html/utilities/index.js"
+  ],
+  "language-html/embed/srcset.js": [
+    "document/index.js",
+    "language-html/embed/utilities.js",
+    "language-html/utilities/index.js"
+  ],
+  "language-html/embed/style.js": [
+    "language-html/embed/utilities.js",
+    "language-html/utilities/index.js"
+  ],
+  "language-html/embed/utilities.js": [
+    "document/index.js"
+  ],
+  "language-html/embed/vue-attributes.js": [
+    "language-html/embed/print-vue-script-generic-attribute-value.js",
+    "language-html/embed/utilities.js",
+    "language-html/embed/vue-bindings.js",
+    "language-html/embed/vue-v-for-directive.js",
+    "language-html/utilities/index.js",
+    "language-html/utilities/is-vue-sfc-with-typescript-script.js"
+  ],
+  "language-html/embed/vue-bindings.js": [
+    "language-html/embed/utilities.js",
+    "language-html/utilities/index.js",
+    "language-html/utilities/is-vue-sfc-with-typescript-script.js"
+  ],
+  "language-html/embed/vue-v-for-directive.js": [
+    "document/index.js",
+    "language-html/embed/utilities.js",
+    "language-html/utilities/index.js",
+    "language-html/utilities/is-vue-sfc-with-typescript-script.js"
+  ],
+  "language-html/get-node-content.js": [
+    "language-html/print/tag.js"
+  ],
+  "language-html/get-visitor-keys.js": [
+    "language-html/visitor-keys.evaluate.js",
+    "utilities/create-get-visitor-keys.js"
+  ],
+  "language-html/index.js": [
+    "language-html/languages.evaluate.js",
+    "language-html/options.js",
+    "language-html/parse/parsers.js",
+    "language-html/printer-html.js"
+  ],
+  "language-html/languages.evaluate.js": [
+    "utilities/create-language.js"
+  ],
+  "language-html/loc.js": [],
+  "language-html/massage-ast/index.js": [],
+  "language-html/options.js": [
+    "common/common-options.evaluate.js"
+  ],
+  "language-html/parse/ast.js": [
+    "main/front-matter/index.js"
+  ],
+  "language-html/parse/conditional-comment.js": [],
+  "language-html/parse/parse-options.js": [],
+  "language-html/parse/parse.js": [
+    "common/parser-create-error.js",
+    "language-html/parse/parse-options.js",
+    "language-html/parse/postprocess.js",
+    "main/front-matter/index.js",
+    "utilities/replace-non-line-breaks-with-space.js"
+  ],
+  "language-html/parse/parsers.js": [
+    "language-html/loc.js",
+    "language-html/parse/parse-options.js",
+    "language-html/parse/parse.js",
+    "language-html/pragma.js"
+  ],
+  "language-html/parse/postprocess.js": [
+    "language-html/parse/ast.js",
+    "language-html/parse/conditional-comment.js",
+    "language-html/utilities/html-elements-attributes.evaluate.js",
+    "language-html/utilities/html-tags.evaluate.js",
+    "language-html/utilities/is-unknown-namespace.js",
+    "utilities/is-non-empty-array.js"
+  ],
+  "language-html/pragma.js": [
+    "utilities/pragma/pragma.evaluate.js"
+  ],
+  "language-html/print-preprocess.js": [
+    "language-html/utilities/index.js",
+    "utilities/html-whitespace.js"
+  ],
+  "language-html/print/angular-control-flow-block-settings.evaluate.js": [],
+  "language-html/print/angular-control-flow-block.js": [
+    "document/index.js",
+    "language-html/print/angular-control-flow-block-settings.evaluate.js",
+    "language-html/print/children.js",
+    "language-html/utilities/index.js"
+  ],
+  "language-html/print/angular-icu-expression.js": [
+    "document/index.js",
+    "language-html/print/tag.js"
+  ],
+  "language-html/print/children.js": [
+    "document/index.js",
+    "language-html/loc.js",
+    "language-html/print/tag.js",
+    "language-html/utilities/index.js",
+    "utilities/html-whitespace.js",
+    "utilities/is-non-empty-array.js"
+  ],
+  "language-html/print/element.js": [
+    "document/index.js",
+    "language-html/get-node-content.js",
+    "language-html/print/children.js",
+    "language-html/print/tag.js",
+    "language-html/utilities/index.js"
+  ],
+  "language-html/print/tag.js": [
+    "document/index.js",
+    "language-html/loc.js",
+    "language-html/utilities/index.js",
+    "utilities/is-non-empty-array.js"
+  ],
+  "language-html/printer-html.js": [
+    "document/index.js",
+    "language-html/embed.js",
+    "language-html/get-visitor-keys.js",
+    "language-html/loc.js",
+    "language-html/massage-ast/index.js",
+    "language-html/pragma.js",
+    "language-html/print-preprocess.js",
+    "language-html/print/angular-control-flow-block.js",
+    "language-html/print/angular-icu-expression.js",
+    "language-html/print/children.js",
+    "language-html/print/element.js",
+    "language-html/print/tag.js",
+    "language-html/utilities/index.js",
+    "utilities/get-preferred-quote.js",
+    "utilities/html-whitespace.js",
+    "utilities/unexpected-node-error.js"
+  ],
+  "language-html/utilities/html-elements-attributes.evaluate.js": [],
+  "language-html/utilities/html-tags.evaluate.js": [],
+  "language-html/utilities/index.js": [
+    "document/index.js",
+    "language-html/constants.evaluate.js",
+    "language-html/utilities/is-unknown-namespace.js",
+    "main/front-matter/index.js",
+    "utilities/html-whitespace.js",
+    "utilities/infer-parser.js"
+  ],
+  "language-html/utilities/is-unknown-namespace.js": [],
+  "language-html/utilities/is-vue-sfc-with-typescript-script.js": [
+    "language-html/utilities/index.js"
+  ],
+  "language-html/visitor-keys.evaluate.js": [
+    "utilities/visitor-keys.js"
+  ],
+  "language-js/comments/attach/handle-for-x-statement-comments.js": [
+    "language-js/location/index.js",
+    "language-js/utilities/strip-comments.js",
+    "main/comments/utilities.js"
+  ],
+  "language-js/comments/attach/handle-if-statement-comments.js": [
+    "language-js/comments/attach/utilities.js",
+    "language-js/location/index.js",
+    "language-js/utilities/strip-comments.js",
+    "main/comments/utilities.js",
+    "utilities/get-next-non-space-non-comment-character.js",
+    "utilities/has-newline-in-range.js"
+  ],
+  "language-js/comments/attach/handle-while-like-comments.js": [
+    "language-js/location/index.js",
+    "main/comments/utilities.js",
+    "utilities/get-next-non-space-non-comment-character.js"
+  ],
+  "language-js/comments/attach/utilities.js": [
+    "language-js/location/index.js",
+    "language-js/utilities/comment-types.js",
+    "main/comments/utilities.js",
+    "utilities/has-newline-in-range.js"
+  ],
+  "language-js/comments/can-attach-comment.js": [
+    "language-js/utilities/create-type-check-function.js",
+    "language-js/utilities/function-parameters.js",
+    "language-js/utilities/is-as-const-expression.js",
+    "language-js/utilities/is-meaningful-empty-statement.js",
+    "language-js/utilities/is-method.js",
+    "language-js/utilities/is-shorthand-specifier.js",
+    "utilities/is-non-empty-array.js"
+  ],
+  "language-js/comments/handle-comments.js": [
+    "language-js/comments/attach/handle-for-x-statement-comments.js",
+    "language-js/comments/attach/handle-if-statement-comments.js",
+    "language-js/comments/attach/handle-while-like-comments.js",
+    "language-js/comments/attach/utilities.js",
+    "language-js/location/index.js",
+    "language-js/utilities/call-arguments.js",
+    "language-js/utilities/call-or-new-expression-parentheses.js",
+    "language-js/utilities/comment-types.js",
+    "language-js/utilities/create-type-check-function.js",
+    "language-js/utilities/function-parameters.js",
+    "language-js/utilities/is-method.js",
+    "language-js/utilities/is-object-property.js",
+    "language-js/utilities/is-prettier-ignore-comment.js",
+    "language-js/utilities/is-type-cast-comment.js",
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/strip-comments.js",
+    "main/comments/utilities.js",
+    "utilities/get-next-non-space-non-comment-character-index.js",
+    "utilities/get-next-non-space-non-comment-character.js",
+    "utilities/has-newline-in-range.js",
+    "utilities/has-newline.js",
+    "utilities/is-non-empty-array.js"
+  ],
+  "language-js/comments/is-gap.js": [],
+  "language-js/comments/will-print-own-comments.js": [
+    "language-js/utilities/create-type-check-function.js",
+    "language-js/utilities/has-node-ignore-comment.js",
+    "language-js/utilities/is-iife-callee-or-tagged-template-expression-tag.js",
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/should-expression-statement-print-own-comments.js",
+    "language-js/utilities/union-type-print.js"
+  ],
+  "language-js/embed/css.js": [
+    "document/index.js",
+    "language-js/embed/utilities.js",
+    "language-js/print/template-literal.js",
+    "language-js/utilities/is-node-matches.js",
+    "utilities/is-non-empty-array.js"
+  ],
+  "language-js/embed/graphql.js": [
+    "document/index.js",
+    "language-js/embed/utilities.js",
+    "language-js/print/template-literal.js"
+  ],
+  "language-js/embed/html.js": [
+    "document/index.js",
+    "language-js/embed/utilities.js",
+    "language-js/print/template-literal.js"
+  ],
+  "language-js/embed/index.js": [
+    "document/index.js",
+    "language-js/embed/css.js",
+    "language-js/embed/graphql.js",
+    "language-js/embed/html.js",
+    "language-js/embed/markdown.js"
+  ],
+  "language-js/embed/markdown.js": [
+    "document/index.js",
+    "language-js/print/template-literal.js"
+  ],
+  "language-js/embed/utilities.js": [
+    "language-js/utilities/comments.js",
+    "language-js/utilities/is-object-property.js",
+    "language-js/utilities/node-types.js"
+  ],
+  "language-js/index.js": [
+    "language-js/languages.evaluate.js",
+    "language-js/options.js",
+    "language-js/parse/index.js",
+    "language-js/printers.js"
+  ],
+  "language-js/languages.evaluate.js": [
+    "utilities/create-language.js"
+  ],
+  "language-js/location/comparison.js": [
+    "language-js/location/is-index.js",
+    "language-js/location/overrides.js",
+    "language-js/location/start.js"
+  ],
+  "language-js/location/end-with-full-text.js": [
+    "language-js/location/is-index.js"
+  ],
+  "language-js/location/index.js": [
+    "language-js/location/comparison.js",
+    "language-js/location/end-with-full-text.js",
+    "language-js/location/overrides.js",
+    "language-js/location/start.js"
+  ],
+  "language-js/location/is-index.js": [],
+  "language-js/location/overrides.js": [
+    "language-js/location/end-with-full-text.js",
+    "language-js/location/start.js",
+    "language-js/utilities/create-type-check-function.js"
+  ],
+  "language-js/location/start.js": [
+    "language-js/location/is-index.js"
+  ],
+  "language-js/massage-ast/chain-expression.js": [
+    "language-js/utilities/node-types.js"
+  ],
+  "language-js/massage-ast/index.js": [
+    "language-js/massage-ast/chain-expression.js",
+    "language-js/massage-ast/key.js",
+    "language-js/massage-ast/regexp-literal.js",
+    "language-js/utilities/is-meaningful-empty-statement.js",
+    "language-js/utilities/node-types.js"
+  ],
+  "language-js/massage-ast/key.js": [
+    "language-js/utilities/node-types.js"
+  ],
+  "language-js/massage-ast/regexp-literal.js": [],
+  "language-js/options.js": [
+    "common/common-options.evaluate.js"
+  ],
+  "language-js/parentheses/chain-expression.js": [
+    "language-js/utilities/create-type-check-function.js"
+  ],
+  "language-js/parentheses/identifier.js": [
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/starts-with-no-lookahead-token.js"
+  ],
+  "language-js/parentheses/needs-parentheses.js": [
+    "language-js/parentheses/chain-expression.js",
+    "language-js/parentheses/identifier.js",
+    "language-js/parentheses/parent-needs-parentheses.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/create-type-check-function.js",
+    "language-js/utilities/function-parameters.js",
+    "language-js/utilities/get-precedence.js",
+    "language-js/utilities/is-bitwise-operator.js",
+    "language-js/utilities/is-nullish-coalescing.js",
+    "language-js/utilities/is-object-property.js",
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/should-flatten.js",
+    "language-js/utilities/starts-with-no-lookahead-token.js"
+  ],
+  "language-js/parentheses/parent-needs-parentheses.js": [
+    "language-js/utilities/has-node.js",
+    "language-js/utilities/left-side.js",
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/return-statement-has-leading-comment.js",
+    "language-js/utilities/strip-chain-element-wrappers.js",
+    "utilities/is-non-empty-array.js"
+  ],
+  "language-js/parse/acorn.js": [
+    "common/parser-create-error.js",
+    "language-js/parse/postprocess/index.js",
+    "language-js/parse/utilities/create-parser.js",
+    "language-js/parse/utilities/source-types.js",
+    "utilities/try-combinations.js"
+  ],
+  "language-js/parse/angular.js": [
+    "common/parser-create-error.js",
+    "language-js/location/index.js",
+    "language-js/parse/utilities/wrap-expression.js"
+  ],
+  "language-js/parse/babel.js": [
+    "language-js/parse/postprocess/index.js",
+    "language-js/parse/utilities/create-babel-parse-error.js",
+    "language-js/parse/utilities/create-parser.js",
+    "language-js/parse/utilities/source-types.js",
+    "language-js/parse/utilities/wrap-expression.js",
+    "language-js/utilities/get-shebang.js",
+    "utilities/get-next-non-space-non-comment-character-index.js",
+    "utilities/try-combinations.js"
+  ],
+  "language-js/parse/espree.js": [
+    "common/parser-create-error.js",
+    "language-js/parse/postprocess/index.js",
+    "language-js/parse/utilities/create-parser.js",
+    "language-js/parse/utilities/source-types.js",
+    "utilities/try-combinations.js"
+  ],
+  "language-js/parse/flow.js": [
+    "common/parser-create-error.js",
+    "language-js/parse/postprocess/index.js",
+    "language-js/parse/utilities/create-parser.js"
+  ],
+  "language-js/parse/hermes.js": [
+    "common/parser-create-error.js",
+    "language-js/parse/postprocess/index.js",
+    "language-js/parse/utilities/create-parser.js"
+  ],
+  "language-js/parse/index.js": [
+    "language-js/parse/acorn.js",
+    "language-js/parse/angular.js",
+    "language-js/parse/babel.js",
+    "language-js/parse/espree.js",
+    "language-js/parse/flow.js",
+    "language-js/parse/hermes.js",
+    "language-js/parse/meriyah.js",
+    "language-js/parse/oxc.js",
+    "language-js/parse/typescript.js"
+  ],
+  "language-js/parse/meriyah.js": [
+    "common/parser-create-error.js",
+    "language-js/parse/postprocess/index.js",
+    "language-js/parse/utilities/create-parser.js",
+    "language-js/parse/utilities/source-types.js",
+    "utilities/try-combinations.js"
+  ],
+  "language-js/parse/oxc.js": [
+    "common/parser-create-error.js",
+    "language-js/parse/postprocess/index.js",
+    "language-js/parse/utilities/create-parser.js",
+    "language-js/parse/utilities/jsx-regexp.evaluate.js",
+    "language-js/parse/utilities/source-types.js",
+    "utilities/try-combinations.js"
+  ],
+  "language-js/parse/postprocess/index.js": [
+    "constants.js",
+    "language-js/location/index.js",
+    "language-js/parse/postprocess/merge-nestled-jsdoc-comments.js",
+    "language-js/parse/postprocess/visit-node.js",
+    "language-js/utilities/comment-types.js",
+    "language-js/utilities/create-type-check-function.js",
+    "language-js/utilities/get-raw.js",
+    "language-js/utilities/is-type-cast-comment.js",
+    "language-js/utilities/strip-comments.js"
+  ],
+  "language-js/parse/postprocess/merge-nestled-jsdoc-comments.js": [
+    "language-js/location/index.js",
+    "language-js/utilities/comment-types.js",
+    "language-js/utilities/is-indentable-block-comment.js"
+  ],
+  "language-js/parse/postprocess/visit-node.js": [
+    "language-js/traverse/get-visitor-keys.js",
+    "utilities/is-object.js"
+  ],
+  "language-js/parse/typescript.js": [
+    "common/parser-create-error.js",
+    "language-js/parse/postprocess/index.js",
+    "language-js/parse/utilities/create-parser.js",
+    "language-js/parse/utilities/jsx-regexp.evaluate.js",
+    "language-js/parse/utilities/replace-hashbang.js",
+    "language-js/parse/utilities/source-types.js",
+    "utilities/try-combinations.js"
+  ],
+  "language-js/parse/utilities/create-babel-parse-error.js": [
+    "common/parser-create-error.js"
+  ],
+  "language-js/parse/utilities/create-parser.js": [
+    "language-js/location/index.js",
+    "language-js/pragma.js"
+  ],
+  "language-js/parse/utilities/jsx-regexp.evaluate.js": [],
+  "language-js/parse/utilities/replace-hashbang.js": [],
+  "language-js/parse/utilities/source-types.js": [],
+  "language-js/parse/utilities/wrap-expression.js": [],
+  "language-js/pragma.js": [
+    "common/end-of-line.js",
+    "language-js/utilities/get-shebang.js",
+    "utilities/pragma/pragma.evaluate.js"
+  ],
+  "language-js/print/angular.js": [
+    "document/index.js",
+    "language-js/print/binaryish.js",
+    "language-js/utilities/create-type-check-function.js",
+    "language-js/utilities/has-node.js",
+    "utilities/unexpected-node-error.js"
+  ],
+  "language-js/print/array-type.js": [],
+  "language-js/print/array.js": [
+    "document/index.js",
+    "language-js/location/index.js",
+    "language-js/print/miscellaneous.js",
+    "language-js/print/type-annotation.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/is-signed-numeric-literal.js",
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/should-print-trailing-comma.js",
+    "main/comments/print.js",
+    "utilities/has-newline.js",
+    "utilities/is-next-line-empty.js",
+    "utilities/skip-inline-comment.js",
+    "utilities/skip-trailing-comment.js"
+  ],
+  "language-js/print/arrow-function.js": [
+    "common/errors.js",
+    "document/index.js",
+    "language-js/print/function-parameters.js",
+    "language-js/print/function.js",
+    "language-js/print/miscellaneous.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/function-parameters.js",
+    "language-js/utilities/has-leading-own-line-comment.js",
+    "language-js/utilities/is-template-on-its-own-line.js",
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/starts-with-no-lookahead-token.js",
+    "main/comments/print.js"
+  ],
+  "language-js/print/assignment.js": [
+    "document/index.js",
+    "language-js/print/binaryish.js",
+    "language-js/print/call-expression.js",
+    "language-js/print/union-type.js",
+    "language-js/utilities/call-arguments.js",
+    "language-js/utilities/has-leading-own-line-comment.js",
+    "language-js/utilities/is-lone-short-argument.js",
+    "language-js/utilities/is-object-property.js",
+    "language-js/utilities/node-types.js",
+    "utilities/get-string-width.js",
+    "utilities/is-non-empty-array.js"
+  ],
+  "language-js/print/await-expression.js": [
+    "document/index.js",
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/starts-with-no-lookahead-token.js"
+  ],
+  "language-js/print/binary-cast-expression.js": [
+    "document/index.js",
+    "language-js/utilities/node-types.js"
+  ],
+  "language-js/print/binaryish.js": [
+    "document/index.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/has-leading-own-line-comment.js",
+    "language-js/utilities/is-boolean-type-coercion.js",
+    "language-js/utilities/is-object-property.js",
+    "language-js/utilities/is-type-cast-comment.js",
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/should-flatten.js",
+    "main/comments/print.js"
+  ],
+  "language-js/print/bind-expression.js": [
+    "document/index.js"
+  ],
+  "language-js/print/block.js": [
+    "document/index.js",
+    "language-js/print/statement-sequence.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/is-next-line-empty.js",
+    "main/comments/print.js",
+    "utilities/is-non-empty-array.js"
+  ],
+  "language-js/print/call-arguments.js": [
+    "common/errors.js",
+    "document/index.js",
+    "language-js/print/array.js",
+    "language-js/print/miscellaneous.js",
+    "language-js/utilities/call-arguments.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/function-parameters.js",
+    "language-js/utilities/is-function-composition-arguments.js",
+    "language-js/utilities/is-long-curried-call-expression.js",
+    "language-js/utilities/is-next-line-empty.js",
+    "language-js/utilities/is-object-property.js",
+    "language-js/utilities/is-simple-call-argument.js",
+    "language-js/utilities/is-simple-type.js",
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/strip-chain-element-wrappers.js"
+  ],
+  "language-js/print/call-expression.js": [
+    "document/index.js",
+    "language-js/parentheses/needs-parentheses.js",
+    "language-js/print/call-arguments.js",
+    "language-js/print/member-chain.js",
+    "language-js/print/miscellaneous.js",
+    "language-js/utilities/call-arguments.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/is-memberish.js",
+    "language-js/utilities/is-node-matches.js",
+    "language-js/utilities/is-template-on-its-own-line.js",
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/test-libraries.js"
+  ],
+  "language-js/print/class-body.js": [
+    "document/index.js",
+    "language-js/location/index.js",
+    "language-js/print/function-parameters.js",
+    "language-js/print/miscellaneous.js",
+    "language-js/utilities/class-members.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/create-type-check-function.js",
+    "language-js/utilities/is-next-line-empty.js",
+    "main/comments/print.js",
+    "utilities/has-newline-in-range.js",
+    "utilities/has-newline.js"
+  ],
+  "language-js/print/class.js": [
+    "document/index.js",
+    "language-js/parentheses/needs-parentheses.js",
+    "language-js/print/assignment.js",
+    "language-js/print/class-body.js",
+    "language-js/print/decorators.js",
+    "language-js/print/function.js",
+    "language-js/print/key.js",
+    "language-js/print/miscellaneous.js",
+    "language-js/print/type-annotation.js",
+    "language-js/utilities/class-members.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/create-type-check-function.js",
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/strip-chain-element-wrappers.js",
+    "main/comments/print.js",
+    "utilities/create-group-id-mapper.js",
+    "utilities/is-non-empty-array.js"
+  ],
+  "language-js/print/clause.js": [
+    "document/index.js",
+    "language-js/location/index.js",
+    "language-js/utilities/comments.js",
+    "utilities/has-newline-in-range.js",
+    "utilities/has-newline.js"
+  ],
+  "language-js/print/comment.js": [
+    "document/index.js",
+    "language-js/location/index.js",
+    "language-js/utilities/comment-types.js",
+    "language-js/utilities/is-indentable-block-comment.js"
+  ],
+  "language-js/print/component.js": [
+    "document/index.js",
+    "language-js/print/function-parameters.js",
+    "language-js/print/miscellaneous.js"
+  ],
+  "language-js/print/decorators.js": [
+    "document/index.js",
+    "language-js/location/index.js",
+    "language-js/utilities/is-ignored.js",
+    "language-js/utilities/node-types.js",
+    "utilities/has-newline.js",
+    "utilities/is-non-empty-array.js"
+  ],
+  "language-js/print/do-while-statement.js": [
+    "document/index.js",
+    "language-js/print/clause.js",
+    "language-js/print/miscellaneous.js"
+  ],
+  "language-js/print/enum.js": [
+    "language-js/print/key.js",
+    "language-js/print/miscellaneous.js",
+    "language-js/print/object.js"
+  ],
+  "language-js/print/estree.js": [
+    "document/index.js",
+    "language-js/print/array.js",
+    "language-js/print/arrow-function.js",
+    "language-js/print/assignment.js",
+    "language-js/print/await-expression.js",
+    "language-js/print/binaryish.js",
+    "language-js/print/bind-expression.js",
+    "language-js/print/block.js",
+    "language-js/print/call-expression.js",
+    "language-js/print/class.js",
+    "language-js/print/do-while-statement.js",
+    "language-js/print/expression-statement.js",
+    "language-js/print/for-statement.js",
+    "language-js/print/for-x-statement.js",
+    "language-js/print/function.js",
+    "language-js/print/html-binding.js",
+    "language-js/print/if-statement.js",
+    "language-js/print/literal.js",
+    "language-js/print/member.js",
+    "language-js/print/miscellaneous.js",
+    "language-js/print/module.js",
+    "language-js/print/object.js",
+    "language-js/print/property.js",
+    "language-js/print/rest-element.js",
+    "language-js/print/return-statement.js",
+    "language-js/print/sequence-expression.js",
+    "language-js/print/switch-statement.js",
+    "language-js/print/template-literal.js",
+    "language-js/print/ternary.js",
+    "language-js/print/try-statement.js",
+    "language-js/print/type-annotation.js",
+    "language-js/print/variable-declaration.js",
+    "language-js/print/while-statement.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/is-meaningful-empty-statement.js",
+    "language-js/utilities/is-method.js",
+    "language-js/utilities/node-types.js",
+    "main/comments/print.js",
+    "utilities/unexpected-node-error.js"
+  ],
+  "language-js/print/expression-statement.js": [
+    "language-js/semicolon/semicolon.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/should-expression-statement-print-own-comments.js",
+    "language-js/utilities/vue-event-binding.js",
+    "main/comments/print.js"
+  ],
+  "language-js/print/flow.js": [
+    "document/index.js",
+    "language-js/print/array-type.js",
+    "language-js/print/array.js",
+    "language-js/print/binary-cast-expression.js",
+    "language-js/print/class.js",
+    "language-js/print/component.js",
+    "language-js/print/enum.js",
+    "language-js/print/function-type.js",
+    "language-js/print/function.js",
+    "language-js/print/hook.js",
+    "language-js/print/indexed-access-type.js",
+    "language-js/print/infer-type.js",
+    "language-js/print/intersection-type.js",
+    "language-js/print/key.js",
+    "language-js/print/literal.js",
+    "language-js/print/mapped-type.js",
+    "language-js/print/match.js",
+    "language-js/print/miscellaneous.js",
+    "language-js/print/module.js",
+    "language-js/print/object.js",
+    "language-js/print/opaque-type.js",
+    "language-js/print/rest-element.js",
+    "language-js/print/rest-type.js",
+    "language-js/print/ternary.js",
+    "language-js/print/tuple.js",
+    "language-js/print/type-alias.js",
+    "language-js/print/type-annotation.js",
+    "language-js/print/type-parameters.js",
+    "language-js/print/type-predicate.js",
+    "language-js/print/type-query.js",
+    "language-js/print/union-type.js",
+    "language-js/print/variable-declaration.js",
+    "language-js/utilities/get-raw.js",
+    "language-js/utilities/is-flow-keyword-type.js",
+    "language-js/utilities/is-method.js",
+    "utilities/print-number.js",
+    "utilities/print-string.js"
+  ],
+  "language-js/print/for-statement.js": [
+    "document/index.js",
+    "language-js/print/clause.js",
+    "main/comments/print.js"
+  ],
+  "language-js/print/for-x-statement.js": [
+    "document/index.js",
+    "language-js/print/clause.js"
+  ],
+  "language-js/print/function-parameters.js": [
+    "common/errors.js",
+    "document/index.js",
+    "language-js/print/miscellaneous.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/function-parameters.js",
+    "language-js/utilities/is-flow-object-type-property-a-function.js",
+    "language-js/utilities/is-next-line-empty.js",
+    "language-js/utilities/is-simple-type.js",
+    "language-js/utilities/is-type-annotation-a-function.js",
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/test-libraries.js",
+    "utilities/is-non-empty-array.js"
+  ],
+  "language-js/print/function-type.js": [
+    "document/index.js",
+    "language-js/location/index.js",
+    "language-js/print/class.js",
+    "language-js/print/function-parameters.js",
+    "language-js/print/miscellaneous.js",
+    "language-js/print/type-annotation.js",
+    "language-js/utilities/is-flow-object-type-property-a-function.js"
+  ],
+  "language-js/print/function.js": [
+    "document/index.js",
+    "language-js/print/function-parameters.js",
+    "language-js/print/key.js",
+    "language-js/print/miscellaneous.js",
+    "language-js/print/type-annotation.js",
+    "language-js/utilities/call-arguments.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/function-parameters.js",
+    "language-js/utilities/is-method.js",
+    "language-js/utilities/node-types.js"
+  ],
+  "language-js/print/hook.js": [
+    "document/index.js",
+    "language-js/print/function-parameters.js",
+    "language-js/print/miscellaneous.js"
+  ],
+  "language-js/print/html-binding.js": [
+    "document/index.js"
+  ],
+  "language-js/print/if-statement.js": [
+    "document/index.js",
+    "language-js/location/index.js",
+    "language-js/print/clause.js",
+    "language-js/print/miscellaneous.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/is-previous-line-empty.js",
+    "language-js/utilities/needs-hardline-after-dangling-comment.js",
+    "main/comments/print.js",
+    "utilities/has-newline.js"
+  ],
+  "language-js/print/ignored.js": [
+    "document/index.js",
+    "language-js/location/index.js",
+    "language-js/semicolon/semicolon.js",
+    "utilities/is-non-empty-array.js"
+  ],
+  "language-js/print/index-signature.js": [
+    "document/index.js",
+    "language-js/print/class.js",
+    "language-js/print/miscellaneous.js",
+    "language-js/print/type-annotation.js"
+  ],
+  "language-js/print/index.js": [
+    "document/index.js",
+    "language-js/parentheses/needs-parentheses.js",
+    "language-js/print/angular.js",
+    "language-js/print/decorators.js",
+    "language-js/print/estree.js",
+    "language-js/print/flow.js",
+    "language-js/print/ignored.js",
+    "language-js/print/jsx.js",
+    "language-js/print/typescript.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/create-type-check-function.js",
+    "language-js/utilities/is-ignored.js",
+    "language-js/utilities/is-iife-callee-or-tagged-template-expression-tag.js",
+    "main/comments/print.js",
+    "utilities/is-non-empty-array.js"
+  ],
+  "language-js/print/indexed-access-type.js": [
+    "language-js/print/miscellaneous.js"
+  ],
+  "language-js/print/infer-type.js": [],
+  "language-js/print/intersection-type.js": [
+    "document/index.js",
+    "language-js/utilities/has-leading-own-line-comment.js",
+    "language-js/utilities/node-types.js"
+  ],
+  "language-js/print/js-doc-type.js": [
+    "language-js/print/type-annotation.js"
+  ],
+  "language-js/print/jsx.js": [
+    "document/index.js",
+    "language-js/parentheses/needs-parentheses.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/create-type-check-function.js",
+    "language-js/utilities/get-raw.js",
+    "language-js/utilities/is-meaningful-jsx-text.js",
+    "language-js/utilities/jsx-whitespace.js",
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/strip-chain-element-wrappers.js",
+    "main/comments/print.js",
+    "utilities/get-preferred-quote.js",
+    "utilities/unexpected-node-error.js"
+  ],
+  "language-js/print/key.js": [
+    "language-js/utilities/get-raw.js",
+    "language-js/utilities/node-types.js",
+    "main/comments/print.js",
+    "utilities/print-number.js",
+    "utilities/print-string.js"
+  ],
+  "language-js/print/literal.js": [
+    "document/index.js",
+    "utilities/print-number.js",
+    "utilities/print-string.js"
+  ],
+  "language-js/print/mapped-type.js": [
+    "document/index.js",
+    "language-js/location/index.js",
+    "language-js/print/class.js",
+    "language-js/utilities/comment-types.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/strip-comments.js",
+    "main/comments/print.js",
+    "utilities/has-newline-in-range.js",
+    "utilities/has-newline.js"
+  ],
+  "language-js/print/match.js": [
+    "document/index.js",
+    "language-js/parentheses/needs-parentheses.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/create-type-check-function.js",
+    "language-js/utilities/has-leading-own-line-comment.js",
+    "language-js/utilities/is-next-line-empty.js",
+    "main/comments/print.js"
+  ],
+  "language-js/print/member-chain.js": [
+    "document/index.js",
+    "language-js/location/index.js",
+    "language-js/parentheses/needs-parentheses.js",
+    "language-js/print/bind-expression.js",
+    "language-js/print/call-arguments.js",
+    "language-js/print/member.js",
+    "language-js/print/miscellaneous.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/is-long-curried-call-expression.js",
+    "language-js/utilities/is-memberish.js",
+    "language-js/utilities/is-next-line-empty.js",
+    "language-js/utilities/is-simple-call-argument.js",
+    "language-js/utilities/node-types.js",
+    "main/comments/print.js",
+    "utilities/get-next-non-space-non-comment-character-index.js",
+    "utilities/is-next-line-empty.js"
+  ],
+  "language-js/print/member.js": [
+    "document/index.js",
+    "language-js/print/miscellaneous.js",
+    "language-js/utilities/call-arguments.js",
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/strip-chain-element-wrappers.js"
+  ],
+  "language-js/print/method-signature.js": [
+    "document/index.js",
+    "language-js/print/class.js",
+    "language-js/print/function-parameters.js",
+    "language-js/print/key.js",
+    "language-js/print/miscellaneous.js",
+    "language-js/print/type-annotation.js"
+  ],
+  "language-js/print/miscellaneous.js": [
+    "document/index.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/create-type-check-function.js",
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/should-print-trailing-comma.js",
+    "main/comments/print.js"
+  ],
+  "language-js/print/module-declaration.js": [
+    "document/index.js",
+    "language-js/print/miscellaneous.js"
+  ],
+  "language-js/print/module.js": [
+    "document/index.js",
+    "language-js/location/index.js",
+    "language-js/print/decorators.js",
+    "language-js/print/miscellaneous.js",
+    "language-js/print/object.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/create-type-check-function.js",
+    "language-js/utilities/is-shorthand-specifier.js",
+    "language-js/utilities/needs-hardline-after-dangling-comment.js",
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/strip-comments.js",
+    "main/comments/print.js",
+    "utilities/is-non-empty-array.js",
+    "utilities/unexpected-node-error.js"
+  ],
+  "language-js/print/object.js": [
+    "document/index.js",
+    "language-js/location/index.js",
+    "language-js/print/function-parameters.js",
+    "language-js/print/miscellaneous.js",
+    "language-js/print/type-annotation.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/create-type-check-function.js",
+    "language-js/utilities/is-next-line-empty.js",
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/strip-comments.js",
+    "main/comments/print.js",
+    "utilities/has-newline-in-range.js",
+    "utilities/has-newline.js",
+    "utilities/is-non-empty-array.js"
+  ],
+  "language-js/print/opaque-type.js": [
+    "document/index.js",
+    "language-js/print/miscellaneous.js"
+  ],
+  "language-js/print/property.js": [
+    "language-js/print/assignment.js",
+    "language-js/print/key.js"
+  ],
+  "language-js/print/rest-element.js": [
+    "language-js/print/type-annotation.js"
+  ],
+  "language-js/print/rest-type.js": [],
+  "language-js/print/return-statement.js": [
+    "document/index.js",
+    "language-js/print/miscellaneous.js",
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/return-statement-has-leading-comment.js"
+  ],
+  "language-js/print/sequence-expression.js": [
+    "document/index.js",
+    "language-js/parentheses/needs-parentheses.js",
+    "language-js/utilities/node-types.js"
+  ],
+  "language-js/print/statement-sequence.js": [
+    "document/index.js",
+    "language-js/utilities/is-next-line-empty.js"
+  ],
+  "language-js/print/switch-statement.js": [
+    "document/index.js",
+    "language-js/print/statement-sequence.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/is-next-line-empty.js",
+    "main/comments/print.js"
+  ],
+  "language-js/print/template-literal.js": [
+    "document/index.js",
+    "language-js/location/index.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/strip-chain-element-wrappers.js",
+    "utilities/get-indent-size.js",
+    "utilities/get-string-width.js",
+    "utilities/has-newline-in-range.js"
+  ],
+  "language-js/print/ternary-old.js": [
+    "document/index.js",
+    "language-js/utilities/node-types.js"
+  ],
+  "language-js/print/ternary.js": [
+    "document/index.js",
+    "language-js/location/index.js",
+    "language-js/parentheses/needs-parentheses.js",
+    "language-js/print/ternary-old.js",
+    "language-js/utilities/comment-types.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/is-lone-short-argument.js",
+    "language-js/utilities/is-simple-expression-by-node-count.js",
+    "language-js/utilities/node-types.js",
+    "main/comments/print.js",
+    "utilities/has-newline-in-range.js"
+  ],
+  "language-js/print/try-statement.js": [
+    "document/index.js",
+    "language-js/location/index.js",
+    "language-js/utilities/comment-types.js",
+    "language-js/utilities/comments.js",
+    "utilities/has-newline.js"
+  ],
+  "language-js/print/tuple.js": [],
+  "language-js/print/type-alias.js": [
+    "language-js/print/assignment.js",
+    "language-js/print/miscellaneous.js"
+  ],
+  "language-js/print/type-annotation.js": [
+    "language-js/print/union-type.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/is-simple-type.js",
+    "language-js/utilities/node-types.js"
+  ],
+  "language-js/print/type-assertion.js": [
+    "document/index.js",
+    "language-js/utilities/node-types.js"
+  ],
+  "language-js/print/type-parameters.js": [
+    "document/index.js",
+    "language-js/location/index.js",
+    "language-js/print/assignment.js",
+    "language-js/print/miscellaneous.js",
+    "language-js/print/type-annotation.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/function-parameters.js",
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/test-libraries.js",
+    "main/comments/print.js",
+    "utilities/has-newline.js"
+  ],
+  "language-js/print/type-predicate.js": [
+    "language-js/print/type-annotation.js"
+  ],
+  "language-js/print/type-query.js": [],
+  "language-js/print/typescript.js": [
+    "language-js/print/array-type.js",
+    "language-js/print/array.js",
+    "language-js/print/binary-cast-expression.js",
+    "language-js/print/block.js",
+    "language-js/print/call-expression.js",
+    "language-js/print/class.js",
+    "language-js/print/enum.js",
+    "language-js/print/function-type.js",
+    "language-js/print/function.js",
+    "language-js/print/index-signature.js",
+    "language-js/print/indexed-access-type.js",
+    "language-js/print/infer-type.js",
+    "language-js/print/intersection-type.js",
+    "language-js/print/js-doc-type.js",
+    "language-js/print/key.js",
+    "language-js/print/mapped-type.js",
+    "language-js/print/method-signature.js",
+    "language-js/print/miscellaneous.js",
+    "language-js/print/module-declaration.js",
+    "language-js/print/module.js",
+    "language-js/print/object.js",
+    "language-js/print/rest-type.js",
+    "language-js/print/template-literal.js",
+    "language-js/print/ternary.js",
+    "language-js/print/tuple.js",
+    "language-js/print/type-alias.js",
+    "language-js/print/type-annotation.js",
+    "language-js/print/type-assertion.js",
+    "language-js/print/type-parameters.js",
+    "language-js/print/type-predicate.js",
+    "language-js/print/type-query.js",
+    "language-js/print/union-type.js",
+    "language-js/utilities/is-ts-keyword-type.js",
+    "utilities/unexpected-node-error.js"
+  ],
+  "language-js/print/union-type.js": [
+    "document/index.js",
+    "language-js/parentheses/needs-parentheses.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/is-flow-object-type-property-a-function.js",
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/union-type-print.js",
+    "main/comments/print.js"
+  ],
+  "language-js/print/variable-declaration.js": [
+    "document/index.js",
+    "language-js/print/miscellaneous.js",
+    "language-js/utilities/comments.js"
+  ],
+  "language-js/print/while-statement.js": [
+    "document/index.js",
+    "language-js/print/clause.js",
+    "language-js/print/miscellaneous.js"
+  ],
+  "language-js/printers.js": [
+    "language-js/comments/can-attach-comment.js",
+    "language-js/comments/handle-comments.js",
+    "language-js/comments/is-gap.js",
+    "language-js/comments/will-print-own-comments.js",
+    "language-js/embed/index.js",
+    "language-js/location/index.js",
+    "language-js/massage-ast/index.js",
+    "language-js/pragma.js",
+    "language-js/print/comment.js",
+    "language-js/print/index.js",
+    "language-js/traverse/get-visitor-keys.js",
+    "language-js/utilities/comment-types.js",
+    "language-js/utilities/is-ignored.js"
+  ],
+  "language-js/semicolon/semicolon.js": [
+    "language-js/parentheses/needs-parentheses.js",
+    "language-js/print/function.js",
+    "language-js/utilities/left-side.js",
+    "language-js/utilities/node-types.js"
+  ],
+  "language-js/traverse/get-visitor-keys.js": [
+    "language-js/traverse/visitor-keys.evaluate.js",
+    "utilities/create-get-visitor-keys.js"
+  ],
+  "language-js/traverse/visitor-keys.evaluate.js": [
+    "utilities/visitor-keys.js"
+  ],
+  "language-js/utilities/call-arguments.js": [],
+  "language-js/utilities/call-or-new-expression-parentheses.js": [
+    "language-js/location/index.js",
+    "language-js/utilities/strip-comments.js"
+  ],
+  "language-js/utilities/class-members.js": [
+    "language-js/location/index.js",
+    "utilities/is-non-empty-array.js"
+  ],
+  "language-js/utilities/comment-types.js": [
+    "language-js/utilities/create-type-check-function.js"
+  ],
+  "language-js/utilities/comments.js": [
+    "language-js/utilities/comment-types.js",
+    "language-js/utilities/is-prettier-ignore-comment.js",
+    "utilities/is-non-empty-array.js"
+  ],
+  "language-js/utilities/create-type-check-function.js": [],
+  "language-js/utilities/function-parameters.js": [],
+  "language-js/utilities/get-precedence.js": [],
+  "language-js/utilities/get-raw.js": [],
+  "language-js/utilities/get-shebang.js": [],
+  "language-js/utilities/has-jsx-ignore-comment.js": [
+    "language-js/utilities/has-node-ignore-comment.js",
+    "language-js/utilities/is-meaningful-jsx-text.js",
+    "language-js/utilities/node-types.js"
+  ],
+  "language-js/utilities/has-leading-own-line-comment.js": [
+    "language-js/location/index.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/has-node-ignore-comment.js",
+    "language-js/utilities/node-types.js",
+    "utilities/has-newline.js"
+  ],
+  "language-js/utilities/has-node-ignore-comment.js": [
+    "language-js/utilities/comments.js"
+  ],
+  "language-js/utilities/has-node.js": [
+    "language-js/traverse/get-visitor-keys.js",
+    "utilities/ast.js"
+  ],
+  "language-js/utilities/is-as-const-expression.js": [],
+  "language-js/utilities/is-bitwise-operator.js": [
+    "language-js/utilities/should-flatten.js"
+  ],
+  "language-js/utilities/is-boolean-type-coercion.js": [],
+  "language-js/utilities/is-flow-keyword-type.js": [
+    "language-js/utilities/create-type-check-function.js"
+  ],
+  "language-js/utilities/is-flow-object-type-property-a-function.js": [],
+  "language-js/utilities/is-function-composition-arguments.js": [
+    "language-js/utilities/call-arguments.js",
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/strip-chain-element-wrappers.js"
+  ],
+  "language-js/utilities/is-ignored.js": [
+    "language-js/utilities/has-jsx-ignore-comment.js",
+    "language-js/utilities/has-node-ignore-comment.js"
+  ],
+  "language-js/utilities/is-iife-callee-or-tagged-template-expression-tag.js": [
+    "language-js/utilities/node-types.js"
+  ],
+  "language-js/utilities/is-indentable-block-comment.js": [
+    "language-js/utilities/comment-types.js"
+  ],
+  "language-js/utilities/is-lone-short-argument.js": [
+    "language-js/utilities/comments.js",
+    "language-js/utilities/get-raw.js",
+    "language-js/utilities/is-signed-numeric-literal.js",
+    "language-js/utilities/node-types.js",
+    "utilities/print-string.js"
+  ],
+  "language-js/utilities/is-long-curried-call-expression.js": [
+    "language-js/utilities/node-types.js"
+  ],
+  "language-js/utilities/is-meaningful-empty-statement.js": [],
+  "language-js/utilities/is-meaningful-jsx-text.js": [
+    "language-js/utilities/get-raw.js",
+    "language-js/utilities/jsx-whitespace.js"
+  ],
+  "language-js/utilities/is-memberish.js": [
+    "language-js/utilities/node-types.js"
+  ],
+  "language-js/utilities/is-method.js": [],
+  "language-js/utilities/is-next-line-empty.js": [
+    "language-js/location/index.js",
+    "utilities/is-next-line-empty.js"
+  ],
+  "language-js/utilities/is-node-matches.js": [],
+  "language-js/utilities/is-nullish-coalescing.js": [],
+  "language-js/utilities/is-object-property.js": [
+    "language-js/utilities/is-method.js"
+  ],
+  "language-js/utilities/is-prettier-ignore-comment.js": [],
+  "language-js/utilities/is-previous-line-empty.js": [
+    "language-js/location/index.js",
+    "utilities/is-previous-line-empty.js"
+  ],
+  "language-js/utilities/is-shorthand-specifier.js": [
+    "language-js/location/index.js",
+    "language-js/utilities/get-raw.js",
+    "language-js/utilities/node-types.js"
+  ],
+  "language-js/utilities/is-signed-numeric-literal.js": [
+    "language-js/utilities/node-types.js"
+  ],
+  "language-js/utilities/is-simple-call-argument.js": [
+    "language-js/utilities/call-arguments.js",
+    "language-js/utilities/create-type-check-function.js",
+    "language-js/utilities/node-types.js",
+    "language-js/utilities/strip-chain-element-wrappers.js",
+    "utilities/get-string-width.js"
+  ],
+  "language-js/utilities/is-simple-expression-by-node-count.js": [
+    "utilities/is-object.js"
+  ],
+  "language-js/utilities/is-simple-type-annotation.js": [
+    "language-js/utilities/create-type-check-function.js"
+  ],
+  "language-js/utilities/is-simple-type.js": [
+    "language-js/utilities/is-flow-keyword-type.js",
+    "language-js/utilities/is-simple-type-annotation.js",
+    "language-js/utilities/is-ts-keyword-type.js"
+  ],
+  "language-js/utilities/is-template-on-its-own-line.js": [
+    "language-js/location/index.js",
+    "language-js/utilities/template-literal-has-new-lines.js",
+    "utilities/has-newline.js"
+  ],
+  "language-js/utilities/is-ts-keyword-type.js": [],
+  "language-js/utilities/is-type-annotation-a-function.js": [
+    "language-js/location/index.js"
+  ],
+  "language-js/utilities/is-type-cast-comment.js": [
+    "language-js/utilities/comment-types.js"
+  ],
+  "language-js/utilities/jsx-whitespace.js": [
+    "utilities/whitespace-utilities.js"
+  ],
+  "language-js/utilities/left-side.js": [
+    "language-js/utilities/node-types.js"
+  ],
+  "language-js/utilities/literal.js": [],
+  "language-js/utilities/needs-hardline-after-dangling-comment.js": [
+    "language-js/utilities/comment-types.js",
+    "language-js/utilities/comments.js"
+  ],
+  "language-js/utilities/node-types.js": [
+    "language-js/utilities/create-type-check-function.js",
+    "language-js/utilities/literal.js"
+  ],
+  "language-js/utilities/return-statement-has-leading-comment.js": [
+    "language-js/location/index.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/has-leading-own-line-comment.js",
+    "language-js/utilities/left-side.js",
+    "language-js/utilities/node-types.js",
+    "utilities/has-newline-in-range.js"
+  ],
+  "language-js/utilities/should-expression-statement-print-own-comments.js": [
+    "language-js/semicolon/semicolon.js",
+    "language-js/utilities/comments.js",
+    "language-js/utilities/is-type-cast-comment.js"
+  ],
+  "language-js/utilities/should-flatten.js": [
+    "language-js/utilities/get-precedence.js"
+  ],
+  "language-js/utilities/should-print-trailing-comma.js": [],
+  "language-js/utilities/starts-with-no-lookahead-token.js": [],
+  "language-js/utilities/strip-chain-element-wrappers.js": [
+    "language-js/utilities/node-types.js"
+  ],
+  "language-js/utilities/strip-comments.js": [
+    "constants.js",
+    "language-js/location/index.js",
+    "utilities/replace-non-line-breaks-with-space.js"
+  ],
+  "language-js/utilities/template-literal-has-new-lines.js": [],
+  "language-js/utilities/test-libraries.js": [
+    "language-js/utilities/call-arguments.js",
+    "language-js/utilities/function-parameters.js",
+    "language-js/utilities/is-node-matches.js",
+    "language-js/utilities/node-types.js"
+  ],
+  "language-js/utilities/union-type-print.js": [
+    "language-js/utilities/comments.js",
+    "language-js/utilities/create-type-check-function.js",
+    "language-js/utilities/node-types.js"
+  ],
+  "language-js/utilities/vue-event-binding.js": [
+    "language-js/utilities/create-type-check-function.js"
+  ],
+  "language-json/get-visitor-keys.js": [
+    "language-json/visitor-keys.evaluate.js",
+    "utilities/create-get-visitor-keys.js"
+  ],
+  "language-json/index.js": [
+    "language-json/languages.evaluate.js",
+    "language-json/parsers.js",
+    "language-json/printers.js"
+  ],
+  "language-json/languages.evaluate.js": [
+    "utilities/create-language.js"
+  ],
+  "language-json/massage-ast/index.js": [
+    "language-json/utilities.js"
+  ],
+  "language-json/parse/json.js": [
+    "common/parser-create-error.js",
+    "language-js/parse/utilities/create-babel-parse-error.js",
+    "language-js/parse/utilities/wrap-expression.js",
+    "utilities/is-non-empty-array.js"
+  ],
+  "language-json/parsers.js": [
+    "language-js/parse/utilities/create-parser.js",
+    "language-json/parse/json.js"
+  ],
+  "language-json/print/index.js": [
+    "language-json/print/json.js"
+  ],
+  "language-json/print/json.js": [
+    "document/index.js",
+    "language-json/utilities.js",
+    "utilities/print-string.js",
+    "utilities/unexpected-node-error.js"
+  ],
+  "language-json/printers.js": [
+    "language-js/printers.js",
+    "language-json/get-visitor-keys.js",
+    "language-json/massage-ast/index.js",
+    "language-json/print/index.js"
+  ],
+  "language-json/utilities.js": [],
+  "language-json/visitor-keys.evaluate.js": [
+    "utilities/visitor-keys.js"
+  ],
+  "language-markdown/constants.evaluate.js": [],
+  "language-markdown/embed.js": [
+    "document/index.js",
+    "language-markdown/utilities.js",
+    "utilities/get-max-continuous-count.js",
+    "utilities/infer-parser.js"
+  ],
+  "language-markdown/index.js": [
+    "language-markdown/languages.evaluate.js",
+    "language-markdown/options.js",
+    "language-markdown/parsers.js",
+    "language-markdown/printers.js"
+  ],
+  "language-markdown/languages.evaluate.js": [
+    "utilities/create-language.js"
+  ],
+  "language-markdown/loc.js": [],
+  "language-markdown/massage-ast/index.js": [
+    "language-markdown/pragma.js",
+    "main/front-matter/index.js"
+  ],
+  "language-markdown/options.js": [
+    "common/common-options.evaluate.js"
+  ],
+  "language-markdown/parse/index.js": [
+    "language-markdown/parse/parse-markdown.js",
+    "language-markdown/parse/parse-mdx.js"
+  ],
+  "language-markdown/parse/mdx.js": [],
+  "language-markdown/parse/micromark/mdast-util-gfm.js": [],
+  "language-markdown/parse/micromark/micromark-extension-html-text.js": [],
+  "language-markdown/parse/micromark/micromark-extension-liquid.js": [],
+  "language-markdown/parse/parse-markdown.js": [
+    "language-markdown/parse/micromark/mdast-util-gfm.js",
+    "language-markdown/parse/micromark/micromark-extension-html-text.js",
+    "language-markdown/parse/micromark/micromark-extension-liquid.js",
+    "main/front-matter/parse.js"
+  ],
+  "language-markdown/parse/parse-mdx.js": [
+    "language-markdown/parse/mdx.js",
+    "language-markdown/parse/unified-plugins/front-matter.js",
+    "language-markdown/parse/unified-plugins/html-to-jsx.js",
+    "language-markdown/parse/unified-plugins/liquid.js",
+    "language-markdown/parse/unified-plugins/wiki-link.js"
+  ],
+  "language-markdown/parse/unified-plugins/front-matter.js": [
+    "main/front-matter/index.js"
+  ],
+  "language-markdown/parse/unified-plugins/html-to-jsx.js": [
+    "language-markdown/parse/mdx.js",
+    "language-markdown/utilities.js"
+  ],
+  "language-markdown/parse/unified-plugins/liquid.js": [],
+  "language-markdown/parse/unified-plugins/wiki-link.js": [],
+  "language-markdown/parsers.js": [
+    "language-markdown/loc.js",
+    "language-markdown/parse/index.js",
+    "language-markdown/pragma.js"
+  ],
+  "language-markdown/pragma.js": [
+    "main/front-matter/index.js",
+    "utilities/pragma/pragma.evaluate.js"
+  ],
+  "language-markdown/print/children.js": [
+    "document/index.js",
+    "language-markdown/utilities.js"
+  ],
+  "language-markdown/print/heading.js": [
+    "document/index.js",
+    "language-markdown/print/children.js",
+    "language-markdown/utilities.js"
+  ],
+  "language-markdown/print/ignored.js": [],
+  "language-markdown/print/index.js": [
+    "language-markdown/print/ignored.js",
+    "language-markdown/print/mdast.js"
+  ],
+  "language-markdown/print/list.js": [
+    "document/index.js",
+    "language-markdown/print/children.js",
+    "language-markdown/utilities.js"
+  ],
+  "language-markdown/print/mdast.js": [
+    "document/index.js",
+    "language-markdown/loc.js",
+    "language-markdown/print/children.js",
+    "language-markdown/print/heading.js",
+    "language-markdown/print/list.js",
+    "language-markdown/print/paragraph.js",
+    "language-markdown/print/sentence.js",
+    "language-markdown/print/table.js",
+    "language-markdown/print/whitespace.js",
+    "language-markdown/print/word.js",
+    "language-markdown/utilities.js",
+    "utilities/get-max-continuous-count.js",
+    "utilities/get-min-not-present-continuous-count.js",
+    "utilities/get-preferred-quote.js",
+    "utilities/unexpected-node-error.js"
+  ],
+  "language-markdown/print/paragraph.js": [
+    "document/index.js"
+  ],
+  "language-markdown/print/preprocess.js": [
+    "language-markdown/utilities.js",
+    "utilities/html-whitespace.js"
+  ],
+  "language-markdown/print/sentence.js": [
+    "document/index.js"
+  ],
+  "language-markdown/print/table.js": [
+    "document/index.js",
+    "document/printer/printer.js",
+    "utilities/get-string-width.js"
+  ],
+  "language-markdown/print/whitespace.js": [
+    "document/index.js",
+    "language-markdown/utilities.js"
+  ],
+  "language-markdown/print/word.js": [
+    "language-markdown/constants.evaluate.js",
+    "language-markdown/utilities.js"
+  ],
+  "language-markdown/printers.js": [
+    "language-markdown/embed.js",
+    "language-markdown/massage-ast/index.js",
+    "language-markdown/pragma.js",
+    "language-markdown/print/index.js",
+    "language-markdown/print/preprocess.js",
+    "language-markdown/traverse/get-visitor-keys.js",
+    "language-markdown/utilities.js"
+  ],
+  "language-markdown/traverse/get-visitor-keys.js": [
+    "language-markdown/traverse/visitor-keys.evaluate.js",
+    "utilities/create-get-visitor-keys.js"
+  ],
+  "language-markdown/traverse/visitor-keys.evaluate.js": [
+    "utilities/visitor-keys.js"
+  ],
+  "language-markdown/utilities.js": [
+    "language-markdown/constants.evaluate.js",
+    "language-markdown/loc.js"
+  ],
+  "language-yaml/embed.js": [
+    "document/index.js"
+  ],
+  "language-yaml/get-visitor-keys.js": [
+    "language-yaml/visitor-keys.evaluate.js",
+    "utilities/create-get-visitor-keys.js"
+  ],
+  "language-yaml/index.js": [
+    "language-yaml/languages.evaluate.js",
+    "language-yaml/options.js",
+    "language-yaml/parser-yaml.js",
+    "language-yaml/printer-yaml.js"
+  ],
+  "language-yaml/languages.evaluate.js": [
+    "utilities/create-language.js"
+  ],
+  "language-yaml/loc.js": [],
+  "language-yaml/massage-ast/index.js": [
+    "language-yaml/pragma.js"
+  ],
+  "language-yaml/options.js": [
+    "common/common-options.evaluate.js"
+  ],
+  "language-yaml/parser-yaml.js": [
+    "common/parser-create-error.js",
+    "language-yaml/loc.js",
+    "language-yaml/pragma.js"
+  ],
+  "language-yaml/pragma.js": [
+    "utilities/pragma/pragma.evaluate.js"
+  ],
+  "language-yaml/print-preprocess.js": [
+    "language-yaml/utilities.js"
+  ],
+  "language-yaml/print/block.js": [
+    "document/index.js",
+    "language-yaml/print/misc.js",
+    "language-yaml/utilities.js"
+  ],
+  "language-yaml/print/flow-mapping-sequence.js": [
+    "document/index.js",
+    "language-yaml/print/misc.js",
+    "language-yaml/utilities.js"
+  ],
+  "language-yaml/print/mapping-item.js": [
+    "document/index.js",
+    "language-yaml/print/misc.js",
+    "language-yaml/utilities.js"
+  ],
+  "language-yaml/print/misc.js": [
+    "document/index.js",
+    "language-yaml/utilities.js"
+  ],
+  "language-yaml/printer-yaml.js": [
+    "document/index.js",
+    "language-yaml/embed.js",
+    "language-yaml/get-visitor-keys.js",
+    "language-yaml/loc.js",
+    "language-yaml/massage-ast/index.js",
+    "language-yaml/pragma.js",
+    "language-yaml/print-preprocess.js",
+    "language-yaml/print/block.js",
+    "language-yaml/print/flow-mapping-sequence.js",
+    "language-yaml/print/mapping-item.js",
+    "language-yaml/print/misc.js",
+    "language-yaml/utilities.js",
+    "utilities/is-previous-line-empty.js",
+    "utilities/unexpected-node-error.js"
+  ],
+  "language-yaml/utilities.js": [
+    "utilities/is-non-empty-array.js"
+  ],
+  "language-yaml/visitor-keys.evaluate.js": [
+    "utilities/visitor-keys.js"
+  ],
+  "main/ast-to-doc.js": [
+    "common/ast-path.js",
+    "constants.js",
+    "document/index.js",
+    "main/comments/attach.js",
+    "main/comments/print.js",
+    "main/create-print-pre-check-function.js",
+    "main/multiparser.js",
+    "main/print-ignored.js",
+    "utilities/is-non-empty-array.js",
+    "utilities/is-object.js"
+  ],
+  "main/comments/attach.js": [
+    "main/comments/utilities.js",
+    "main/utilities/get-sorted-child-nodes.js",
+    "utilities/has-newline.js",
+    "utilities/is-non-empty-array.js"
+  ],
+  "main/comments/print.js": [
+    "constants.js",
+    "document/index.js",
+    "utilities/has-newline.js",
+    "utilities/is-previous-line-empty.js",
+    "utilities/skip-newline.js",
+    "utilities/skip.js"
+  ],
+  "main/comments/utilities.js": [],
+  "main/core-options.evaluate.js": [
+    "main/option-categories.js"
+  ],
+  "main/core.js": [
+    "common/end-of-line.js",
+    "constants.js",
+    "document/index.js",
+    "main/ast-to-doc.js",
+    "main/get-cursor-node.js",
+    "main/massage-ast.js",
+    "main/normalize-format-options.js",
+    "main/parse.js",
+    "main/parser-and-printer.js",
+    "main/range.js",
+    "utilities/get-alignment-size.js"
+  ],
+  "main/create-get-visitor-keys-function.js": [
+    "main/front-matter/index.js"
+  ],
+  "main/create-print-pre-check-function.js": [
+    "utilities/noop.js"
+  ],
+  "main/front-matter/clean.js": [
+    "main/front-matter/embed.js"
+  ],
+  "main/front-matter/constants.js": [],
+  "main/front-matter/embed.js": [
+    "document/index.js",
+    "main/front-matter/is-front-matter.js",
+    "utilities/infer-parser.js"
+  ],
+  "main/front-matter/index.js": [
+    "main/front-matter/clean.js",
+    "main/front-matter/constants.js",
+    "main/front-matter/embed.js",
+    "main/front-matter/is-front-matter.js",
+    "main/front-matter/parse.js",
+    "main/front-matter/print.js"
+  ],
+  "main/front-matter/is-front-matter.js": [
+    "main/front-matter/constants.js"
+  ],
+  "main/front-matter/parse.js": [
+    "main/front-matter/constants.js",
+    "utilities/replace-non-line-breaks-with-space.js"
+  ],
+  "main/front-matter/print.js": [],
+  "main/get-cursor-node.js": [
+    "utilities/ast.js"
+  ],
+  "main/massage-ast.js": [
+    "utilities/is-object.js"
+  ],
+  "main/multiparser.js": [
+    "document/index.js",
+    "main/normalize-format-options.js",
+    "main/parse.js"
+  ],
+  "main/normalize-format-options.js": [
+    "common/errors.js",
+    "main/normalize-options.js",
+    "main/parser-and-printer.js",
+    "main/support.js",
+    "utilities/infer-parser.js"
+  ],
+  "main/normalize-options.js": [],
+  "main/option-categories.js": [],
+  "main/parse.js": [
+    "main/parser-and-printer.js"
+  ],
+  "main/parser-and-printer.js": [
+    "common/errors.js",
+    "main/create-get-visitor-keys-function.js",
+    "main/front-matter/index.js"
+  ],
+  "main/plugins/builtin-plugins/development-plugins.js": [
+    "language-css/index.js",
+    "language-css/languages.evaluate.js",
+    "language-css/options.js",
+    "language-graphql/index.js",
+    "language-graphql/languages.evaluate.js",
+    "language-graphql/options.js",
+    "language-handlebars/index.js",
+    "language-handlebars/languages.evaluate.js",
+    "language-html/index.js",
+    "language-html/languages.evaluate.js",
+    "language-html/options.js",
+    "language-js/index.js",
+    "language-js/languages.evaluate.js",
+    "language-js/options.js",
+    "language-json/index.js",
+    "language-json/languages.evaluate.js",
+    "language-markdown/index.js",
+    "language-markdown/languages.evaluate.js",
+    "language-markdown/options.js",
+    "language-yaml/index.js",
+    "language-yaml/languages.evaluate.js",
+    "language-yaml/options.js",
+    "main/plugins/builtin-plugins/utilities.js"
+  ],
+  "main/plugins/builtin-plugins/production-plugins.js": [
+    "language-css/languages.evaluate.js",
+    "language-css/options.js",
+    "language-graphql/languages.evaluate.js",
+    "language-graphql/options.js",
+    "language-handlebars/languages.evaluate.js",
+    "language-html/languages.evaluate.js",
+    "language-html/options.js",
+    "language-js/languages.evaluate.js",
+    "language-js/options.js",
+    "language-json/languages.evaluate.js",
+    "language-markdown/languages.evaluate.js",
+    "language-markdown/options.js",
+    "language-yaml/languages.evaluate.js",
+    "language-yaml/options.js",
+    "main/plugins/builtin-plugins/utilities.js",
+    "plugins/acorn.js",
+    "plugins/angular.js",
+    "plugins/babel.js",
+    "plugins/estree.js",
+    "plugins/flow.js",
+    "plugins/glimmer.js",
+    "plugins/graphql.js",
+    "plugins/html.js",
+    "plugins/markdown.js",
+    "plugins/meriyah.js",
+    "plugins/postcss.js",
+    "plugins/typescript.js",
+    "plugins/yaml.js"
+  ],
+  "main/plugins/builtin-plugins/utilities.js": [],
+  "main/plugins/index.js": [
+    "main/plugins/load-builtin-plugins.js",
+    "main/plugins/load-plugin.js",
+    "main/plugins/load-plugins.js"
+  ],
+  "main/plugins/load-builtin-plugins.js": [
+    "main/plugins/builtin-plugins/development-plugins.js",
+    "main/plugins/builtin-plugins/production-plugins.js"
+  ],
+  "main/plugins/load-plugin.js": [
+    "utilities/import-from-directory.js"
+  ],
+  "main/plugins/load-plugins.js": [
+    "main/plugins/load-plugin.js"
+  ],
+  "main/print-ignored.js": [
+    "constants.js"
+  ],
+  "main/range.js": [
+    "main/comments/attach.js",
+    "main/utilities/get-sorted-child-nodes.js"
+  ],
+  "main/support.js": [
+    "main/core-options.evaluate.js"
+  ],
+  "main/utilities/get-sorted-child-nodes.js": [
+    "utilities/ast.js"
+  ],
+  "main/version.evaluate.js": [
+    "../package.json"
+  ],
+  "plugins/acorn.js": [
+    "language-js/parse/acorn.js",
+    "language-js/parse/espree.js"
+  ],
+  "plugins/angular.js": [
+    "language-js/parse/angular.js"
+  ],
+  "plugins/babel.js": [
+    "language-js/parse/babel.js",
+    "language-json/parsers.js"
+  ],
+  "plugins/estree.js": [
+    "language-js/languages.evaluate.js",
+    "language-js/options.js",
+    "language-js/printers.js",
+    "language-json/index.js"
+  ],
+  "plugins/flow.js": [
+    "language-js/parse/flow.js"
+  ],
+  "plugins/glimmer.js": [
+    "language-handlebars/index.js"
+  ],
+  "plugins/graphql.js": [
+    "language-graphql/index.js"
+  ],
+  "plugins/html.js": [
+    "language-html/index.js"
+  ],
+  "plugins/markdown.js": [
+    "language-markdown/index.js"
+  ],
+  "plugins/meriyah.js": [
+    "language-js/parse/meriyah.js"
+  ],
+  "plugins/postcss.js": [
+    "language-css/index.js"
+  ],
+  "plugins/typescript.js": [
+    "language-js/parse/typescript.js"
+  ],
+  "plugins/yaml.js": [
+    "language-yaml/index.js"
+  ],
+  "utilities/ast.js": [
+    "utilities/is-object.js"
+  ],
+  "utilities/create-get-visitor-keys.js": [],
+  "utilities/create-group-id-mapper.js": [],
+  "utilities/create-language.js": [],
+  "utilities/create-mockable.js": [],
+  "utilities/get-alignment-size.js": [],
+  "utilities/get-indent-size.js": [
+    "utilities/get-alignment-size.js"
+  ],
+  "utilities/get-max-continuous-count.js": [],
+  "utilities/get-min-not-present-continuous-count.js": [],
+  "utilities/get-next-non-space-non-comment-character-index.js": [
+    "utilities/skip-inline-comment.js",
+    "utilities/skip-newline.js",
+    "utilities/skip-trailing-comment.js",
+    "utilities/skip.js"
+  ],
+  "utilities/get-next-non-space-non-comment-character.js": [
+    "utilities/get-next-non-space-non-comment-character-index.js"
+  ],
+  "utilities/get-preferred-quote.js": [],
+  "utilities/get-string-width.js": [],
+  "utilities/has-newline-in-range.js": [],
+  "utilities/has-newline.js": [
+    "utilities/skip-newline.js",
+    "utilities/skip.js"
+  ],
+  "utilities/has-spaces.js": [
+    "utilities/skip.js"
+  ],
+  "utilities/html-whitespace.js": [
+    "utilities/whitespace-utilities.js"
+  ],
+  "utilities/ignore.js": [
+    "utilities/read-file.js"
+  ],
+  "utilities/import-from-directory.js": [
+    "utilities/import-from-file.js"
+  ],
+  "utilities/import-from-file.js": [],
+  "utilities/infer-parser.js": [
+    "utilities/is-non-empty-array.js"
+  ],
+  "utilities/is-next-line-empty.js": [
+    "utilities/has-newline.js",
+    "utilities/skip-inline-comment.js",
+    "utilities/skip-newline.js",
+    "utilities/skip-trailing-comment.js",
+    "utilities/skip.js"
+  ],
+  "utilities/is-non-empty-array.js": [],
+  "utilities/is-object.js": [],
+  "utilities/is-previous-line-empty.js": [
+    "utilities/skip-newline.js",
+    "utilities/skip.js"
+  ],
+  "utilities/line-column-to-index.js": [],
+  "utilities/make-string.js": [
+    "utilities/get-preferred-quote.js"
+  ],
+  "utilities/noop.js": [],
+  "utilities/object-omit.js": [],
+  "utilities/partition.js": [],
+  "utilities/pragma/pragma.evaluate.js": [],
+  "utilities/print-number.js": [],
+  "utilities/print-string.js": [
+    "utilities/get-preferred-quote.js",
+    "utilities/make-string.js"
+  ],
+  "utilities/public.js": [
+    "main/comments/utilities.js",
+    "utilities/get-alignment-size.js",
+    "utilities/get-indent-size.js",
+    "utilities/get-max-continuous-count.js",
+    "utilities/get-next-non-space-non-comment-character-index.js",
+    "utilities/get-next-non-space-non-comment-character.js",
+    "utilities/get-preferred-quote.js",
+    "utilities/get-string-width.js",
+    "utilities/has-newline-in-range.js",
+    "utilities/has-newline.js",
+    "utilities/has-spaces.js",
+    "utilities/is-next-line-empty.js",
+    "utilities/is-previous-line-empty.js",
+    "utilities/skip-inline-comment.js",
+    "utilities/skip-newline.js",
+    "utilities/skip-trailing-comment.js",
+    "utilities/skip.js"
+  ],
+  "utilities/read-file.js": [],
+  "utilities/replace-non-line-breaks-with-space.js": [],
+  "utilities/require-from-file.js": [],
+  "utilities/skip-inline-comment.js": [],
+  "utilities/skip-newline.js": [],
+  "utilities/skip-trailing-comment.js": [
+    "utilities/skip.js"
+  ],
+  "utilities/skip.js": [],
+  "utilities/try-combinations.js": [],
+  "utilities/unexpected-node-error.js": [],
+  "utilities/visitor-keys.js": [],
+  "utilities/whitespace-utilities.js": []
+}

@@ -1,0 +1,62 @@
+@startuml
+' Prettier high-level architecture + parser/printer flow
+skinparam componentStyle rectangle
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam defaultTextAlignment center
+left to right direction
+
+actor User as U
+
+package "Public API" {
+  component "CLI\nsrc/cli/*" as CLI
+  component "JS API\nsrc/index.js" as API
+}
+
+package "Core Formatting Pipeline" {
+  component "Option Resolution\nsrc/config/*" as CFG
+  component "Plugin Resolver\ngetParserPluginByParserName()\ngetPrinterPluginByAstFormat()" as RES
+  component "Parser Init\ninitParser()" as PARINIT
+  component "AST Parse\n(plugin parser.parse)" as PARSE
+  component "Printer Init\ninitPrinter()" as PRIINIT
+  component "Printer Normalize\nnormalizePrinter()" as NORM
+  component "Document Build\n(printer.print/embed)" as DOC
+  component "String Output\nprintDocToString" as OUT
+}
+
+package "Plugin System" {
+  component "Built-in Plugins\nsrc/language-*" as BUILTIN
+  component "External Plugins" as EXTERNAL
+}
+
+package "Front Matter Support" {
+  component "cleanFrontMatter()" as FM_CLEAN
+  component "printFrontMatter()\nprintEmbedFrontMatter()" as FM_PRINT
+  component "isFrontMatter()\nisEmbedFrontMatter()" as FM_CHECK
+}
+
+U --> CLI : format command
+U --> API : format(text, options)
+
+CLI --> CFG
+API --> CFG
+CFG --> RES
+
+RES --> BUILTIN
+RES --> EXTERNAL
+RES --> PARINIT
+RES --> PRIINIT
+
+PARINIT --> PARSE
+PARSE --> NORM : astFormat
+PRIINIT --> NORM
+
+NORM --> FM_CLEAN : wraps massageAstNode
+NORM --> FM_CHECK : checks front matter nodes
+NORM --> FM_PRINT : delegates front matter print
+
+NORM --> DOC
+DOC --> OUT
+OUT --> U : formatted text
+
+@enduml

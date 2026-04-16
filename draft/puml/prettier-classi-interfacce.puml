@@ -1,0 +1,83 @@
+@startuml
+' Class/Interface diagram based on real files in prettier/src
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+left to right direction
+
+title Prettier - Classi, Interfacce e Implementazioni
+
+package "Core classes (runtime)" {
+  class AstPath
+  class Context
+
+  class ConfigError
+  class UndefinedParserError
+  class ArgExpansionBailout
+
+  ConfigError --|> Error
+  UndefinedParserError --|> Error
+  ArgExpansionBailout --|> Error
+}
+
+package "Public Type Interfaces (src/index.d.ts)" {
+  interface "doc.printer.Options" as DocPrinterOptions
+  interface RequiredOptions
+  interface Options
+  interface Config
+  interface "ParserOptions<T>" as ParserOptions
+  interface "Plugin<T>" as Plugin
+  interface "Parser<T>" as Parser
+  interface "Printer<T>" as Printer
+
+  RequiredOptions --|> DocPrinterOptions
+  ParserOptions --|> RequiredOptions
+  Config --|> Options
+
+  Plugin "1" o-- "0..*" Parser : parsers
+  Plugin "1" o-- "0..*" Printer : printers
+}
+
+package "Document interfaces (src/document/public.d.ts)" {
+  interface Line
+  interface Softline
+  interface HardlineWithoutBreakParent
+  interface LiterallineWithoutBreakParent
+
+  Softline --|> Line
+  HardlineWithoutBreakParent --|> Line
+  LiterallineWithoutBreakParent --|> Line
+}
+
+package "Concrete plugin modules (runtime objects)" {
+  class "BabelPlugin module" as BabelPlugin <<module>>
+  class "HtmlPlugin module" as HtmlPlugin <<module>>
+  class "YamlPlugin module" as YamlPlugin <<module>>
+
+  class "Babel parsers object" as BabelParsers <<object>>
+  class "Html printer object" as HtmlPrinter <<object>>
+  class "Yaml printer object" as YamlPrinter <<object>>
+
+  BabelPlugin ..|> Plugin
+  HtmlPlugin ..|> Plugin
+  YamlPlugin ..|> Plugin
+
+  BabelParsers ..|> Parser
+  HtmlPrinter ..|> Printer
+  YamlPrinter ..|> Printer
+
+  BabelPlugin o-- BabelParsers : exports parsers
+  HtmlPlugin o-- HtmlPrinter : exports printers.html
+  YamlPlugin o-- YamlPrinter : exports printers.yaml
+}
+
+AstPath ..> Parser : used in print(path,...)
+Parser ..> ParserOptions
+Printer ..> ParserOptions
+
+note bottom
+  Nota: in Prettier molte "implementazioni" sono oggetti/moduli JS
+  (non classi TypeScript). Le relazioni ..|> mostrano la realizzazione
+  contrattuale delle interfacce Plugin/Parser/Printer.
+end note
+
+@enduml

@@ -1,0 +1,649 @@
+@startuml
+' Auto-generated from prettier/src (code only)
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+left to right direction
+
+title Prettier src - Classi e Interfacce (Completo codice)
+
+package "src" {
+  class "AstPath" as index_d_ts__AstPath
+  interface "BaseSupportOption" as index_d_ts__BaseSupportOption
+  interface "BooleanArraySupportOption" as index_d_ts__BooleanArraySupportOption
+  interface "BooleanSupportOption" as index_d_ts__BooleanSupportOption
+  interface "ChoiceSupportOption" as index_d_ts__ChoiceSupportOption
+  interface "Config" as index_d_ts__Config
+  interface "CursorOptions" as index_d_ts__CursorOptions
+  interface "CursorResult" as index_d_ts__CursorResult
+  interface "FileInfoOptions" as index_d_ts__FileInfoOptions
+  interface "FileInfoResult" as index_d_ts__FileInfoResult
+  interface "IntArraySupportOption" as index_d_ts__IntArraySupportOption
+  interface "IntSupportOption" as index_d_ts__IntSupportOption
+  interface "Options" as index_d_ts__Options
+  interface "Parser" as index_d_ts__Parser
+  interface "ParserOptions" as index_d_ts__ParserOptions
+  interface "PathArraySupportOption" as index_d_ts__PathArraySupportOption
+  interface "PathSupportOption" as index_d_ts__PathSupportOption
+  interface "Plugin" as index_d_ts__Plugin
+  interface "Printer" as index_d_ts__Printer
+  interface "RequiredOptions" as index_d_ts__RequiredOptions
+  interface "ResolveConfigOptions" as index_d_ts__ResolveConfigOptions
+  interface "SkipOptions" as index_d_ts__SkipOptions
+  interface "StringArraySupportOption" as index_d_ts__StringArraySupportOption
+  interface "StringSupportOption" as index_d_ts__StringSupportOption
+  interface "SupportInfo" as index_d_ts__SupportInfo
+  interface "SupportInfoOptions" as index_d_ts__SupportInfoOptions
+  interface "SupportLanguage" as index_d_ts__SupportLanguage
+  interface "SupportOptionRange" as index_d_ts__SupportOptionRange
+  interface "SupportOptions" as index_d_ts__SupportOptions
+}
+
+package "src/cli" {
+  class "Context" as cli_context_js__Context
+  class "DebugError" as cli_format_js__DebugError
+  class "DirectoryIgnorer" as cli_directory_ignorer_js__DirectoryIgnorer
+  class "FormatResultsCache" as cli_format_results_cache_js__FormatResultsCache
+}
+
+package "src/cli/options" {
+  class "FlagSchema" as cli_options_normalize_cli_options_js__FlagSchema
+}
+
+package "src/common" {
+  class "ArgExpansionBailout" as common_errors_js__ArgExpansionBailout
+  class "AstPath" as common_ast_path_js__AstPath
+  class "ConfigError" as common_errors_js__ConfigError
+  class "UndefinedParserError" as common_errors_js__UndefinedParserError
+}
+
+package "src/document" {
+  interface "Align" as document_public_d_ts__Align
+  interface "BreakParent" as document_public_d_ts__BreakParent
+  interface "Cursor" as document_public_d_ts__Cursor
+  interface "Fill" as document_public_d_ts__Fill
+  interface "Group" as document_public_d_ts__Group
+  interface "GroupOptions" as document_public_d_ts__GroupOptions
+  interface "HardlineWithoutBreakParent" as document_public_d_ts__HardlineWithoutBreakParent
+  interface "IfBreak" as document_public_d_ts__IfBreak
+  interface "Indent" as document_public_d_ts__Indent
+  interface "IndentIfBreak" as document_public_d_ts__IndentIfBreak
+  interface "Label" as document_public_d_ts__Label
+  interface "Line" as document_public_d_ts__Line
+  interface "LineSuffix" as document_public_d_ts__LineSuffix
+  interface "LineSuffixBoundary" as document_public_d_ts__LineSuffixBoundary
+  interface "LiterallineWithoutBreakParent" as document_public_d_ts__LiterallineWithoutBreakParent
+  interface "Options" as document_public_d_ts__Options
+  interface "Softline" as document_public_d_ts__Softline
+  interface "Trim" as document_public_d_ts__Trim
+}
+
+package "src/document/printer" {
+  class "printResult" as document_printer_print_result_js__printResult
+}
+
+package "src/document/utilities" {
+  class "InvalidDocError" as document_utilities_invalid_doc_error_js__InvalidDocError
+}
+
+package "src/language-html/parse" {
+  class "Node" as language_html_parse_ast_js__Node
+  class "Visitor" as language_html_parse_postprocess_js__Visitor
+}
+
+package "src/language-js/comments" {
+  class "Foo" as language_js_comments_can_attach_comment_js__Foo
+}
+
+package "src/language-js/types" {
+  interface "AnyTypeAnnotation" as language_js_types_flow_estree_d_ts__AnyTypeAnnotation
+  interface "ArrayExpression" as language_js_types_flow_estree_d_ts__ArrayExpression
+  interface "ArrayPattern" as language_js_types_flow_estree_d_ts__ArrayPattern
+  interface "ArrayTypeAnnotation" as language_js_types_flow_estree_d_ts__ArrayTypeAnnotation
+  interface "ArrowFunctionExpression" as language_js_types_flow_estree_d_ts__ArrowFunctionExpression
+  interface "AsConstExpression" as language_js_types_flow_estree_d_ts__AsConstExpression
+  interface "AsExpression" as language_js_types_flow_estree_d_ts__AsExpression
+  interface "AssignmentExpression" as language_js_types_flow_estree_d_ts__AssignmentExpression
+  interface "AssignmentPattern" as language_js_types_flow_estree_d_ts__AssignmentPattern
+  interface "AwaitExpression" as language_js_types_flow_estree_d_ts__AwaitExpression
+  interface "BaseCallExpression" as language_js_types_flow_estree_d_ts__BaseCallExpression
+  interface "BaseClass" as language_js_types_flow_estree_d_ts__BaseClass
+  interface "BaseEnumBody" as language_js_types_flow_estree_d_ts__BaseEnumBody
+  interface "BaseForXStatement" as language_js_types_flow_estree_d_ts__BaseForXStatement
+  interface "BaseFunction" as language_js_types_flow_estree_d_ts__BaseFunction
+  interface "BaseInferrableEnumBody" as language_js_types_flow_estree_d_ts__BaseInferrableEnumBody
+  interface "BaseInterfaceDeclaration" as language_js_types_flow_estree_d_ts__BaseInterfaceDeclaration
+  interface "BaseInterfaceNode" as language_js_types_flow_estree_d_ts__BaseInterfaceNode
+  interface "BaseNode" as language_js_types_flow_estree_d_ts__BaseNode
+  interface "BaseOpaqueType" as language_js_types_flow_estree_d_ts__BaseOpaqueType
+  interface "BaseToken" as language_js_types_flow_estree_d_ts__BaseToken
+  interface "BaseTypeAlias" as language_js_types_flow_estree_d_ts__BaseTypeAlias
+  interface "BigIntLiteral" as language_js_types_flow_estree_d_ts__BigIntLiteral
+  interface "BigIntLiteralTypeAnnotation" as language_js_types_flow_estree_d_ts__BigIntLiteralTypeAnnotation
+  interface "BigIntTypeAnnotation" as language_js_types_flow_estree_d_ts__BigIntTypeAnnotation
+  interface "BinaryExpressionIn" as language_js_types_flow_estree_d_ts__BinaryExpressionIn
+  interface "BinaryExpressionWithoutIn" as language_js_types_flow_estree_d_ts__BinaryExpressionWithoutIn
+  interface "BlockComment" as language_js_types_flow_estree_d_ts__BlockComment
+  interface "BlockStatement" as language_js_types_flow_estree_d_ts__BlockStatement
+  interface "BooleanLiteral" as language_js_types_flow_estree_d_ts__BooleanLiteral
+  interface "BooleanLiteralTypeAnnotation" as language_js_types_flow_estree_d_ts__BooleanLiteralTypeAnnotation
+  interface "BooleanTypeAnnotation" as language_js_types_flow_estree_d_ts__BooleanTypeAnnotation
+  interface "BreakStatement" as language_js_types_flow_estree_d_ts__BreakStatement
+  interface "CallExpression" as language_js_types_flow_estree_d_ts__CallExpression
+  interface "CatchClause" as language_js_types_flow_estree_d_ts__CatchClause
+  interface "ChainExpression" as language_js_types_flow_estree_d_ts__ChainExpression
+  interface "ClassBody" as language_js_types_flow_estree_d_ts__ClassBody
+  interface "ClassDeclaration" as language_js_types_flow_estree_d_ts__ClassDeclaration
+  interface "ClassExpression" as language_js_types_flow_estree_d_ts__ClassExpression
+  interface "ClassImplements" as language_js_types_flow_estree_d_ts__ClassImplements
+  interface "ComponentDeclaration" as language_js_types_flow_estree_d_ts__ComponentDeclaration
+  interface "ComponentParameter" as language_js_types_flow_estree_d_ts__ComponentParameter
+  interface "ComponentTypeAnnotation" as language_js_types_flow_estree_d_ts__ComponentTypeAnnotation
+  interface "ComponentTypeParameter" as language_js_types_flow_estree_d_ts__ComponentTypeParameter
+  interface "ConditionalExpression" as language_js_types_flow_estree_d_ts__ConditionalExpression
+  interface "ConditionalTypeAnnotation" as language_js_types_flow_estree_d_ts__ConditionalTypeAnnotation
+  interface "ContinueStatement" as language_js_types_flow_estree_d_ts__ContinueStatement
+  interface "DebuggerStatement" as language_js_types_flow_estree_d_ts__DebuggerStatement
+  interface "DeclareClass" as language_js_types_flow_estree_d_ts__DeclareClass
+  interface "DeclareComponent" as language_js_types_flow_estree_d_ts__DeclareComponent
+  interface "DeclaredPredicate" as language_js_types_flow_estree_d_ts__DeclaredPredicate
+  interface "DeclareEnum" as language_js_types_flow_estree_d_ts__DeclareEnum
+  interface "DeclareExportAllDeclaration" as language_js_types_flow_estree_d_ts__DeclareExportAllDeclaration
+  interface "DeclareExportDeclarationBase" as language_js_types_flow_estree_d_ts__DeclareExportDeclarationBase
+  interface "DeclareExportDeclarationNamedWithDeclaration" as language_js_types_flow_estree_d_ts__DeclareExportDeclarationNamedWithDeclaration
+  interface "DeclareExportDeclarationNamedWithSpecifiers" as language_js_types_flow_estree_d_ts__DeclareExportDeclarationNamedWithSpecifiers
+  interface "DeclareExportDefaultDeclaration" as language_js_types_flow_estree_d_ts__DeclareExportDefaultDeclaration
+  interface "DeclareFunction" as language_js_types_flow_estree_d_ts__DeclareFunction
+  interface "DeclareHook" as language_js_types_flow_estree_d_ts__DeclareHook
+  interface "DeclareInterface" as language_js_types_flow_estree_d_ts__DeclareInterface
+  interface "DeclareModule" as language_js_types_flow_estree_d_ts__DeclareModule
+  interface "DeclareModuleExports" as language_js_types_flow_estree_d_ts__DeclareModuleExports
+  interface "DeclareNamespace" as language_js_types_flow_estree_d_ts__DeclareNamespace
+  interface "DeclareOpaqueType" as language_js_types_flow_estree_d_ts__DeclareOpaqueType
+  interface "DeclareTypeAlias" as language_js_types_flow_estree_d_ts__DeclareTypeAlias
+  interface "DeclareVariable" as language_js_types_flow_estree_d_ts__DeclareVariable
+  interface "Decorator" as language_js_types_flow_estree_d_ts__Decorator
+  interface "DestructuringObjectPropertyBase" as language_js_types_flow_estree_d_ts__DestructuringObjectPropertyBase
+  interface "DestructuringObjectPropertyWithComputedName" as language_js_types_flow_estree_d_ts__DestructuringObjectPropertyWithComputedName
+  interface "DestructuringObjectPropertyWithNonShorthandStaticName" as language_js_types_flow_estree_d_ts__DestructuringObjectPropertyWithNonShorthandStaticName
+  interface "DestructuringObjectPropertyWithShorthandStaticName" as language_js_types_flow_estree_d_ts__DestructuringObjectPropertyWithShorthandStaticName
+  interface "DoWhileStatement" as language_js_types_flow_estree_d_ts__DoWhileStatement
+  interface "EmptyStatement" as language_js_types_flow_estree_d_ts__EmptyStatement
+  interface "EmptyTypeAnnotation" as language_js_types_flow_estree_d_ts__EmptyTypeAnnotation
+  interface "EnumBigIntBody" as language_js_types_flow_estree_d_ts__EnumBigIntBody
+  interface "EnumBigIntMember" as language_js_types_flow_estree_d_ts__EnumBigIntMember
+  interface "EnumBooleanBody" as language_js_types_flow_estree_d_ts__EnumBooleanBody
+  interface "EnumBooleanMember" as language_js_types_flow_estree_d_ts__EnumBooleanMember
+  interface "EnumDeclaration" as language_js_types_flow_estree_d_ts__EnumDeclaration
+  interface "EnumDefaultedMember" as language_js_types_flow_estree_d_ts__EnumDefaultedMember
+  interface "EnumNumberBody" as language_js_types_flow_estree_d_ts__EnumNumberBody
+  interface "EnumNumberMember" as language_js_types_flow_estree_d_ts__EnumNumberMember
+  interface "EnumStringBody" as language_js_types_flow_estree_d_ts__EnumStringBody
+  interface "EnumStringMember" as language_js_types_flow_estree_d_ts__EnumStringMember
+  interface "EnumSymbolBody" as language_js_types_flow_estree_d_ts__EnumSymbolBody
+  interface "ExistsTypeAnnotation" as language_js_types_flow_estree_d_ts__ExistsTypeAnnotation
+  interface "ExportAllDeclaration" as language_js_types_flow_estree_d_ts__ExportAllDeclaration
+  interface "ExportDefaultDeclaration" as language_js_types_flow_estree_d_ts__ExportDefaultDeclaration
+  interface "ExportNamedDeclarationBase" as language_js_types_flow_estree_d_ts__ExportNamedDeclarationBase
+  interface "ExportNamedDeclarationWithDeclaration" as language_js_types_flow_estree_d_ts__ExportNamedDeclarationWithDeclaration
+  interface "ExportNamedDeclarationWithSpecifiers" as language_js_types_flow_estree_d_ts__ExportNamedDeclarationWithSpecifiers
+  interface "ExportSpecifier" as language_js_types_flow_estree_d_ts__ExportSpecifier
+  interface "ExpressionStatement" as language_js_types_flow_estree_d_ts__ExpressionStatement
+  interface "ForInStatement" as language_js_types_flow_estree_d_ts__ForInStatement
+  interface "ForOfStatement" as language_js_types_flow_estree_d_ts__ForOfStatement
+  interface "ForStatement" as language_js_types_flow_estree_d_ts__ForStatement
+  interface "FunctionDeclaration" as language_js_types_flow_estree_d_ts__FunctionDeclaration
+  interface "FunctionExpression" as language_js_types_flow_estree_d_ts__FunctionExpression
+  interface "FunctionTypeAnnotation" as language_js_types_flow_estree_d_ts__FunctionTypeAnnotation
+  interface "FunctionTypeParam" as language_js_types_flow_estree_d_ts__FunctionTypeParam
+  interface "GenericTypeAnnotation" as language_js_types_flow_estree_d_ts__GenericTypeAnnotation
+  interface "HookDeclaration" as language_js_types_flow_estree_d_ts__HookDeclaration
+  interface "HookTypeAnnotation" as language_js_types_flow_estree_d_ts__HookTypeAnnotation
+  interface "Identifier" as language_js_types_flow_estree_d_ts__Identifier
+  interface "IfStatement" as language_js_types_flow_estree_d_ts__IfStatement
+  interface "ImportAttribute" as language_js_types_flow_estree_d_ts__ImportAttribute
+  interface "ImportDeclaration" as language_js_types_flow_estree_d_ts__ImportDeclaration
+  interface "ImportDefaultSpecifier" as language_js_types_flow_estree_d_ts__ImportDefaultSpecifier
+  interface "ImportExpression" as language_js_types_flow_estree_d_ts__ImportExpression
+  interface "ImportNamespaceSpecifier" as language_js_types_flow_estree_d_ts__ImportNamespaceSpecifier
+  interface "ImportSpecifier" as language_js_types_flow_estree_d_ts__ImportSpecifier
+  interface "IndexedAccessType" as language_js_types_flow_estree_d_ts__IndexedAccessType
+  interface "InferredPredicate" as language_js_types_flow_estree_d_ts__InferredPredicate
+  interface "InferTypeAnnotation" as language_js_types_flow_estree_d_ts__InferTypeAnnotation
+  interface "InterfaceDeclaration" as language_js_types_flow_estree_d_ts__InterfaceDeclaration
+  interface "InterfaceExtends" as language_js_types_flow_estree_d_ts__InterfaceExtends
+  interface "InterfaceTypeAnnotation" as language_js_types_flow_estree_d_ts__InterfaceTypeAnnotation
+  interface "InterpreterDirective" as language_js_types_flow_estree_d_ts__InterpreterDirective
+  interface "IntersectionTypeAnnotation" as language_js_types_flow_estree_d_ts__IntersectionTypeAnnotation
+  interface "JSXAttribute" as language_js_types_flow_estree_d_ts__JSXAttribute
+  interface "JSXClosingElement" as language_js_types_flow_estree_d_ts__JSXClosingElement
+  interface "JSXClosingFragment" as language_js_types_flow_estree_d_ts__JSXClosingFragment
+  interface "JSXElement" as language_js_types_flow_estree_d_ts__JSXElement
+  interface "JSXEmptyExpression" as language_js_types_flow_estree_d_ts__JSXEmptyExpression
+  interface "JSXExpressionContainer" as language_js_types_flow_estree_d_ts__JSXExpressionContainer
+  interface "JSXFragment" as language_js_types_flow_estree_d_ts__JSXFragment
+  interface "JSXIdentifier" as language_js_types_flow_estree_d_ts__JSXIdentifier
+  interface "JSXMemberExpression" as language_js_types_flow_estree_d_ts__JSXMemberExpression
+  interface "JSXNamespacedName" as language_js_types_flow_estree_d_ts__JSXNamespacedName
+  interface "JSXOpeningElement" as language_js_types_flow_estree_d_ts__JSXOpeningElement
+  interface "JSXOpeningFragment" as language_js_types_flow_estree_d_ts__JSXOpeningFragment
+  interface "JSXSpreadAttribute" as language_js_types_flow_estree_d_ts__JSXSpreadAttribute
+  interface "JSXSpreadChild" as language_js_types_flow_estree_d_ts__JSXSpreadChild
+  interface "JSXText" as language_js_types_flow_estree_d_ts__JSXText
+  interface "KeyofTypeAnnotation" as language_js_types_flow_estree_d_ts__KeyofTypeAnnotation
+  interface "LabeledStatement" as language_js_types_flow_estree_d_ts__LabeledStatement
+  interface "LineComment" as language_js_types_flow_estree_d_ts__LineComment
+  interface "LogicalExpression" as language_js_types_flow_estree_d_ts__LogicalExpression
+  interface "MatchArrayPattern" as language_js_types_flow_estree_d_ts__MatchArrayPattern
+  interface "MatchAsPattern" as language_js_types_flow_estree_d_ts__MatchAsPattern
+  interface "MatchBindingPattern" as language_js_types_flow_estree_d_ts__MatchBindingPattern
+  interface "MatchExpression" as language_js_types_flow_estree_d_ts__MatchExpression
+  interface "MatchExpressionCase" as language_js_types_flow_estree_d_ts__MatchExpressionCase
+  interface "MatchIdentifierPattern" as language_js_types_flow_estree_d_ts__MatchIdentifierPattern
+  interface "MatchInstanceObjectPattern" as language_js_types_flow_estree_d_ts__MatchInstanceObjectPattern
+  interface "MatchInstancePattern" as language_js_types_flow_estree_d_ts__MatchInstancePattern
+  interface "MatchLiteralPattern" as language_js_types_flow_estree_d_ts__MatchLiteralPattern
+  interface "MatchMemberPattern" as language_js_types_flow_estree_d_ts__MatchMemberPattern
+  interface "MatchObjectPattern" as language_js_types_flow_estree_d_ts__MatchObjectPattern
+  interface "MatchObjectPatternProperty" as language_js_types_flow_estree_d_ts__MatchObjectPatternProperty
+  interface "MatchOrPattern" as language_js_types_flow_estree_d_ts__MatchOrPattern
+  interface "MatchRestPattern" as language_js_types_flow_estree_d_ts__MatchRestPattern
+  interface "MatchStatement" as language_js_types_flow_estree_d_ts__MatchStatement
+  interface "MatchStatementCase" as language_js_types_flow_estree_d_ts__MatchStatementCase
+  interface "MatchUnaryPattern" as language_js_types_flow_estree_d_ts__MatchUnaryPattern
+  interface "MatchWildcardPattern" as language_js_types_flow_estree_d_ts__MatchWildcardPattern
+  interface "MemberExpressionWithComputedName" as language_js_types_flow_estree_d_ts__MemberExpressionWithComputedName
+  interface "MemberExpressionWithNonComputedName" as language_js_types_flow_estree_d_ts__MemberExpressionWithNonComputedName
+  interface "MetaProperty" as language_js_types_flow_estree_d_ts__MetaProperty
+  interface "MethodDefinitionBase" as language_js_types_flow_estree_d_ts__MethodDefinitionBase
+  interface "MethodDefinitionConstructor" as language_js_types_flow_estree_d_ts__MethodDefinitionConstructor
+  interface "MethodDefinitionWithComputedName" as language_js_types_flow_estree_d_ts__MethodDefinitionWithComputedName
+  interface "MethodDefinitionWithNonComputedName" as language_js_types_flow_estree_d_ts__MethodDefinitionWithNonComputedName
+  interface "MixedTypeAnnotation" as language_js_types_flow_estree_d_ts__MixedTypeAnnotation
+  interface "MostTokens" as language_js_types_flow_estree_d_ts__MostTokens
+  interface "NeverTypeAnnotation" as language_js_types_flow_estree_d_ts__NeverTypeAnnotation
+  interface "NewExpression" as language_js_types_flow_estree_d_ts__NewExpression
+  interface "NullableTypeAnnotation" as language_js_types_flow_estree_d_ts__NullableTypeAnnotation
+  interface "NullLiteral" as language_js_types_flow_estree_d_ts__NullLiteral
+  interface "NullLiteralTypeAnnotation" as language_js_types_flow_estree_d_ts__NullLiteralTypeAnnotation
+  interface "NumberLiteralTypeAnnotation" as language_js_types_flow_estree_d_ts__NumberLiteralTypeAnnotation
+  interface "NumberTypeAnnotation" as language_js_types_flow_estree_d_ts__NumberTypeAnnotation
+  interface "NumericLiteral" as language_js_types_flow_estree_d_ts__NumericLiteral
+  interface "ObjectExpression" as language_js_types_flow_estree_d_ts__ObjectExpression
+  interface "ObjectPattern" as language_js_types_flow_estree_d_ts__ObjectPattern
+  interface "ObjectPropertyBase" as language_js_types_flow_estree_d_ts__ObjectPropertyBase
+  interface "ObjectPropertyWithComputedName" as language_js_types_flow_estree_d_ts__ObjectPropertyWithComputedName
+  interface "ObjectPropertyWithNonShorthandStaticName" as language_js_types_flow_estree_d_ts__ObjectPropertyWithNonShorthandStaticName
+  interface "ObjectPropertyWithShorthandStaticName" as language_js_types_flow_estree_d_ts__ObjectPropertyWithShorthandStaticName
+  interface "ObjectTypeAccessorSignature" as language_js_types_flow_estree_d_ts__ObjectTypeAccessorSignature
+  interface "ObjectTypeAnnotation" as language_js_types_flow_estree_d_ts__ObjectTypeAnnotation
+  interface "ObjectTypeCallProperty" as language_js_types_flow_estree_d_ts__ObjectTypeCallProperty
+  interface "ObjectTypeIndexer" as language_js_types_flow_estree_d_ts__ObjectTypeIndexer
+  interface "ObjectTypeInternalSlot" as language_js_types_flow_estree_d_ts__ObjectTypeInternalSlot
+  interface "ObjectTypeMappedTypeProperty" as language_js_types_flow_estree_d_ts__ObjectTypeMappedTypeProperty
+  interface "ObjectTypeMethodSignature" as language_js_types_flow_estree_d_ts__ObjectTypeMethodSignature
+  interface "ObjectTypePropertyBase" as language_js_types_flow_estree_d_ts__ObjectTypePropertyBase
+  interface "ObjectTypePropertySignature" as language_js_types_flow_estree_d_ts__ObjectTypePropertySignature
+  interface "ObjectTypeSpreadProperty" as language_js_types_flow_estree_d_ts__ObjectTypeSpreadProperty
+  interface "ObjectWithLoc" as language_js_types_flow_estree_d_ts__ObjectWithLoc
+  interface "OpaqueType" as language_js_types_flow_estree_d_ts__OpaqueType
+  interface "OptionalIndexedAccessType" as language_js_types_flow_estree_d_ts__OptionalIndexedAccessType
+  interface "Position" as language_js_types_flow_estree_d_ts__Position
+  interface "PrivateIdentifier" as language_js_types_flow_estree_d_ts__PrivateIdentifier
+  interface "Program" as language_js_types_flow_estree_d_ts__Program
+  interface "PropertyDefinitionBase" as language_js_types_flow_estree_d_ts__PropertyDefinitionBase
+  interface "PropertyDefinitionWithComputedName" as language_js_types_flow_estree_d_ts__PropertyDefinitionWithComputedName
+  interface "PropertyDefinitionWithNonComputedName" as language_js_types_flow_estree_d_ts__PropertyDefinitionWithNonComputedName
+  interface "QualifiedTypeIdentifier" as language_js_types_flow_estree_d_ts__QualifiedTypeIdentifier
+  interface "QualifiedTypeofIdentifier" as language_js_types_flow_estree_d_ts__QualifiedTypeofIdentifier
+  interface "RecordDeclaration" as language_js_types_flow_estree_d_ts__RecordDeclaration
+  interface "RecordDeclarationBody" as language_js_types_flow_estree_d_ts__RecordDeclarationBody
+  interface "RecordDeclarationImplements" as language_js_types_flow_estree_d_ts__RecordDeclarationImplements
+  interface "RecordDeclarationProperty" as language_js_types_flow_estree_d_ts__RecordDeclarationProperty
+  interface "RecordDeclarationStaticProperty" as language_js_types_flow_estree_d_ts__RecordDeclarationStaticProperty
+  interface "RecordExpression" as language_js_types_flow_estree_d_ts__RecordExpression
+  interface "RecordExpressionProperties" as language_js_types_flow_estree_d_ts__RecordExpressionProperties
+  interface "RegExpLiteral" as language_js_types_flow_estree_d_ts__RegExpLiteral
+  interface "RegexToken" as language_js_types_flow_estree_d_ts__RegexToken
+  interface "RendersQuestionTypeOperator" as language_js_types_flow_estree_d_ts__RendersQuestionTypeOperator
+  interface "RendersStarTypeOperator" as language_js_types_flow_estree_d_ts__RendersStarTypeOperator
+  interface "RendersTypeOperator" as language_js_types_flow_estree_d_ts__RendersTypeOperator
+  interface "RestElement" as language_js_types_flow_estree_d_ts__RestElement
+  interface "ReturnStatement" as language_js_types_flow_estree_d_ts__ReturnStatement
+  interface "SequenceExpression" as language_js_types_flow_estree_d_ts__SequenceExpression
+  interface "SourceLocation" as language_js_types_flow_estree_d_ts__SourceLocation
+  interface "SpreadElement" as language_js_types_flow_estree_d_ts__SpreadElement
+  interface "StaticBlock" as language_js_types_flow_estree_d_ts__StaticBlock
+  interface "StringLiteral" as language_js_types_flow_estree_d_ts__StringLiteral
+  interface "StringLiteralTypeAnnotation" as language_js_types_flow_estree_d_ts__StringLiteralTypeAnnotation
+  interface "StringTypeAnnotation" as language_js_types_flow_estree_d_ts__StringTypeAnnotation
+  interface "Super" as language_js_types_flow_estree_d_ts__Super
+  interface "SwitchCase" as language_js_types_flow_estree_d_ts__SwitchCase
+  interface "SwitchStatement" as language_js_types_flow_estree_d_ts__SwitchStatement
+  interface "SymbolTypeAnnotation" as language_js_types_flow_estree_d_ts__SymbolTypeAnnotation
+  interface "TaggedTemplateExpression" as language_js_types_flow_estree_d_ts__TaggedTemplateExpression
+  interface "TemplateElement" as language_js_types_flow_estree_d_ts__TemplateElement
+  interface "TemplateLiteral" as language_js_types_flow_estree_d_ts__TemplateLiteral
+  interface "ThisExpression" as language_js_types_flow_estree_d_ts__ThisExpression
+  interface "ThisTypeAnnotation" as language_js_types_flow_estree_d_ts__ThisTypeAnnotation
+  interface "ThrowStatement" as language_js_types_flow_estree_d_ts__ThrowStatement
+  interface "TryStatement" as language_js_types_flow_estree_d_ts__TryStatement
+  interface "TupleTypeAnnotation" as language_js_types_flow_estree_d_ts__TupleTypeAnnotation
+  interface "TupleTypeLabeledElement" as language_js_types_flow_estree_d_ts__TupleTypeLabeledElement
+  interface "TupleTypeSpreadElement" as language_js_types_flow_estree_d_ts__TupleTypeSpreadElement
+  interface "TypeAlias" as language_js_types_flow_estree_d_ts__TypeAlias
+  interface "TypeAnnotation" as language_js_types_flow_estree_d_ts__TypeAnnotation
+  interface "TypeCastExpression" as language_js_types_flow_estree_d_ts__TypeCastExpression
+  interface "TypeofTypeAnnotation" as language_js_types_flow_estree_d_ts__TypeofTypeAnnotation
+  interface "TypeOperatorBase" as language_js_types_flow_estree_d_ts__TypeOperatorBase
+  interface "TypeParameter" as language_js_types_flow_estree_d_ts__TypeParameter
+  interface "TypeParameterDeclaration" as language_js_types_flow_estree_d_ts__TypeParameterDeclaration
+  interface "TypeParameterInstantiation" as language_js_types_flow_estree_d_ts__TypeParameterInstantiation
+  interface "TypePredicate" as language_js_types_flow_estree_d_ts__TypePredicate
+  interface "UnaryExpression" as language_js_types_flow_estree_d_ts__UnaryExpression
+  interface "UndefinedTypeAnnotation" as language_js_types_flow_estree_d_ts__UndefinedTypeAnnotation
+  interface "UnionTypeAnnotation" as language_js_types_flow_estree_d_ts__UnionTypeAnnotation
+  interface "UnknownTypeAnnotation" as language_js_types_flow_estree_d_ts__UnknownTypeAnnotation
+  interface "UpdateExpression" as language_js_types_flow_estree_d_ts__UpdateExpression
+  interface "VariableDeclaration" as language_js_types_flow_estree_d_ts__VariableDeclaration
+  interface "VariableDeclarator" as language_js_types_flow_estree_d_ts__VariableDeclarator
+  interface "Variance" as language_js_types_flow_estree_d_ts__Variance
+  interface "VoidTypeAnnotation" as language_js_types_flow_estree_d_ts__VoidTypeAnnotation
+  interface "WhileStatement" as language_js_types_flow_estree_d_ts__WhileStatement
+  interface "WithStatement" as language_js_types_flow_estree_d_ts__WithStatement
+  interface "YieldExpression" as language_js_types_flow_estree_d_ts__YieldExpression
+}
+
+package "src/utilities" {
+  class "UnexpectedNodeError" as utilities_unexpected_node_error_js__UnexpectedNodeError
+  class "WhitespaceUtilities" as utilities_whitespace_utilities_js__WhitespaceUtilities
+}
+
+package "external" {
+  class "ChoiceSchema" as external__ChoiceSchema <<external>>
+  class "Error" as external__Error <<external>>
+  class "Partial" as external__Partial <<external>>
+  class "Record<string" as external__Record_string <<external>>
+  class "RecursiveVisitor" as external__RecursiveVisitor <<external>>
+  class "SupportOption>" as external__SupportOption_ <<external>>
+}
+
+cli_format_js__DebugError --|> external__Error
+cli_options_normalize_cli_options_js__FlagSchema --|> external__ChoiceSchema
+common_errors_js__ConfigError --|> external__Error
+common_errors_js__UndefinedParserError --|> external__Error
+common_errors_js__ArgExpansionBailout --|> external__Error
+document_public_d_ts__HardlineWithoutBreakParent --|> document_public_d_ts__Line
+document_public_d_ts__LiterallineWithoutBreakParent --|> document_public_d_ts__Line
+document_public_d_ts__Softline --|> document_public_d_ts__Line
+document_utilities_invalid_doc_error_js__InvalidDocError --|> external__Error
+index_d_ts__Config --|> document_public_d_ts__Options
+index_d_ts__Options --|> external__Partial
+index_d_ts__RequiredOptions --|> document_public_d_ts__Options
+index_d_ts__CursorOptions --|> document_public_d_ts__Options
+index_d_ts__IntSupportOption --|> index_d_ts__BaseSupportOption
+index_d_ts__IntArraySupportOption --|> index_d_ts__BaseSupportOption
+index_d_ts__StringSupportOption --|> index_d_ts__BaseSupportOption
+index_d_ts__StringArraySupportOption --|> index_d_ts__BaseSupportOption
+index_d_ts__BooleanSupportOption --|> index_d_ts__BaseSupportOption
+index_d_ts__BooleanArraySupportOption --|> index_d_ts__BaseSupportOption
+index_d_ts__PathSupportOption --|> index_d_ts__BaseSupportOption
+index_d_ts__PathArraySupportOption --|> index_d_ts__BaseSupportOption
+index_d_ts__SupportOptions --|> external__Record_string
+index_d_ts__SupportOptions --|> external__SupportOption_
+language_html_parse_postprocess_js__Visitor --|> external__RecursiveVisitor
+language_js_types_flow_estree_d_ts__BaseToken --|> language_js_types_flow_estree_d_ts__ObjectWithLoc
+language_js_types_flow_estree_d_ts__BaseNode --|> language_js_types_flow_estree_d_ts__BaseToken
+language_js_types_flow_estree_d_ts__MostTokens --|> language_js_types_flow_estree_d_ts__BaseToken
+language_js_types_flow_estree_d_ts__RegexToken --|> language_js_types_flow_estree_d_ts__BaseToken
+language_js_types_flow_estree_d_ts__LineComment --|> language_js_types_flow_estree_d_ts__BaseToken
+language_js_types_flow_estree_d_ts__BlockComment --|> language_js_types_flow_estree_d_ts__BaseToken
+language_js_types_flow_estree_d_ts__InterpreterDirective --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__Program --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__BaseFunction --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__EmptyStatement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__BlockStatement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__StaticBlock --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ExpressionStatement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__IfStatement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__LabeledStatement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__BreakStatement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ContinueStatement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__WithStatement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__SwitchStatement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ReturnStatement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ThrowStatement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__TryStatement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__WhileStatement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__DoWhileStatement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ForStatement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__BaseForXStatement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ForInStatement --|> language_js_types_flow_estree_d_ts__BaseForXStatement
+language_js_types_flow_estree_d_ts__ForOfStatement --|> language_js_types_flow_estree_d_ts__BaseForXStatement
+language_js_types_flow_estree_d_ts__DebuggerStatement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ComponentParameter --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ComponentDeclaration --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__HookDeclaration --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__FunctionDeclaration --|> language_js_types_flow_estree_d_ts__BaseFunction
+language_js_types_flow_estree_d_ts__VariableDeclaration --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__VariableDeclarator --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ThisExpression --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ArrayExpression --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ObjectExpression --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ObjectPropertyBase --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ObjectPropertyWithNonShorthandStaticName --|> language_js_types_flow_estree_d_ts__ObjectPropertyBase
+language_js_types_flow_estree_d_ts__ObjectPropertyWithShorthandStaticName --|> language_js_types_flow_estree_d_ts__ObjectPropertyBase
+language_js_types_flow_estree_d_ts__ObjectPropertyWithComputedName --|> language_js_types_flow_estree_d_ts__ObjectPropertyBase
+language_js_types_flow_estree_d_ts__DestructuringObjectPropertyBase --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__DestructuringObjectPropertyWithNonShorthandStaticName --|> language_js_types_flow_estree_d_ts__DestructuringObjectPropertyBase
+language_js_types_flow_estree_d_ts__DestructuringObjectPropertyWithShorthandStaticName --|> language_js_types_flow_estree_d_ts__DestructuringObjectPropertyBase
+language_js_types_flow_estree_d_ts__DestructuringObjectPropertyWithComputedName --|> language_js_types_flow_estree_d_ts__DestructuringObjectPropertyBase
+language_js_types_flow_estree_d_ts__FunctionExpression --|> language_js_types_flow_estree_d_ts__BaseFunction
+language_js_types_flow_estree_d_ts__SequenceExpression --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__UnaryExpression --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__BinaryExpressionWithoutIn --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__BinaryExpressionIn --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__AssignmentExpression --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__UpdateExpression --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__LogicalExpression --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ConditionalExpression --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__BaseCallExpression --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__CallExpression --|> language_js_types_flow_estree_d_ts__BaseCallExpression
+language_js_types_flow_estree_d_ts__NewExpression --|> language_js_types_flow_estree_d_ts__BaseCallExpression
+language_js_types_flow_estree_d_ts__MemberExpressionWithComputedName --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__MemberExpressionWithNonComputedName --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ChainExpression --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__SwitchCase --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__CatchClause --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__Identifier --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__PrivateIdentifier --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__BigIntLiteral --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__BooleanLiteral --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__NullLiteral --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__NumericLiteral --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__RegExpLiteral --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__StringLiteral --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__Super --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__SpreadElement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ArrowFunctionExpression --|> language_js_types_flow_estree_d_ts__BaseFunction
+language_js_types_flow_estree_d_ts__YieldExpression --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__TemplateLiteral --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__TaggedTemplateExpression --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__TemplateElement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ObjectPattern --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ArrayPattern --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__RestElement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__AssignmentPattern --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__BaseClass --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ClassBody --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__MethodDefinitionBase --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__MethodDefinitionConstructor --|> language_js_types_flow_estree_d_ts__MethodDefinitionBase
+language_js_types_flow_estree_d_ts__MethodDefinitionWithComputedName --|> language_js_types_flow_estree_d_ts__MethodDefinitionBase
+language_js_types_flow_estree_d_ts__MethodDefinitionWithNonComputedName --|> language_js_types_flow_estree_d_ts__MethodDefinitionBase
+language_js_types_flow_estree_d_ts__PropertyDefinitionBase --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__PropertyDefinitionWithComputedName --|> language_js_types_flow_estree_d_ts__PropertyDefinitionBase
+language_js_types_flow_estree_d_ts__PropertyDefinitionWithNonComputedName --|> language_js_types_flow_estree_d_ts__PropertyDefinitionBase
+language_js_types_flow_estree_d_ts__ClassDeclaration --|> language_js_types_flow_estree_d_ts__BaseClass
+language_js_types_flow_estree_d_ts__ClassExpression --|> language_js_types_flow_estree_d_ts__BaseClass
+language_js_types_flow_estree_d_ts__MetaProperty --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ImportDeclaration --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ImportAttribute --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ImportSpecifier --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ImportExpression --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ImportDefaultSpecifier --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ImportNamespaceSpecifier --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ExportNamedDeclarationBase --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ExportNamedDeclarationWithSpecifiers --|> language_js_types_flow_estree_d_ts__ExportNamedDeclarationBase
+language_js_types_flow_estree_d_ts__ExportNamedDeclarationWithDeclaration --|> language_js_types_flow_estree_d_ts__ExportNamedDeclarationBase
+language_js_types_flow_estree_d_ts__ExportSpecifier --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ExportDefaultDeclaration --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ExportAllDeclaration --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__AwaitExpression --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__Variance --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__BaseTypeAlias --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__TypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__TypeAlias --|> language_js_types_flow_estree_d_ts__BaseTypeAlias
+language_js_types_flow_estree_d_ts__BaseOpaqueType --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__OpaqueType --|> language_js_types_flow_estree_d_ts__BaseOpaqueType
+language_js_types_flow_estree_d_ts__NumberTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__StringTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__BigIntTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__BooleanTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__NullLiteralTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__AnyTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__EmptyTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__SymbolTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ThisTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__MixedTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__VoidTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__UnknownTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__NeverTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__UndefinedTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__StringLiteralTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__NumberLiteralTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__BigIntLiteralTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__BooleanLiteralTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ArrayTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__NullableTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ExistsTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__GenericTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__QualifiedTypeIdentifier --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__QualifiedTypeofIdentifier --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__TypeofTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__KeyofTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__TupleTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__TupleTypeSpreadElement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__TupleTypeLabeledElement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__InferTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ObjectTypeInternalSlot --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__InterfaceTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseInterfaceNode
+language_js_types_flow_estree_d_ts__UnionTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__IntersectionTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ConditionalTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__TypeOperatorBase --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__RendersTypeOperator --|> language_js_types_flow_estree_d_ts__TypeOperatorBase
+language_js_types_flow_estree_d_ts__RendersStarTypeOperator --|> language_js_types_flow_estree_d_ts__TypeOperatorBase
+language_js_types_flow_estree_d_ts__RendersQuestionTypeOperator --|> language_js_types_flow_estree_d_ts__TypeOperatorBase
+language_js_types_flow_estree_d_ts__TypePredicate --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__FunctionTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__FunctionTypeParam --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__HookTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ComponentTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ComponentTypeParameter --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__InferredPredicate --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ObjectTypeAnnotation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ObjectTypePropertyBase --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ObjectTypeMethodSignature --|> language_js_types_flow_estree_d_ts__ObjectTypePropertyBase
+language_js_types_flow_estree_d_ts__ObjectTypePropertySignature --|> language_js_types_flow_estree_d_ts__ObjectTypePropertyBase
+language_js_types_flow_estree_d_ts__ObjectTypeAccessorSignature --|> language_js_types_flow_estree_d_ts__ObjectTypePropertyBase
+language_js_types_flow_estree_d_ts__ObjectTypeCallProperty --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ObjectTypeIndexer --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ObjectTypeMappedTypeProperty --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ObjectTypeSpreadProperty --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__IndexedAccessType --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__OptionalIndexedAccessType --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__TypeCastExpression --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__AsExpression --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__AsConstExpression --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__BaseInterfaceNode --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__BaseInterfaceDeclaration --|> language_js_types_flow_estree_d_ts__BaseInterfaceNode
+language_js_types_flow_estree_d_ts__InterfaceDeclaration --|> language_js_types_flow_estree_d_ts__BaseInterfaceDeclaration
+language_js_types_flow_estree_d_ts__InterfaceExtends --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__ClassImplements --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__Decorator --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__TypeParameterDeclaration --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__TypeParameter --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__TypeParameterInstantiation --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__EnumDeclaration --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__BaseEnumBody --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__BaseInferrableEnumBody --|> language_js_types_flow_estree_d_ts__BaseEnumBody
+language_js_types_flow_estree_d_ts__EnumNumberBody --|> language_js_types_flow_estree_d_ts__BaseInferrableEnumBody
+language_js_types_flow_estree_d_ts__EnumNumberMember --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__EnumBigIntBody --|> language_js_types_flow_estree_d_ts__BaseInferrableEnumBody
+language_js_types_flow_estree_d_ts__EnumBigIntMember --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__EnumStringBody --|> language_js_types_flow_estree_d_ts__BaseInferrableEnumBody
+language_js_types_flow_estree_d_ts__EnumStringMember --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__EnumBooleanBody --|> language_js_types_flow_estree_d_ts__BaseInferrableEnumBody
+language_js_types_flow_estree_d_ts__EnumBooleanMember --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__EnumSymbolBody --|> language_js_types_flow_estree_d_ts__BaseEnumBody
+language_js_types_flow_estree_d_ts__EnumDefaultedMember --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__DeclareClass --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__DeclareComponent --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__DeclareHook --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__DeclareVariable --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__DeclareEnum --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__DeclareFunction --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__DeclareModule --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__DeclareNamespace --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__DeclareInterface --|> language_js_types_flow_estree_d_ts__BaseInterfaceDeclaration
+language_js_types_flow_estree_d_ts__DeclareTypeAlias --|> language_js_types_flow_estree_d_ts__BaseTypeAlias
+language_js_types_flow_estree_d_ts__DeclareOpaqueType --|> language_js_types_flow_estree_d_ts__BaseOpaqueType
+language_js_types_flow_estree_d_ts__DeclareExportAllDeclaration --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__DeclareExportDeclarationBase --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__DeclareExportDefaultDeclaration --|> language_js_types_flow_estree_d_ts__DeclareExportDeclarationBase
+language_js_types_flow_estree_d_ts__DeclareExportDeclarationNamedWithDeclaration --|> language_js_types_flow_estree_d_ts__DeclareExportDeclarationBase
+language_js_types_flow_estree_d_ts__DeclareExportDeclarationNamedWithSpecifiers --|> language_js_types_flow_estree_d_ts__DeclareExportDeclarationBase
+language_js_types_flow_estree_d_ts__DeclareModuleExports --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__DeclaredPredicate --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__JSXAttribute --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__JSXClosingElement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__JSXClosingFragment --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__JSXElement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__JSXEmptyExpression --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__JSXExpressionContainer --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__JSXFragment --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__JSXIdentifier --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__JSXMemberExpression --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__JSXNamespacedName --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__JSXOpeningElement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__JSXOpeningFragment --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__JSXSpreadAttribute --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__JSXText --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__JSXSpreadChild --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__MatchExpression --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__MatchExpressionCase --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__MatchStatement --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__MatchStatementCase --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__MatchOrPattern --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__MatchAsPattern --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__MatchWildcardPattern --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__MatchLiteralPattern --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__MatchUnaryPattern --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__MatchIdentifierPattern --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__MatchMemberPattern --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__MatchBindingPattern --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__MatchObjectPattern --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__MatchObjectPatternProperty --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__MatchInstancePattern --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__MatchInstanceObjectPattern --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__MatchArrayPattern --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__MatchRestPattern --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__RecordDeclaration --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__RecordDeclarationImplements --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__RecordDeclarationBody --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__RecordDeclarationProperty --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__RecordDeclarationStaticProperty --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__RecordExpression --|> language_js_types_flow_estree_d_ts__BaseNode
+language_js_types_flow_estree_d_ts__RecordExpressionProperties --|> language_js_types_flow_estree_d_ts__BaseNode
+utilities_unexpected_node_error_js__UnexpectedNodeError --|> external__Error
+
+@enduml
