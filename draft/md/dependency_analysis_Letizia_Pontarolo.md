@@ -206,7 +206,7 @@ In other cases, they are simply updated together because the same feature must b
 ### Files inside the same language-specific printing area 
 - Consistent with code dependencies.
 - Files that belong to the same language-specific printing area are often changed together. This is expected because they are part of the same subsystem and usually work together to format the same language. They often share helper functions, printing logic, and internal utilities.
-- Example:
+- Example:  
 `src/language-markdown/print/children.js`  
 `src/language-markdown/print/list.js`  
 `src/language-markdown/printer-markdown.js`  
