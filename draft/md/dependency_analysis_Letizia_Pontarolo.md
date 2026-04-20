@@ -146,13 +146,17 @@ They are related to dependency management rather than to the program logic.
 ---
 
 ### Source files + Test files 
-- Consistent with code dependencies.
-- When a source file is modified, the related tests are often updated in the same commit. This happens because tests are used to verify that the code works correctly.
-- If the formatting logic changes, the expected output also changes, so test snapshots must be updated. This is a strong and expected relationship, because tests directly depend on the behavior of the source code.
+- Not consistent with code dependencies.
+- These files are often modified together because tests must be updated when the formatting behavior changes. However, the test files do not directly import the source files. They use a shared testing framework (`runFormatTest`) and refer to the language (e.g. "markdown"), so the dependency is indirect. For this reason, the relation is not visible through import-based code dependencies.
 - Example:  
-`src/language-js/print/union-type.js`  
-`tests/format/typescript/union/comments/18389.ts`  
-`tests/format/typescript/union/comments/\_\_snapshots\_\_/format.test.js.snap`
+`changelog_unreleased/markdown/18519.md`  
+`src/language-markdown/embed.js`  
+`tests/format/markdown/code/angular/__snapshots__/format.test.js.snap`  
+`tests/format/markdown/code/angular/angular-html-invalid.md`  
+`tests/format/markdown/code/angular/angular-html.md`  
+`tests/format/markdown/code/angular/angular-ts-invalid.md`  
+`tests/format/markdown/code/angular/angular-ts.md`  
+`tests/format/markdown/code/angular/format.test.js`
 
 ---
 
@@ -196,6 +200,17 @@ In other cases, they are simply updated together because the same feature must b
 `src/language-js/parse/postprocess/visit-node.js`  
 `src/language-js/utilities/index.js`  
 `src/main/ast-to-doc.js`
+
+---
+
+### Files inside the same language-specific printing area 
+- Consistent with code dependencies.
+- Files that belong to the same language-specific printing area are often changed together. This is expected because they are part of the same subsystem and usually work together to format the same language. They often share helper functions, printing logic, and internal utilities.
+- Example:
+`src/language-markdown/print/children.js`  
+`src/language-markdown/print/list.js`  
+`src/language-markdown/printer-markdown.js`  
+`src/language-markdown/utils.js`
 
 ---
 
