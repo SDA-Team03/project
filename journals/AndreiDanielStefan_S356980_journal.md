@@ -9,3 +9,10 @@
 | Perform source code analysis                                  | `sourcegraph`                 |
 | Generate and comparing dependency graphs                      | `dependency-cruiser`, `madge` |
 | Extract all imports from the entrypoint file (`src/index.js`) | `madge`                       |
+
+
+## [21/04/2026] - Dependency Analysis - 1 hours
+
+| Activity                                                   |     Tools Used     |
+| :--------------------------------------------------------- | :----------------- |
+| Analyze `src` folder to count imports number               | `madge`, `graphiz` |
