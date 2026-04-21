@@ -1,0 +1,1690 @@
+[
+  {
+    "file": "language-js/print/flow.js",
+    "imports": 35
+  },
+  {
+    "file": "language-js/print/typescript.js",
+    "imports": 33
+  },
+  {
+    "file": "language-js/print/estree.js",
+    "imports": 29
+  },
+  {
+    "file": "plugins/builtin-plugins-proxy.js",
+    "imports": 27
+  },
+  {
+    "file": "language-markdown/printer-markdown.js",
+    "imports": 19
+  },
+  {
+    "file": "utilities/public.js",
+    "imports": 17
+  },
+  {
+    "file": "language-js/utilities/index.js",
+    "imports": 17
+  },
+  {
+    "file": "index.js",
+    "imports": 17
+  },
+  {
+    "file": "language-html/printer-html.js",
+    "imports": 16
+  },
+  {
+    "file": "document/builders/index.js",
+    "imports": 15
+  },
+  {
+    "file": "language-yaml/printer-yaml.js",
+    "imports": 14
+  },
+  {
+    "file": "language-css/printer-postcss.js",
+    "imports": 14
+  },
+  {
+    "file": "language-js/print/index.js",
+    "imports": 13
+  },
+  {
+    "file": "language-js/printer.js",
+    "imports": 12
+  },
+  {
+    "file": "language-js/print/object.js",
+    "imports": 12
+  },
+  {
+    "file": "language-js/print/class.js",
+    "imports": 12
+  },
+  {
+    "file": "language-js/print/module.js",
+    "imports": 11
+  },
+  {
+    "file": "language-js/print/member-chain.js",
+    "imports": 11
+  },
+  {
+    "file": "language-js/comments/handle-comments.js",
+    "imports": 11
+  },
+  {
+    "file": "language-css/parser-postcss.js",
+    "imports": 11
+  },
+  {
+    "file": "cli/index.js",
+    "imports": 11
+  },
+  {
+    "file": "main/core.js",
+    "imports": 10
+  },
+  {
+    "file": "language-js/print/function.js",
+    "imports": 10
+  },
+  {
+    "file": "language-js/print/array.js",
+    "imports": 10
+  },
+  {
+    "file": "language-handlebars/printer-glimmer.js",
+    "imports": 10
+  },
+  {
+    "file": "language-js/parse/postprocess/index.js",
+    "imports": 9
+  },
+  {
+    "file": "language-html/embed/attribute.js",
+    "imports": 9
+  },
+  {
+    "file": "language-html/embed.js",
+    "imports": 9
+  },
+  {
+    "file": "main/ast-to-doc.js",
+    "imports": 8
+  },
+  {
+    "file": "language-js/print/ternary.js",
+    "imports": 8
+  },
+  {
+    "file": "language-js/print/jsx.js",
+    "imports": 8
+  },
+  {
+    "file": "language-js/print/arrow-function.js",
+    "imports": 8
+  },
+  {
+    "file": "language-js/parse/babel.js",
+    "imports": 8
+  },
+  {
+    "file": "language-graphql/printer-graphql.js",
+    "imports": 8
+  },
+  {
+    "file": "language-css/parse/parse-value.js",
+    "imports": 8
+  },
+  {
+    "file": "cli/format.js",
+    "imports": 8
+  },
+  {
+    "file": "language-markdown/parser-markdown.js",
+    "imports": 7
+  },
+  {
+    "file": "language-js/print/mapped-type.js",
+    "imports": 7
+  },
+  {
+    "file": "language-js/print/function-type.js",
+    "imports": 7
+  },
+  {
+    "file": "language-js/print/function-parameters.js",
+    "imports": 7
+  },
+  {
+    "file": "language-js/print/class-body.js",
+    "imports": 7
+  },
+  {
+    "file": "language-js/parse/typescript.js",
+    "imports": 7
+  },
+  {
+    "file": "document/printer/printer.js",
+    "imports": 7
+  },
+  {
+    "file": "main/front-matter/index.js",
+    "imports": 6
+  },
+  {
+    "file": "main/comments/print.js",
+    "imports": 6
+  },
+  {
+    "file": "language-js/print/template-literal.js",
+    "imports": 6
+  },
+  {
+    "file": "language-js/print/property.js",
+    "imports": 6
+  },
+  {
+    "file": "language-js/print/decorators.js",
+    "imports": 6
+  },
+  {
+    "file": "language-js/print/component.js",
+    "imports": 6
+  },
+  {
+    "file": "language-js/print/call-expression.js",
+    "imports": 6
+  },
+  {
+    "file": "language-js/print/assignment.js",
+    "imports": 6
+  },
+  {
+    "file": "language-js/parse/oxc.js",
+    "imports": 6
+  },
+  {
+    "file": "language-html/utilities/index.js",
+    "imports": 6
+  },
+  {
+    "file": "language-html/print/children.js",
+    "imports": 6
+  },
+  {
+    "file": "language-html/parse/postprocess.js",
+    "imports": 6
+  },
+  {
+    "file": "language-html/embed/vue-attributes.js",
+    "imports": 6
+  },
+  {
+    "file": "language-css/print/parenthesized-value-group.js",
+    "imports": 6
+  },
+  {
+    "file": "utilities/is-next-line-empty.js",
+    "imports": 5
+  },
+  {
+    "file": "standalone.js",
+    "imports": 5
+  },
+  {
+    "file": "plugins/estree.js",
+    "imports": 5
+  },
+  {
+    "file": "main/normalize-format-options.js",
+    "imports": 5
+  },
+  {
+    "file": "main/comments/attach.js",
+    "imports": 5
+  },
+  {
+    "file": "language-json/parser-json.js",
+    "imports": 5
+  },
+  {
+    "file": "language-js/print/type-parameters.js",
+    "imports": 5
+  },
+  {
+    "file": "language-js/print/method-signature.js",
+    "imports": 5
+  },
+  {
+    "file": "language-js/print/comment.js",
+    "imports": 5
+  },
+  {
+    "file": "language-js/print/call-arguments.js",
+    "imports": 5
+  },
+  {
+    "file": "language-js/print/block.js",
+    "imports": 5
+  },
+  {
+    "file": "language-js/parse/meriyah.js",
+    "imports": 5
+  },
+  {
+    "file": "language-js/parse/espree.js",
+    "imports": 5
+  },
+  {
+    "file": "language-js/parse/acorn.js",
+    "imports": 5
+  },
+  {
+    "file": "language-js/embed/index.js",
+    "imports": 5
+  },
+  {
+    "file": "language-js/embed/css.js",
+    "imports": 5
+  },
+  {
+    "file": "language-html/print/tag.js",
+    "imports": 5
+  },
+  {
+    "file": "language-html/print/element.js",
+    "imports": 5
+  },
+  {
+    "file": "language-css/print/sequence.js",
+    "imports": 5
+  },
+  {
+    "file": "document/utilities/index.js",
+    "imports": 5
+  },
+  {
+    "file": "document/utilities/assert-doc.js",
+    "imports": 5
+  },
+  {
+    "file": "cli/options/parse-cli-arguments.js",
+    "imports": 5
+  },
+  {
+    "file": "cli/options/get-options-for-file.js",
+    "imports": 5
+  },
+  {
+    "file": "utilities/get-next-non-space-non-comment-character-index.js",
+    "imports": 4
+  },
+  {
+    "file": "main/parser-and-printer.js",
+    "imports": 4
+  },
+  {
+    "file": "language-yaml/index.js",
+    "imports": 4
+  },
+  {
+    "file": "language-markdown/index.js",
+    "imports": 4
+  },
+  {
+    "file": "language-markdown/embed.js",
+    "imports": 4
+  },
+  {
+    "file": "language-js/print/union-type.js",
+    "imports": 4
+  },
+  {
+    "file": "language-js/print/match.js",
+    "imports": 4
+  },
+  {
+    "file": "language-js/print/index-signature.js",
+    "imports": 4
+  },
+  {
+    "file": "language-js/print/hook.js",
+    "imports": 4
+  },
+  {
+    "file": "language-js/print/binaryish.js",
+    "imports": 4
+  },
+  {
+    "file": "language-js/print/angular.js",
+    "imports": 4
+  },
+  {
+    "file": "language-js/parse/postprocess/merge-nestled-jsdoc-comments.js",
+    "imports": 4
+  },
+  {
+    "file": "language-html/print/angular-control-flow-block.js",
+    "imports": 4
+  },
+  {
+    "file": "language-html/parse/parsers.js",
+    "imports": 4
+  },
+  {
+    "file": "language-html/parse/parse.js",
+    "imports": 4
+  },
+  {
+    "file": "language-html/index.js",
+    "imports": 4
+  },
+  {
+    "file": "language-html/embed/vue-v-for-directive.js",
+    "imports": 4
+  },
+  {
+    "file": "language-html/embed/permissions-policy.js",
+    "imports": 4
+  },
+  {
+    "file": "language-html/embed/angular-attributes.js",
+    "imports": 4
+  },
+  {
+    "file": "language-graphql/index.js",
+    "imports": 4
+  },
+  {
+    "file": "language-css/index.js",
+    "imports": 4
+  },
+  {
+    "file": "document/index.js",
+    "imports": 4
+  },
+  {
+    "file": "common/get-file-info.js",
+    "imports": 4
+  },
+  {
+    "file": "utilities/print-string.js",
+    "imports": 3
+  },
+  {
+    "file": "main/range.js",
+    "imports": 3
+  },
+  {
+    "file": "main/plugins/index.js",
+    "imports": 3
+  },
+  {
+    "file": "main/multiparser.js",
+    "imports": 3
+  },
+  {
+    "file": "main/front-matter/embed.js",
+    "imports": 3
+  },
+  {
+    "file": "language-yaml/print/mapping-item.js",
+    "imports": 3
+  },
+  {
+    "file": "language-yaml/print/flow-mapping-sequence.js",
+    "imports": 3
+  },
+  {
+    "file": "language-yaml/print/block.js",
+    "imports": 3
+  },
+  {
+    "file": "language-yaml/parser-yaml.js",
+    "imports": 3
+  },
+  {
+    "file": "language-markdown/utilities.js",
+    "imports": 3
+  },
+  {
+    "file": "language-markdown/print/table.js",
+    "imports": 3
+  },
+  {
+    "file": "language-markdown/print/list.js",
+    "imports": 3
+  },
+  {
+    "file": "language-json/printer-estree-json.js",
+    "imports": 3
+  },
+  {
+    "file": "language-js/semicolon/semicolon.js",
+    "imports": 3
+  },
+  {
+    "file": "language-js/print/member.js",
+    "imports": 3
+  },
+  {
+    "file": "language-js/print/literal.js",
+    "imports": 3
+  },
+  {
+    "file": "language-js/pragma.js",
+    "imports": 3
+  },
+  {
+    "file": "language-js/parse/hermes.js",
+    "imports": 3
+  },
+  {
+    "file": "language-js/parse/flow.js",
+    "imports": 3
+  },
+  {
+    "file": "language-js/embed/html.js",
+    "imports": 3
+  },
+  {
+    "file": "language-js/embed/graphql.js",
+    "imports": 3
+  },
+  {
+    "file": "language-html/embed/vue-bindings.js",
+    "imports": 3
+  },
+  {
+    "file": "language-html/embed/srcset.js",
+    "imports": 3
+  },
+  {
+    "file": "language-html/embed/angular-interpolation.js",
+    "imports": 3
+  },
+  {
+    "file": "language-handlebars/parser-glimmer.js",
+    "imports": 3
+  },
+  {
+    "file": "language-handlebars/index.js",
+    "imports": 3
+  },
+  {
+    "file": "language-graphql/parser-graphql.js",
+    "imports": 3
+  },
+  {
+    "file": "language-css/print/misc.js",
+    "imports": 3
+  },
+  {
+    "file": "language-css/print/comma-separated-value-group.js",
+    "imports": 3
+  },
+  {
+    "file": "language-css/loc.js",
+    "imports": 3
+  },
+  {
+    "file": "document/utilities/traverse-doc.js",
+    "imports": 3
+  },
+  {
+    "file": "document/public.js",
+    "imports": 3
+  },
+  {
+    "file": "document/builders/align.js",
+    "imports": 3
+  },
+  {
+    "file": "config/resolve-config.js",
+    "imports": 3
+  },
+  {
+    "file": "config/prettier-config/index.js",
+    "imports": 3
+  },
+  {
+    "file": "cli/usage.js",
+    "imports": 3
+  },
+  {
+    "file": "cli/options/get-context-options.js",
+    "imports": 3
+  },
+  {
+    "file": "cli/expand-patterns.js",
+    "imports": 3
+  },
+  {
+    "file": "utilities/is-previous-line-empty.js",
+    "imports": 2
+  },
+  {
+    "file": "utilities/infer-parser.js",
+    "imports": 2
+  },
+  {
+    "file": "utilities/has-newline.js",
+    "imports": 2
+  },
+  {
+    "file": "plugins/babel.js",
+    "imports": 2
+  },
+  {
+    "file": "plugins/acorn.js",
+    "imports": 2
+  },
+  {
+    "file": "language-yaml/print/misc.js",
+    "imports": 2
+  },
+  {
+    "file": "language-yaml/get-visitor-keys.js",
+    "imports": 2
+  },
+  {
+    "file": "language-markdown/unified-plugins/html-to-jsx.js",
+    "imports": 2
+  },
+  {
+    "file": "language-markdown/print/word.js",
+    "imports": 2
+  },
+  {
+    "file": "language-markdown/print/children.js",
+    "imports": 2
+  },
+  {
+    "file": "language-markdown/print-whitespace.js",
+    "imports": 2
+  },
+  {
+    "file": "language-markdown/print-preprocess.js",
+    "imports": 2
+  },
+  {
+    "file": "language-markdown/pragma.js",
+    "imports": 2
+  },
+  {
+    "file": "language-markdown/get-visitor-keys.js",
+    "imports": 2
+  },
+  {
+    "file": "language-markdown/clean.js",
+    "imports": 2
+  },
+  {
+    "file": "language-json/get-visitor-keys.js",
+    "imports": 2
+  },
+  {
+    "file": "language-js/utilities/is-ignored.js",
+    "imports": 2
+  },
+  {
+    "file": "language-js/utilities/get-text-without-comments.js",
+    "imports": 2
+  },
+  {
+    "file": "language-js/traverse/get-visitor-keys.js",
+    "imports": 2
+  },
+  {
+    "file": "language-js/print/type-assertion.js",
+    "imports": 2
+  },
+  {
+    "file": "language-js/print/type-annotation.js",
+    "imports": 2
+  },
+  {
+    "file": "language-js/print/type-alias.js",
+    "imports": 2
+  },
+  {
+    "file": "language-js/print/ternary-old.js",
+    "imports": 2
+  },
+  {
+    "file": "language-js/print/statement.js",
+    "imports": 2
+  },
+  {
+    "file": "language-js/print/opaque-type.js",
+    "imports": 2
+  },
+  {
+    "file": "language-js/print/module-declaration.js",
+    "imports": 2
+  },
+  {
+    "file": "language-js/print/misc.js",
+    "imports": 2
+  },
+  {
+    "file": "language-js/print/intersection-type.js",
+    "imports": 2
+  },
+  {
+    "file": "language-js/print/expression-statement.js",
+    "imports": 2
+  },
+  {
+    "file": "language-js/print/enum.js",
+    "imports": 2
+  },
+  {
+    "file": "language-js/print/cast-expression.js",
+    "imports": 2
+  },
+  {
+    "file": "language-js/parse/utilities/create-parser.js",
+    "imports": 2
+  },
+  {
+    "file": "language-js/parse/postprocess/visit-node.js",
+    "imports": 2
+  },
+  {
+    "file": "language-js/parentheses/needs-parentheses.js",
+    "imports": 2
+  },
+  {
+    "file": "language-js/embed/markdown.js",
+    "imports": 2
+  },
+  {
+    "file": "language-js/comments/can-attach-comment.js",
+    "imports": 2
+  },
+  {
+    "file": "language-html/print/angular-icu-expression.js",
+    "imports": 2
+  },
+  {
+    "file": "language-html/print-preprocess.js",
+    "imports": 2
+  },
+  {
+    "file": "language-html/get-visitor-keys.js",
+    "imports": 2
+  },
+  {
+    "file": "language-html/embed/style.js",
+    "imports": 2
+  },
+  {
+    "file": "language-html/embed/print-vue-script-generic-attribute-value.js",
+    "imports": 2
+  },
+  {
+    "file": "language-html/embed/event-handler.js",
+    "imports": 2
+  },
+  {
+    "file": "language-handlebars/get-visitor-keys.js",
+    "imports": 2
+  },
+  {
+    "file": "language-graphql/get-visitor-keys.js",
+    "imports": 2
+  },
+  {
+    "file": "language-css/pragma.js",
+    "imports": 2
+  },
+  {
+    "file": "language-css/get-visitor-keys.js",
+    "imports": 2
+  },
+  {
+    "file": "document/utilities/invalid-doc-error.js",
+    "imports": 2
+  },
+  {
+    "file": "document/builders/line.js",
+    "imports": 2
+  },
+  {
+    "file": "document/builders/line-suffix.js",
+    "imports": 2
+  },
+  {
+    "file": "document/builders/label.js",
+    "imports": 2
+  },
+  {
+    "file": "document/builders/indent.js",
+    "imports": 2
+  },
+  {
+    "file": "document/builders/indent-if-break.js",
+    "imports": 2
+  },
+  {
+    "file": "document/builders/if-break.js",
+    "imports": 2
+  },
+  {
+    "file": "document/builders/group.js",
+    "imports": 2
+  },
+  {
+    "file": "document/builders/fill.js",
+    "imports": 2
+  },
+  {
+    "file": "config/prettier-config/loaders.js",
+    "imports": 2
+  },
+  {
+    "file": "config/prettier-config/load-external-config.js",
+    "imports": 2
+  },
+  {
+    "file": "config/prettier-config/load-config.js",
+    "imports": 2
+  },
+  {
+    "file": "config/editorconfig/index.js",
+    "imports": 2
+  },
+  {
+    "file": "cli/print-support-info.js",
+    "imports": 2
+  },
+  {
+    "file": "cli/mockable.js",
+    "imports": 2
+  },
+  {
+    "file": "cli/logger.js",
+    "imports": 2
+  },
+  {
+    "file": "cli/format-results-cache.js",
+    "imports": 2
+  },
+  {
+    "file": "cli/find-config-path.js",
+    "imports": 2
+  },
+  {
+    "file": "cli/file-info.js",
+    "imports": 2
+  },
+  {
+    "file": "cli/context.js",
+    "imports": 2
+  },
+  {
+    "file": "utilities/skip-trailing-comment.js",
+    "imports": 1
+  },
+  {
+    "file": "utilities/narrow-emojis.evaluate.js",
+    "imports": 1
+  },
+  {
+    "file": "utilities/import-from-directory.js",
+    "imports": 1
+  },
+  {
+    "file": "utilities/ignore.js",
+    "imports": 1
+  },
+  {
+    "file": "utilities/html-whitespace.js",
+    "imports": 1
+  },
+  {
+    "file": "utilities/has-spaces.js",
+    "imports": 1
+  },
+  {
+    "file": "utilities/get-string-width.js",
+    "imports": 1
+  },
+  {
+    "file": "utilities/get-next-non-space-non-comment-character.js",
+    "imports": 1
+  },
+  {
+    "file": "utilities/get-indent-size.js",
+    "imports": 1
+  },
+  {
+    "file": "utilities/create-language.js",
+    "imports": 1
+  },
+  {
+    "file": "utilities/ast.js",
+    "imports": 1
+  },
+  {
+    "file": "universal/index.js",
+    "imports": 1
+  },
+  {
+    "file": "universal/assert.browser.js",
+    "imports": 1
+  },
+  {
+    "file": "plugins/yaml.js",
+    "imports": 1
+  },
+  {
+    "file": "plugins/typescript.js",
+    "imports": 1
+  },
+  {
+    "file": "plugins/postcss.js",
+    "imports": 1
+  },
+  {
+    "file": "plugins/meriyah.js",
+    "imports": 1
+  },
+  {
+    "file": "plugins/markdown.js",
+    "imports": 1
+  },
+  {
+    "file": "plugins/html.js",
+    "imports": 1
+  },
+  {
+    "file": "plugins/graphql.js",
+    "imports": 1
+  },
+  {
+    "file": "plugins/glimmer.js",
+    "imports": 1
+  },
+  {
+    "file": "plugins/flow.js",
+    "imports": 1
+  },
+  {
+    "file": "plugins/angular.js",
+    "imports": 1
+  },
+  {
+    "file": "main/version.evaluate.js",
+    "imports": 1
+  },
+  {
+    "file": "main/utilities/get-sorted-child-nodes.js",
+    "imports": 1
+  },
+  {
+    "file": "main/support.js",
+    "imports": 1
+  },
+  {
+    "file": "main/plugins/load-plugins.js",
+    "imports": 1
+  },
+  {
+    "file": "main/plugins/load-plugin.js",
+    "imports": 1
+  },
+  {
+    "file": "main/plugins/load-builtin-plugins.js",
+    "imports": 1
+  },
+  {
+    "file": "main/parse.js",
+    "imports": 1
+  },
+  {
+    "file": "main/massage-ast.js",
+    "imports": 1
+  },
+  {
+    "file": "main/get-cursor-node.js",
+    "imports": 1
+  },
+  {
+    "file": "main/front-matter/parse.js",
+    "imports": 1
+  },
+  {
+    "file": "main/front-matter/is-front-matter.js",
+    "imports": 1
+  },
+  {
+    "file": "main/front-matter/clean.js",
+    "imports": 1
+  },
+  {
+    "file": "main/create-print-pre-check-function.js",
+    "imports": 1
+  },
+  {
+    "file": "main/create-get-visitor-keys-function.js",
+    "imports": 1
+  },
+  {
+    "file": "main/core-options.evaluate.js",
+    "imports": 1
+  },
+  {
+    "file": "language-yaml/visitor-keys.evaluate.js",
+    "imports": 1
+  },
+  {
+    "file": "language-yaml/utilities.js",
+    "imports": 1
+  },
+  {
+    "file": "language-yaml/print-preprocess.js",
+    "imports": 1
+  },
+  {
+    "file": "language-yaml/pragma.js",
+    "imports": 1
+  },
+  {
+    "file": "language-yaml/options.js",
+    "imports": 1
+  },
+  {
+    "file": "language-yaml/languages.evaluate.js",
+    "imports": 1
+  },
+  {
+    "file": "language-yaml/embed.js",
+    "imports": 1
+  },
+  {
+    "file": "language-yaml/clean.js",
+    "imports": 1
+  },
+  {
+    "file": "language-markdown/visitor-keys.evaluate.js",
+    "imports": 1
+  },
+  {
+    "file": "language-markdown/unified-plugins/front-matter.js",
+    "imports": 1
+  },
+  {
+    "file": "language-markdown/print-sentence.js",
+    "imports": 1
+  },
+  {
+    "file": "language-markdown/print-paragraph.js",
+    "imports": 1
+  },
+  {
+    "file": "language-markdown/options.js",
+    "imports": 1
+  },
+  {
+    "file": "language-markdown/languages.evaluate.js",
+    "imports": 1
+  },
+  {
+    "file": "language-json/visitor-keys.evaluate.js",
+    "imports": 1
+  },
+  {
+    "file": "language-json/languages.evaluate.js",
+    "imports": 1
+  },
+  {
+    "file": "language-js/utilities/vue-event-binding.js",
+    "imports": 1
+  },
+  {
+    "file": "language-js/utilities/is-type-cast-comment.js",
+    "imports": 1
+  },
+  {
+    "file": "language-js/utilities/is-line-comment.js",
+    "imports": 1
+  },
+  {
+    "file": "language-js/utilities/is-indentable-block-comment.js",
+    "imports": 1
+  },
+  {
+    "file": "language-js/utilities/is-flow-keyword-type.js",
+    "imports": 1
+  },
+  {
+    "file": "language-js/utilities/is-block-comment.js",
+    "imports": 1
+  },
+  {
+    "file": "language-js/utilities/create-type-check-function.js",
+    "imports": 1
+  },
+  {
+    "file": "language-js/traverse/visitor-keys.evaluate.js",
+    "imports": 1
+  },
+  {
+    "file": "language-js/print/type-predicate.js",
+    "imports": 1
+  },
+  {
+    "file": "language-js/print/rest-element.js",
+    "imports": 1
+  },
+  {
+    "file": "language-js/print/js-doc-type.js",
+    "imports": 1
+  },
+  {
+    "file": "language-js/print/indexed-access-type.js",
+    "imports": 1
+  },
+  {
+    "file": "language-js/print/html-binding.js",
+    "imports": 1
+  },
+  {
+    "file": "language-js/print/bind-expression.js",
+    "imports": 1
+  },
+  {
+    "file": "language-js/parse/utilities/create-babel-parse-error.js",
+    "imports": 1
+  },
+  {
+    "file": "language-js/parse/angular.js",
+    "imports": 1
+  },
+  {
+    "file": "language-js/options.js",
+    "imports": 1
+  },
+  {
+    "file": "language-js/languages.evaluate.js",
+    "imports": 1
+  },
+  {
+    "file": "language-js/embed/utilities.js",
+    "imports": 1
+  },
+  {
+    "file": "language-js/comments/will-print-own-comments.js",
+    "imports": 1
+  },
+  {
+    "file": "language-js/clean.js",
+    "imports": 1
+  },
+  {
+    "file": "language-html/visitor-keys.evaluate.js",
+    "imports": 1
+  },
+  {
+    "file": "language-html/utilities/is-vue-sfc-with-typescript-script.js",
+    "imports": 1
+  },
+  {
+    "file": "language-html/pragma.js",
+    "imports": 1
+  },
+  {
+    "file": "language-html/parse/ast.js",
+    "imports": 1
+  },
+  {
+    "file": "language-html/options.js",
+    "imports": 1
+  },
+  {
+    "file": "language-html/languages.evaluate.js",
+    "imports": 1
+  },
+  {
+    "file": "language-html/get-node-content.js",
+    "imports": 1
+  },
+  {
+    "file": "language-html/embed/utilities.js",
+    "imports": 1
+  },
+  {
+    "file": "language-html/embed/parse-permissions-policy.js",
+    "imports": 1
+  },
+  {
+    "file": "language-html/embed/class-names.js",
+    "imports": 1
+  },
+  {
+    "file": "language-html/embed/angular-control-flow-block-parameters.js",
+    "imports": 1
+  },
+  {
+    "file": "language-handlebars/languages.evaluate.js",
+    "imports": 1
+  },
+  {
+    "file": "language-handlebars/clean.js",
+    "imports": 1
+  },
+  {
+    "file": "language-graphql/print/description.js",
+    "imports": 1
+  },
+  {
+    "file": "language-graphql/pragma.js",
+    "imports": 1
+  },
+  {
+    "file": "language-graphql/options.js",
+    "imports": 1
+  },
+  {
+    "file": "language-graphql/languages.evaluate.js",
+    "imports": 1
+  },
+  {
+    "file": "language-css/visitor-keys.evaluate.js",
+    "imports": 1
+  },
+  {
+    "file": "language-css/utilities/has-scss-interpolation.js",
+    "imports": 1
+  },
+  {
+    "file": "language-css/utilities/get-function-arguments-text.js",
+    "imports": 1
+  },
+  {
+    "file": "language-css/parse/utilities.js",
+    "imports": 1
+  },
+  {
+    "file": "language-css/parse/parse-selector.js",
+    "imports": 1
+  },
+  {
+    "file": "language-css/parse/parse-media-query.js",
+    "imports": 1
+  },
+  {
+    "file": "language-css/options.js",
+    "imports": 1
+  },
+  {
+    "file": "language-css/languages.evaluate.js",
+    "imports": 1
+  },
+  {
+    "file": "language-css/clean.js",
+    "imports": 1
+  },
+  {
+    "file": "experimental-cli/constants.evaluate.js",
+    "imports": 1
+  },
+  {
+    "file": "document/utilities/get-doc-type.js",
+    "imports": 1
+  },
+  {
+    "file": "document/debug.js",
+    "imports": 1
+  },
+  {
+    "file": "document/builders/trim.js",
+    "imports": 1
+  },
+  {
+    "file": "document/builders/line-suffix-boundary.js",
+    "imports": 1
+  },
+  {
+    "file": "document/builders/join.js",
+    "imports": 1
+  },
+  {
+    "file": "document/builders/cursor.js",
+    "imports": 1
+  },
+  {
+    "file": "document/builders/break-parent.js",
+    "imports": 1
+  },
+  {
+    "file": "config/prettier-config/config-searcher.js",
+    "imports": 1
+  },
+  {
+    "file": "common/mockable.js",
+    "imports": 1
+  },
+  {
+    "file": "common/end-of-line.js",
+    "imports": 1
+  },
+  {
+    "file": "cli/utilities.js",
+    "imports": 1
+  },
+  {
+    "file": "cli/prettier-internal.js",
+    "imports": 1
+  },
+  {
+    "file": "cli/options/normalize-cli-options.js",
+    "imports": 1
+  },
+  {
+    "file": "cli/find-cache-file.js",
+    "imports": 1
+  },
+  {
+    "file": "cli/constants.evaluate.js",
+    "imports": 1
+  },
+  {
+    "file": "cli/cli-options.evaluate.js",
+    "imports": 1
+  },
+  {
+    "file": "utilities/whitespace-utilities.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/visitor-keys.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/unexpected-node-error.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/try-combinations.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/skip.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/skip-newline.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/skip-inline-comment.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/require-from-file.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/read-file.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/print-number.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/pragma/pragma.evaluate.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/partition.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/object-omit.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/noop.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/make-string.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/line-column-to-index.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/is-object.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/is-non-empty-array.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/import-from-file.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/has-newline-in-range.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/get-preferred-quote.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/get-min-not-present-continuous-count.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/get-max-continuous-count.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/get-interpreter.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/get-alignment-size.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/create-mockable.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/create-group-id-mapper.js",
+    "imports": 0
+  },
+  {
+    "file": "utilities/create-get-visitor-keys.js",
+    "imports": 0
+  },
+  {
+    "file": "universal/index.browser.js",
+    "imports": 0
+  },
+  {
+    "file": "universal/assert.js",
+    "imports": 0
+  },
+  {
+    "file": "main/print-ignored.js",
+    "imports": 0
+  },
+  {
+    "file": "main/option-categories.js",
+    "imports": 0
+  },
+  {
+    "file": "main/normalize-options.js",
+    "imports": 0
+  },
+  {
+    "file": "main/front-matter/print.js",
+    "imports": 0
+  },
+  {
+    "file": "main/front-matter/constants.js",
+    "imports": 0
+  },
+  {
+    "file": "main/comments/utilities.js",
+    "imports": 0
+  },
+  {
+    "file": "language-yaml/loc.js",
+    "imports": 0
+  },
+  {
+    "file": "language-markdown/unified-plugins/wiki-link.js",
+    "imports": 0
+  },
+  {
+    "file": "language-markdown/unified-plugins/liquid.js",
+    "imports": 0
+  },
+  {
+    "file": "language-markdown/mdx.js",
+    "imports": 0
+  },
+  {
+    "file": "language-markdown/loc.js",
+    "imports": 0
+  },
+  {
+    "file": "language-markdown/constants.evaluate.js",
+    "imports": 0
+  },
+  {
+    "file": "language-js/utilities/is-ts-keyword-type.js",
+    "imports": 0
+  },
+  {
+    "file": "language-js/utilities/is-node-matches.js",
+    "imports": 0
+  },
+  {
+    "file": "language-js/utilities/is-meaningful-empty-statement.js",
+    "imports": 0
+  },
+  {
+    "file": "language-js/utilities/get-shebang.js",
+    "imports": 0
+  },
+  {
+    "file": "language-js/utilities/get-raw.js",
+    "imports": 0
+  },
+  {
+    "file": "language-js/print/type-query.js",
+    "imports": 0
+  },
+  {
+    "file": "language-js/print/tuple.js",
+    "imports": 0
+  },
+  {
+    "file": "language-js/print/rest-type.js",
+    "imports": 0
+  },
+  {
+    "file": "language-js/print/infer-type.js",
+    "imports": 0
+  },
+  {
+    "file": "language-js/print/array-type.js",
+    "imports": 0
+  },
+  {
+    "file": "language-js/parse/utilities/wrap-babel-expression.js",
+    "imports": 0
+  },
+  {
+    "file": "language-js/parse/utilities/source-types.js",
+    "imports": 0
+  },
+  {
+    "file": "language-js/parse/utilities/replace-hashbang.js",
+    "imports": 0
+  },
+  {
+    "file": "language-js/parse/utilities/jsx-regexp.evaluate.js",
+    "imports": 0
+  },
+  {
+    "file": "language-js/loc.js",
+    "imports": 0
+  },
+  {
+    "file": "language-js/comments/is-gap.js",
+    "imports": 0
+  },
+  {
+    "file": "language-html/utilities/is-unknown-namespace.js",
+    "imports": 0
+  },
+  {
+    "file": "language-html/utilities/html-tags.evaluate.js",
+    "imports": 0
+  },
+  {
+    "file": "language-html/utilities/html-elements-attributes.evaluate.js",
+    "imports": 0
+  },
+  {
+    "file": "language-html/print/angular-control-flow-block-settings.evaluate.js",
+    "imports": 0
+  },
+  {
+    "file": "language-html/parse/parse-options.js",
+    "imports": 0
+  },
+  {
+    "file": "language-html/parse/conditional-comment.js",
+    "imports": 0
+  },
+  {
+    "file": "language-html/loc.js",
+    "imports": 0
+  },
+  {
+    "file": "language-html/constants.evaluate.js",
+    "imports": 0
+  },
+  {
+    "file": "language-html/clean.js",
+    "imports": 0
+  },
+  {
+    "file": "language-handlebars/visitor-keys.js",
+    "imports": 0
+  },
+  {
+    "file": "language-handlebars/utilities.js",
+    "imports": 0
+  },
+  {
+    "file": "language-handlebars/loc.js",
+    "imports": 0
+  },
+  {
+    "file": "language-handlebars/embed.js",
+    "imports": 0
+  },
+  {
+    "file": "language-graphql/visitor-keys.js",
+    "imports": 0
+  },
+  {
+    "file": "language-graphql/loc.js",
+    "imports": 0
+  },
+  {
+    "file": "language-css/utilities/is-scss-variable.js",
+    "imports": 0
+  },
+  {
+    "file": "language-css/utilities/is-scss-nested-property-node.js",
+    "imports": 0
+  },
+  {
+    "file": "language-css/utilities/is-module-rule-name.js",
+    "imports": 0
+  },
+  {
+    "file": "language-css/utilities/index.js",
+    "imports": 0
+  },
+  {
+    "file": "language-css/utilities/has-string-or-function.js",
+    "imports": 0
+  },
+  {
+    "file": "language-css/utilities/get-value-root.js",
+    "imports": 0
+  },
+  {
+    "file": "language-css/print/css-units.evaluate.js",
+    "imports": 0
+  },
+  {
+    "file": "language-css/embed.js",
+    "imports": 0
+  },
+  {
+    "file": "experimental-cli/worker.js",
+    "imports": 0
+  },
+  {
+    "file": "experimental-cli/index.js",
+    "imports": 0
+  },
+  {
+    "file": "document/printer/trim-indentation.js",
+    "imports": 0
+  },
+  {
+    "file": "document/printer/indent.js",
+    "imports": 0
+  },
+  {
+    "file": "document/builders/types.js",
+    "imports": 0
+  },
+  {
+    "file": "config/find-project-root.js",
+    "imports": 0
+  },
+  {
+    "file": "config/editorconfig/editorconfig-to-prettier.js",
+    "imports": 0
+  },
+  {
+    "file": "common/parser-create-error.js",
+    "imports": 0
+  },
+  {
+    "file": "common/errors.js",
+    "imports": 0
+  },
+  {
+    "file": "common/common-options.evaluate.js",
+    "imports": 0
+  },
+  {
+    "file": "common/ast-path.js",
+    "imports": 0
+  },
+  {
+    "file": "cli/utilities/clear-stream-text.js",
+    "imports": 0
+  },
+  {
+    "file": "cli/options/minimist.js",
+    "imports": 0
+  },
+  {
+    "file": "cli/options/create-minimist-options.js",
+    "imports": 0
+  },
+  {
+    "file": "cli/directory-ignorer.js",
+    "imports": 0
+  },
+  {
+    "file": "../package.json",
+    "imports": 0
+  }
+]
