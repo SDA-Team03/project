@@ -1,0 +1,6085 @@
+--- COMMIT ed739f0d6 ---
+src/language-html/print/angular-control-flow-block.js
+
+--- COMMIT 4e401ff7e ---
+src/language-markdown/embed.js
+
+--- COMMIT f92f80179 ---
+src/language-markdown/embed.js
+
+--- COMMIT fa6f533e0 ---
+src/language-html/embed/utilities.js
+
+--- COMMIT fe494348a ---
+src/language-js/parentheses/needs-parentheses.js
+
+--- COMMIT ca02b3748 ---
+src/language-js/comments/will-print-own-comments.js
+src/language-js/print/union-type.js
+src/language-js/utilities/index.js
+src/main/comments/print.js
+
+--- COMMIT 7efb988c6 ---
+src/language-js/print/union-type.js
+
+--- COMMIT 706aa4ef9 ---
+src/language-css/parse/parse-value.js
+src/language-css/parse/utilities.js
+src/language-css/parser-postcss.js
+src/language-js/parse/postprocess/index.js
+src/language-js/parse/postprocess/visit-node.js
+src/language-js/utilities/index.js
+src/main/ast-to-doc.js
+
+--- COMMIT d3eb2b2d0 ---
+src/language-css/get-visitor-keys.js
+src/language-css/visitor-keys.evaluate.js
+src/language-handlebars/get-visitor-keys.js
+src/language-handlebars/html-void-elements.evaluate.js
+src/language-handlebars/utilities.js
+src/language-handlebars/visitor-keys.js
+src/language-html/get-visitor-keys.js
+src/language-html/visitor-keys.evaluate.js
+src/language-js/traverse/visitor-keys.evaluate.js
+src/language-json/get-visitor-keys.js
+src/language-json/visitor-keys.evaluate.js
+src/language-markdown/get-visitor-keys.js
+src/language-markdown/visitor-keys.evaluate.js
+src/language-yaml/get-visitor-keys.js
+src/language-yaml/visitor-keys.evaluate.js
+src/utilities/visitor-keys.js
+
+--- COMMIT c45fef106 ---
+src/language-html/embed/attribute.js
+src/language-html/printer-html.js
+src/language-html/utilities/index.js
+
+--- COMMIT 363a20e1c ---
+src/utilities/get-preferred-quote.js
+
+--- COMMIT 95c4dd6f7 ---
+src/common/end-of-line.js
+src/document/printer/printer.js
+src/main/core.js
+
+--- COMMIT 36380d9a7 ---
+src/language-js/print/literal.js
+
+--- COMMIT e240f15e7 ---
+src/cli/expand-patterns.js
+src/cli/file-info.js
+src/cli/find-cache-file.js
+src/cli/find-config-path.js
+src/cli/format-results-cache.js
+src/cli/format.js
+src/cli/index.js
+src/cli/mockable.js
+src/cli/options/parse-cli-arguments.js
+src/cli/print-support-info.js
+src/cli/usage.js
+src/cli/utilities.js
+src/common/get-file-info.js
+src/common/mockable.js
+src/config/prettier-config/load-external-config.js
+src/config/prettier-config/loaders.js
+src/config/resolve-config.js
+src/document/printer/printer.js
+src/document/utilities/assert-doc.js
+src/index.cjs
+src/index.d.ts
+src/index.js
+src/language-css/get-visitor-keys.js
+src/language-css/languages.evaluate.js
+src/language-css/loc.js
+src/language-css/parse/parse-media-query.js
+src/language-css/parse/parse-selector.js
+src/language-css/parse/parse-value.js
+src/language-css/parse/utilities.js
+src/language-css/parser-postcss.js
+src/language-css/print/comma-separated-value-group.js
+src/language-css/print/misc.js
+src/language-css/print/parenthesized-value-group.js
+src/language-css/print/sequence.js
+src/language-css/printer-postcss.js
+src/language-css/utilities/get-function-arguments-text.js
+src/language-css/utilities/get-value-root.js
+src/language-css/utilities/has-scss-interpolation.js
+src/language-css/utilities/has-string-or-function.js
+src/language-css/utilities/index.js
+src/language-css/utilities/is-module-rule-name.js
+src/language-css/utilities/is-scss-nested-property-node.js
+src/language-css/utilities/is-scss-variable.js
+src/language-graphql/get-visitor-keys.js
+src/language-graphql/languages.evaluate.js
+src/language-graphql/pragma.js
+src/language-graphql/printer-graphql.js
+src/language-handlebars/clean.js
+src/language-handlebars/get-visitor-keys.js
+src/language-handlebars/languages.evaluate.js
+src/language-handlebars/printer-glimmer.js
+src/language-handlebars/utilities.js
+src/language-html/embed.js
+src/language-html/embed/angular-attributes.js
+src/language-html/embed/angular-control-flow-block-parameters.js
+src/language-html/embed/angular-interpolation.js
+src/language-html/embed/class-names.js
+src/language-html/embed/event-handler.js
+src/language-html/embed/parse-permissions-policy.js
+src/language-html/embed/permissions-policy.js
+src/language-html/embed/print-vue-script-generic-attribute-value.js
+src/language-html/embed/srcset.js
+src/language-html/embed/style.js
+src/language-html/embed/utilities.js
+src/language-html/embed/vue-attributes.js
+src/language-html/embed/vue-bindings.js
+src/language-html/embed/vue-v-for-directive.js
+src/language-html/get-visitor-keys.js
+src/language-html/languages.evaluate.js
+src/language-html/parse/postprocess.js
+src/language-html/pragma.js
+src/language-html/print-preprocess.js
+src/language-html/print/angular-control-flow-block.js
+src/language-html/print/children.js
+src/language-html/print/element.js
+src/language-html/print/tag.js
+src/language-html/printer-html.js
+src/language-html/utilities/html-elements-attributes.evaluate.js
+src/language-html/utilities/html-tags.evaluate.js
+src/language-html/utilities/index.js
+src/language-html/utilities/is-unknown-namespace.js
+src/language-html/utilities/is-vue-sfc-with-typescript-script.js
+src/language-js/clean.js
+src/language-js/comments/can-attach-comment.js
+src/language-js/comments/handle-comments.js
+src/language-js/comments/is-gap.js
+src/language-js/comments/will-print-own-comments.js
+src/language-js/embed/css.js
+src/language-js/embed/graphql.js
+src/language-js/embed/html.js
+src/language-js/embed/utilities.js
+src/language-js/languages.evaluate.js
+src/language-js/parentheses/needs-parentheses.js
+src/language-js/parse/acorn.js
+src/language-js/parse/babel.js
+src/language-js/parse/espree.js
+src/language-js/parse/flow.js
+src/language-js/parse/hermes.js
+src/language-js/parse/meriyah.js
+src/language-js/parse/oxc.js
+src/language-js/parse/postprocess/index.js
+src/language-js/parse/postprocess/merge-nestled-jsdoc-comments.js
+src/language-js/parse/typescript.js
+src/language-js/parse/utilities/create-babel-parse-error.js
+src/language-js/parse/utilities/create-parser.js
+src/language-js/parse/utilities/jsx-regexp.evaluate.js
+src/language-js/parse/utilities/replace-hashbang.js
+src/language-js/parse/utilities/source-types.js
+src/language-js/parse/utilities/wrap-babel-expression.js
+src/language-js/pragma.js
+src/language-js/print/angular.js
+src/language-js/print/array-type.js
+src/language-js/print/array.js
+src/language-js/print/arrow-function.js
+src/language-js/print/assignment.js
+src/language-js/print/binaryish.js
+src/language-js/print/bind-expression.js
+src/language-js/print/block.js
+src/language-js/print/call-arguments.js
+src/language-js/print/call-expression.js
+src/language-js/print/cast-expression.js
+src/language-js/print/class-body.js
+src/language-js/print/class.js
+src/language-js/print/comment.js
+src/language-js/print/component.js
+src/language-js/print/decorators.js
+src/language-js/print/enum.js
+src/language-js/print/estree.js
+src/language-js/print/expression-statement.js
+src/language-js/print/flow.js
+src/language-js/print/function-parameters.js
+src/language-js/print/function-type.js
+src/language-js/print/function.js
+src/language-js/print/index-signature.js
+src/language-js/print/index.js
+src/language-js/print/indexed-access-type.js
+src/language-js/print/infer-type.js
+src/language-js/print/intersection-type.js
+src/language-js/print/js-doc-type.js
+src/language-js/print/jsx.js
+src/language-js/print/literal.js
+src/language-js/print/mapped-type.js
+src/language-js/print/match.js
+src/language-js/print/member-chain.js
+src/language-js/print/member.js
+src/language-js/print/method-signature.js
+src/language-js/print/misc.js
+src/language-js/print/module-declaration.js
+src/language-js/print/module.js
+src/language-js/print/object.js
+src/language-js/print/opaque-type.js
+src/language-js/print/property.js
+src/language-js/print/rest-element.js
+src/language-js/print/rest-type.js
+src/language-js/print/statement.js
+src/language-js/print/template-literal.js
+src/language-js/print/ternary-old.js
+src/language-js/print/ternary.js
+src/language-js/print/tuple.js
+src/language-js/print/type-alias.js
+src/language-js/print/type-annotation.js
+src/language-js/print/type-assertion.js
+src/language-js/print/type-parameters.js
+src/language-js/print/type-predicate.js
+src/language-js/print/type-query.js
+src/language-js/print/typescript.js
+src/language-js/print/union-type.js
+src/language-js/printer.js
+src/language-js/semicolon/semicolon.js
+src/language-js/traverse/get-visitor-keys.js
+src/language-js/utilities/create-type-check-function.js
+src/language-js/utilities/get-raw.js
+src/language-js/utilities/get-shebang.js
+src/language-js/utilities/get-text-without-comments.js
+src/language-js/utilities/index.js
+src/language-js/utilities/is-block-comment.js
+src/language-js/utilities/is-flow-keyword-type.js
+src/language-js/utilities/is-ignored.js
+src/language-js/utilities/is-indentable-block-comment.js
+src/language-js/utilities/is-line-comment.js
+src/language-js/utilities/is-meaningful-empty-statement.js
+src/language-js/utilities/is-node-matches.js
+src/language-js/utilities/is-ts-keyword-type.js
+src/language-js/utilities/is-type-cast-comment.js
+src/language-js/utilities/vue-event-binding.js
+src/language-json/get-visitor-keys.js
+src/language-json/languages.evaluate.js
+src/language-json/parser-json.js
+src/language-json/printer-estree-json.js
+src/language-markdown/embed.js
+src/language-markdown/get-visitor-keys.js
+src/language-markdown/languages.evaluate.js
+src/language-markdown/pragma.js
+src/language-markdown/print-preprocess.js
+src/language-markdown/print-whitespace.js
+src/language-markdown/print/children.js
+src/language-markdown/print/list.js
+src/language-markdown/print/table.js
+src/language-markdown/print/word.js
+src/language-markdown/printer-markdown.js
+src/language-markdown/unified-plugins/html-to-jsx.js
+src/language-markdown/utilities.js
+src/language-yaml/get-visitor-keys.js
+src/language-yaml/languages.evaluate.js
+src/language-yaml/pragma.js
+src/language-yaml/print-preprocess.js
+src/language-yaml/print/block.js
+src/language-yaml/print/flow-mapping-sequence.js
+src/language-yaml/print/mapping-item.js
+src/language-yaml/print/misc.js
+src/language-yaml/printer-yaml.js
+src/language-yaml/utilities.js
+src/main/comments/attach.js
+src/main/comments/print.js
+src/main/comments/utilities.js
+src/main/core.js
+src/main/create-print-pre-check-function.js
+src/main/front-matter/embed.js
+src/main/get-cursor-node.js
+src/main/massage-ast.js
+src/main/normalize-format-options.js
+src/main/plugins/load-plugin.js
+src/main/utilities/get-sorted-child-nodes.js
+src/standalone.js
+src/universal/assert.browser.js
+src/universal/index.js
+src/utilities/ast.js
+src/utilities/create-get-visitor-keys.js
+src/utilities/create-group-id-mapper.js
+src/utilities/create-language.js
+src/utilities/create-mockable.js
+src/utilities/get-alignment-size.js
+src/utilities/get-indent-size.js
+src/utilities/get-interpreter.js
+src/utilities/get-max-continuous-count.js
+src/utilities/get-min-not-present-continuous-count.js
+src/utilities/get-next-non-space-non-comment-character-index.js
+src/utilities/get-next-non-space-non-comment-character.js
+src/utilities/get-preferred-quote.js
+src/utilities/get-string-width.js
+src/utilities/has-newline-in-range.js
+src/utilities/has-newline.js
+src/utilities/has-spaces.js
+src/utilities/html-whitespace.js
+src/utilities/ignore.js
+src/utilities/import-from-directory.js
+src/utilities/import-from-file.js
+src/utilities/infer-parser.js
+src/utilities/is-next-line-empty.js
+src/utilities/is-non-empty-array.js
+src/utilities/is-object.js
+src/utilities/is-previous-line-empty.js
+src/utilities/line-column-to-index.js
+src/utilities/make-string.js
+src/utilities/narrow-emojis.evaluate.js
+src/utilities/noop.js
+src/utilities/object-omit.js
+src/utilities/partition.js
+src/utilities/pragma/pragma.evaluate.js
+src/utilities/print-number.js
+src/utilities/print-string.js
+src/utilities/public.js
+src/utilities/read-file.js
+src/utilities/require-from-file.js
+src/utilities/skip-inline-comment.js
+src/utilities/skip-newline.js
+src/utilities/skip-trailing-comment.js
+src/utilities/skip.js
+src/utilities/try-combinations.js
+src/utilities/unexpected-node-error.js
+src/utilities/whitespace-utilities.js
+src/utils/html-whitespace-utils.js
+
+--- COMMIT 2dce3ec09 ---
+src/common/get-file-info.js
+
+--- COMMIT 27d6c645c ---
+src/cli/file-info.js
+src/common/get-file-info.js
+src/index.js
+
+--- COMMIT f4a7afaeb ---
+src/config/editorconfig/index.js
+src/config/resolve-config.js
+
+--- COMMIT 29a11ae1a ---
+src/language-js/print/class-body.js
+
+--- COMMIT 70493171d ---
+src/language-js/print/ternary-old.js
+
+--- COMMIT c60eca241 ---
+src/language-html/embed/attribute.js
+
+--- COMMIT 3e770b95a ---
+src/utils/make-string.js
+
+--- COMMIT 8785c6e3a ---
+src/language-markdown/print/word.js
+src/language-markdown/printer-markdown.js
+
+--- COMMIT d147f67ef ---
+src/document/printer/printer.js
+
+--- COMMIT 3a098e32d ---
+src/config/prettier-config/loaders.js
+src/index.d.ts
+src/language-css/print/parenthesized-value-group.js
+src/language-css/utils/is-scss-variable.js
+src/language-js/comments/printer-methods.js
+src/language-js/utils/index.js
+
+--- COMMIT 2bcc3c2a5 ---
+src/language-js/parse/acorn.js
+src/language-js/parse/babel.js
+src/language-js/parse/espree.js
+src/language-js/parse/meriyah.js
+src/language-js/parse/oxc.js
+src/language-js/parse/utils/source-types.js
+
+--- COMMIT a14c44f30 ---
+src/language-yaml/print/mapping-item.js
+
+--- COMMIT fad27abf3 ---
+src/language-js/parse/meriyah.js
+
+--- COMMIT 6ba133e80 ---
+src/language-js/print/class.js
+
+--- COMMIT e2ed914e0 ---
+src/language-markdown/print/children.js
+src/language-markdown/print/list.js
+src/language-markdown/printer-markdown.js
+src/language-markdown/utils.js
+
+--- COMMIT 864bb7c04 ---
+src/language-js/clean.js
+src/language-js/parse/postprocess/index.js
+src/language-js/print/call-expression.js
+src/language-js/traverse/visitor-keys.evaluate.js
+src/language-js/utils/index.js
+
+--- COMMIT 138f92764 ---
+src/language-js/clean.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT ca5c11e95 ---
+src/language-js/parse/acorn.js
+src/language-js/parse/babel.js
+src/language-js/parse/espree.js
+src/language-js/parse/meriyah.js
+src/language-js/parse/oxc.js
+src/language-js/parse/typescript.js
+src/utils/try-combinations.js
+
+--- COMMIT 1d0c666f0 ---
+src/language-js/print/estree.js
+
+--- COMMIT 9a571e44d ---
+src/language-js/print/jsx.js
+
+--- COMMIT 6fac964b4 ---
+src/language-yaml/clean.js
+src/language-yaml/printer-yaml.js
+
+--- COMMIT b79cfcf34 ---
+src/language-yaml/clean.js
+src/language-yaml/printer-yaml.js
+src/language-yaml/utils.js
+
+--- COMMIT 9f2fad7aa ---
+src/language-js/comments/handle-comments.js
+
+--- COMMIT 238c66f36 ---
+src/language-js/print/member.js
+
+--- COMMIT 97079ee03 ---
+src/language-js/comments/printer-methods.js
+
+--- COMMIT 8c02a9f31 ---
+src/language-js/parse/oxc.js
+
+--- COMMIT 5e82e9a82 ---
+src/language-css/print/comma-separated-value-group.js
+
+--- COMMIT 35718f299 ---
+src/language-js/print/member.js
+
+--- COMMIT 81859299b ---
+src/language-js/comments/handle-comments.js
+
+--- COMMIT 18c0f26be ---
+src/common/ast-path.js
+src/language-css/printer-postcss.js
+
+--- COMMIT 48b4ff97a ---
+src/document/printer/printer.js
+
+--- COMMIT 3b8e7960c ---
+src/language-js/comments/handle-comments.js
+
+--- COMMIT 439fc2259 ---
+src/language-js/print/class.js
+
+--- COMMIT 0273e33fc ---
+src/cli/find-cache-file.js
+
+--- COMMIT 8b05533e7 ---
+src/utils/get-max-continuous-count.js
+
+--- COMMIT 5e19f43eb ---
+src/utils/make-string.js
+src/utils/print-string.js
+src/utils/public.js
+
+--- COMMIT 8d29f18fe ---
+src/language-js/print/class.js
+src/language-js/print/type-parameters.js
+
+--- COMMIT 4c4792fe6 ---
+src/language-js/print/binaryish.js
+
+--- COMMIT b9dc50402 ---
+src/language-js/comments/printer-methods.js
+src/language-js/print/class.js
+
+--- COMMIT 40d4bb181 ---
+src/language-js/print/jsx.js
+
+--- COMMIT 2af5dc0a6 ---
+src/language-graphql/visitor-keys.js
+
+--- COMMIT 9e9f65e7b ---
+src/language-js/parse/postprocess/index.js
+
+--- COMMIT 5bc3cd61c ---
+src/language-js/print/class.js
+
+--- COMMIT beecab8e2 ---
+src/language-graphql/printer-graphql.js
+src/language-graphql/visitor-keys.js
+
+--- COMMIT 50fec8025 ---
+src/language-graphql/visitor-keys.js
+
+--- COMMIT 6c92f7ea5 ---
+src/language-js/print/binaryish.js
+
+--- COMMIT 17e0c79cc ---
+src/document/printer/printer.js
+
+--- COMMIT fb66c7dfc ---
+src/language-js/print/array.js
+
+--- COMMIT c7e151237 ---
+src/config/prettier-config/loaders.js
+src/document/printer/printer.js
+src/document/printer/trim-indentation.js
+
+--- COMMIT b87311a7c ---
+src/document/printer/printer.js
+src/document/printer/trim-indentation.js
+
+--- COMMIT bf95d3cdb ---
+src/document/builders/align.js
+src/document/utilities/assert-doc.js
+
+--- COMMIT 9d667ffa3 ---
+src/document/printer/printer.js
+
+--- COMMIT 1ec06bd62 ---
+src/document/builders/index.js
+src/document/builders/line.js
+src/document/utilities/assert-doc.js
+src/document/utilities/get-doc-type.js
+src/document/utilities/traverse-doc.js
+
+--- COMMIT 01ce26582 ---
+src/document/builders.js
+src/document/builders/align.js
+src/document/builders/break-parent.js
+src/document/builders/cursor.js
+src/document/builders/fill.js
+src/document/builders/group.js
+src/document/builders/if-break.js
+src/document/builders/indent-if-break.js
+src/document/builders/indent.js
+src/document/builders/index.js
+src/document/builders/join.js
+src/document/builders/label.js
+src/document/builders/line-suffix-boundary.js
+src/document/builders/line-suffix.js
+src/document/builders/line.js
+src/document/builders/trim.js
+src/document/builders/types.js
+src/document/constants.js
+src/document/debug.js
+src/document/index.js
+src/document/printer/indent.js
+src/document/printer/printer.js
+src/document/public.js
+src/document/utilities/assert-doc.js
+src/document/utilities/get-doc-type.js
+src/document/utilities/index.js
+src/document/utilities/invalid-doc-error.js
+src/document/utilities/traverse-doc.js
+src/language-css/print/comma-separated-value-group.js
+src/language-css/print/parenthesized-value-group.js
+src/language-css/print/sequence.js
+src/language-css/printer-postcss.js
+src/language-graphql/print/description.js
+src/language-graphql/printer-graphql.js
+src/language-handlebars/printer-glimmer.js
+src/language-html/embed.js
+src/language-html/embed/angular-attributes.js
+src/language-html/embed/angular-interpolation.js
+src/language-html/embed/attribute.js
+src/language-html/embed/permissions-policy.js
+src/language-html/embed/print-vue-script-generic-attribute-value.js
+src/language-html/embed/srcset.js
+src/language-html/embed/utils.js
+src/language-html/embed/vue-attributes.js
+src/language-html/embed/vue-bindings.js
+src/language-html/embed/vue-v-for-directive.js
+src/language-html/print/angular-control-flow-block.js
+src/language-html/print/angular-icu-expression.js
+src/language-html/print/children.js
+src/language-html/print/element.js
+src/language-html/print/tag.js
+src/language-html/printer-html.js
+src/language-html/utils/index.js
+src/language-js/embed/css.js
+src/language-js/embed/graphql.js
+src/language-js/embed/html.js
+src/language-js/embed/index.js
+src/language-js/embed/markdown.js
+src/language-js/print/angular.js
+src/language-js/print/array.js
+src/language-js/print/arrow-function.js
+src/language-js/print/assignment.js
+src/language-js/print/binaryish.js
+src/language-js/print/block.js
+src/language-js/print/call-arguments.js
+src/language-js/print/call-expression.js
+src/language-js/print/cast-expression.js
+src/language-js/print/class-body.js
+src/language-js/print/class.js
+src/language-js/print/comment.js
+src/language-js/print/component.js
+src/language-js/print/decorators.js
+src/language-js/print/estree.js
+src/language-js/print/flow.js
+src/language-js/print/function-parameters.js
+src/language-js/print/function.js
+src/language-js/print/hook.js
+src/language-js/print/html-binding.js
+src/language-js/print/index.js
+src/language-js/print/jsx.js
+src/language-js/print/literal.js
+src/language-js/print/mapped-type.js
+src/language-js/print/match.js
+src/language-js/print/member-chain.js
+src/language-js/print/member.js
+src/language-js/print/misc.js
+src/language-js/print/module.js
+src/language-js/print/object.js
+src/language-js/print/statement.js
+src/language-js/print/template-literal.js
+src/language-js/print/ternary-old.js
+src/language-js/print/ternary.js
+src/language-js/print/type-annotation.js
+src/language-js/print/type-parameters.js
+src/language-js/print/typescript.js
+src/language-json/printer-estree-json.js
+src/language-markdown/embed.js
+src/language-markdown/print-paragraph.js
+src/language-markdown/print-sentence.js
+src/language-markdown/print-whitespace.js
+src/language-markdown/print/table.js
+src/language-markdown/printer-markdown.js
+src/language-yaml/embed.js
+src/language-yaml/print/block.js
+src/language-yaml/print/flow-mapping-sequence.js
+src/language-yaml/print/mapping-item.js
+src/language-yaml/print/misc.js
+src/language-yaml/printer-yaml.js
+src/main/ast-to-doc.js
+src/main/comments/print.js
+src/main/core.js
+src/main/front-matter/embed.js
+src/main/multiparser.js
+
+--- COMMIT a313ca0b8 ---
+src/common/end-of-line.js
+src/document/printer/indent.js
+src/document/printer/printer.js
+src/document/public.js
+src/language-js/print/template-literal.js
+src/language-markdown/print/table.js
+src/main/core.js
+
+--- COMMIT 5f3ea6c48 ---
+src/language-js/print/assignment.js
+src/language-js/print/type-annotation.js
+src/language-js/utils/index.js
+
+--- COMMIT 1c2ef1f0d ---
+src/utils/skip-newline.js
+
+--- COMMIT e3884fcc7 ---
+src/main/ast-to-doc.js
+
+--- COMMIT 3bc46da96 ---
+src/language-js/needs-parens.js
+
+--- COMMIT 48100c323 ---
+src/language-js/comments/printer-methods.js
+
+--- COMMIT d548a8768 ---
+src/language-js/comments/printer-methods.js
+src/language-js/print/jsx.js
+
+--- COMMIT 1a3d44379 ---
+src/language-js/comments/printer-methods.js
+src/language-js/print/type-annotation.js
+
+--- COMMIT 528638031 ---
+src/language-js/comments/printer-methods.js
+src/language-js/print/cast-expression.js
+src/language-js/utils/index.js
+
+--- COMMIT 7d3ff5d2f ---
+src/language-js/comments/handle-comments.js
+
+--- COMMIT 062ab1060 ---
+src/language-js/comments/printer-methods.js
+
+--- COMMIT fd8c3909c ---
+src/main/comments/attach.js
+src/main/range.js
+src/main/utilities/get-sorted-child-nodes.js
+
+--- COMMIT 03e6828bf ---
+src/language-css/clean.js
+src/language-css/embed.js
+src/language-css/parser-postcss.js
+src/language-css/pragma.js
+src/language-css/print/sequence.js
+src/language-css/printer-postcss.js
+src/language-css/visitor-keys.js
+src/language-handlebars/clean.js
+src/language-handlebars/embed.js
+src/language-handlebars/parser-glimmer.js
+src/language-handlebars/printer-glimmer.js
+src/language-handlebars/visitor-keys.evaluate.js
+src/language-html/clean.js
+src/language-html/embed.js
+src/language-html/parse/ast.js
+src/language-html/parse/parse.js
+src/language-html/printer-html.js
+src/language-html/utils/index.js
+src/language-html/visitor-keys.js
+src/language-js/printer.js
+src/language-markdown/clean.js
+src/language-markdown/embed.js
+src/language-markdown/pragma.js
+src/language-markdown/printer-markdown.js
+src/language-markdown/unified-plugins/front-matter.js
+src/language-markdown/visitor-keys.js
+src/main/comments/attach.js
+src/main/create-get-visitor-keys-function.js
+src/main/front-matter/clean.js
+src/main/front-matter/constants.js
+src/main/front-matter/embed.js
+src/main/front-matter/index.js
+src/main/front-matter/is-front-matter.js
+src/main/front-matter/parse.js
+src/main/front-matter/print.js
+src/main/massage-ast.js
+src/main/multiparser.js
+src/main/normalize-format-options.js
+src/main/parser-and-printer.js
+src/utils/front-matter/is-front-matter.js
+
+--- COMMIT 4d2205926 ---
+src/language-js/comments/handle-comments.js
+
+--- COMMIT e5118b265 ---
+src/language-js/comments/handle-comments.js
+src/language-js/print/jsx.js
+src/language-js/print/misc.js
+src/language-js/utils/create-type-check-function.js
+
+--- COMMIT e51ff9ad4 ---
+src/language-handlebars/clean.js
+src/language-handlebars/embed.js
+src/language-handlebars/parser-glimmer.js
+src/language-handlebars/printer-glimmer.js
+src/language-handlebars/visitor-keys.evaluate.js
+
+--- COMMIT 17cf07e68 ---
+src/language-html/utils/html-tags.evaluate.js
+
+--- COMMIT 3df17ca1b ---
+src/language-markdown/printer-markdown.js
+src/utils/get-min-not-present-continuous-count.js
+
+--- COMMIT 912342210 ---
+src/language-handlebars/embed.js
+src/language-handlebars/printer-glimmer.js
+src/language-html/embed.js
+src/language-html/utils/index.js
+src/utils/whitespace-utils.js
+
+--- COMMIT d452be5cb ---
+src/language-handlebars/printer-glimmer.js
+
+--- COMMIT 35dacd1aa ---
+src/language-handlebars/printer-glimmer.js
+
+--- COMMIT 28aca7bed ---
+src/language-css/print/comma-separated-value-group.js
+src/language-css/utils/index.js
+
+--- COMMIT 9047a40a9 ---
+src/language-html/embed/vue-v-for-directive.js
+src/language-html/print/element.js
+src/language-js/print/jsx.js
+src/language-markdown/constants.evaluate.js
+src/utils/pragma/pragma.evaluate.js
+
+--- COMMIT c93e014c2 ---
+src/language-js/print/binaryish.js
+
+--- COMMIT 12607085a ---
+src/language-js/print/class-body.js
+
+--- COMMIT 823a335a2 ---
+src/language-json/parser-json.js
+
+--- COMMIT 445074d1f ---
+src/language-js/print/class-body.js
+src/language-js/print/class.js
+src/language-js/print/flow.js
+src/language-js/print/function-parameters.js
+src/language-js/print/mapped-type.js
+src/language-js/print/object.js
+src/language-js/print/type-annotation.js
+src/language-js/print/typescript.js
+
+--- COMMIT 016226383 ---
+src/language-js/print/class.js
+src/language-js/print/type-parameters.js
+src/language-js/print/typescript.js
+
+--- COMMIT fc70e992a ---
+src/language-js/print/typescript.js
+
+--- COMMIT 7de88d638 ---
+src/language-js/print/class.js
+src/language-js/print/flow.js
+src/language-js/print/interface.js
+src/language-js/print/object.js
+src/language-js/print/typescript.js
+src/language-js/utils/index.js
+
+--- COMMIT a94d3cf45 ---
+src/language-js/print/class.js
+
+--- COMMIT d4bd42f7f ---
+src/language-js/comments/handle-comments.js
+src/language-js/comments/printer-methods.js
+
+--- COMMIT 7eb39eafc ---
+src/language-js/print/assignment.js
+
+--- COMMIT 7a20fe5c5 ---
+src/language-js/clean.js
+src/language-js/comments/printer-methods.js
+src/language-js/print/estree.js
+src/language-js/print/misc.js
+src/language-js/utils/index.js
+src/language-js/utils/is-meaningful-empty-statement.js
+
+--- COMMIT 8d567d4f7 ---
+src/language-css/clean.js
+src/language-css/print/comma-separated-value-group.js
+
+--- COMMIT db0d52cbe ---
+src/index.d.ts
+src/language-js/print/index.js
+src/language-js/printer.js
+src/main/ast-to-doc.js
+src/main/print-ignored.js
+
+--- COMMIT 561d62a21 ---
+src/language-js/comments/handle-comments.js
+
+--- COMMIT 66eaaaa69 ---
+src/language-js/print/module.js
+src/language-js/print/object.js
+src/language-js/utils/get-text-without-comments.js
+
+--- COMMIT 6a3797983 ---
+src/language-js/utils/index.js
+src/utils/ast-utils.js
+src/utils/create-get-visitor-keys.js
+
+--- COMMIT eca05c175 ---
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT cf35887b9 ---
+src/main/plugins/load-plugin.js
+
+--- COMMIT 9871b4931 ---
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 3476a69e7 ---
+src/cli/file-info.js
+src/common/get-file-info.js
+src/index.js
+
+--- COMMIT d6f7f142a ---
+src/main/plugins/load-builtin-plugins.js
+src/plugins/builtin-plugins-proxy.js
+
+--- COMMIT 0a14c4a72 ---
+src/cli/format-results-cache.js
+
+--- COMMIT 172c0051e ---
+src/main/comments/attach.js
+src/main/create-print-pre-check-function.js
+src/main/get-cursor-node.js
+src/main/massage-ast.js
+src/main/multiparser.js
+src/main/normalize-format-options.js
+
+--- COMMIT 1b9c98269 ---
+src/main/get-cursor-node.js
+
+--- COMMIT 160288e1a ---
+src/main/core.js
+src/main/range.js
+
+--- COMMIT 7930083cf ---
+src/language-markdown/printer-markdown.js
+
+--- COMMIT 0f74812b5 ---
+src/index.d.ts
+src/language-graphql/printer-graphql.js
+src/language-js/comments/handle-comments.js
+src/language-js/comments/printer-methods.js
+src/language-js/print/component.js
+src/language-js/printer.js
+src/main/comments/attach.js
+src/main/range-util.js
+
+--- COMMIT 356e7d9f5 ---
+src/language-html/parse/conditional-comment.js
+src/language-html/parse/parse.js
+src/language-html/parse/postprocess.js
+
+--- COMMIT 4061f83ad ---
+src/language-html/index.js
+src/language-html/parse/ast.js
+src/language-html/parse/conditional-comment.js
+src/language-html/parse/parse-options.js
+src/language-html/parse/parse.js
+src/language-html/parse/parsers.js
+src/language-html/parse/postprocess.js
+src/language-html/parser-html.js
+
+--- COMMIT d7a3a7626 ---
+src/language-html/ast.js
+src/language-html/clean.js
+src/language-html/conditional-comment.js
+src/language-html/embed.js
+src/language-html/get-visitor-keys.js
+src/language-html/parser-html.js
+src/language-html/print-preprocess.js
+src/language-html/print/angular-control-flow-block.js
+src/language-html/print/angular-icu-expression.js
+src/language-html/print/children.js
+src/language-html/print/element.js
+src/language-html/print/tag.js
+src/language-html/printer-html.js
+src/language-html/utils/index.js
+src/language-html/utils/is-unknown-namespace.js
+
+--- COMMIT 65d6e1808 ---
+src/language-js/types/estree.d.ts
+
+--- COMMIT 1bc979c8d ---
+src/language-html/clean.js
+src/language-html/parser-html.js
+
+--- COMMIT 5abc81f05 ---
+src/language-js/print/type-parameters.js
+
+--- COMMIT 3a3db39b3 ---
+src/language-js/comments/handle-comments.js
+
+--- COMMIT 858ace6ff ---
+src/language-js/print/binaryish.js
+src/language-js/print/call-expression.js
+src/language-js/print/class.js
+src/language-js/print/match.js
+src/language-js/print/property.js
+src/language-js/print/template-literal.js
+src/language-js/print/ternary.js
+src/language-js/print/type-annotation.js
+
+--- COMMIT 05b1a783d ---
+src/language-js/print/call-arguments.js
+src/language-js/print/call-expression.js
+src/language-js/print/typescript.js
+src/language-js/utils/index.js
+
+--- COMMIT fc7da89a5 ---
+src/language-js/print/call-expression.js
+
+--- COMMIT fbcdccbf2 ---
+src/language-js/print/estree.js
+
+--- COMMIT b703190f8 ---
+src/language-js/print/assignment.js
+src/language-js/print/call-arguments.js
+src/language-js/utils/index.js
+
+--- COMMIT b80e9fa79 ---
+src/language-js/print/estree.js
+src/language-js/print/template-literal.js
+
+--- COMMIT b85bff8d1 ---
+src/language-js/print/arrow-function.js
+src/language-js/print/call-expression.js
+src/language-js/print/function-parameters.js
+src/language-js/print/function.js
+src/language-js/print/hook.js
+src/language-js/print/member-chain.js
+src/language-js/print/misc.js
+src/language-js/print/type-annotation.js
+src/language-js/print/typescript.js
+
+--- COMMIT 7df3ed6e3 ---
+src/language-js/traverse/union-visitor-keys.js
+src/language-js/traverse/utilities.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 65d1dfb42 ---
+src/language-js/print/jsx.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT a8c033a49 ---
+src/language-js/print/hook.js
+src/language-js/print/jsx.js
+src/language-js/print/module.js
+src/language-js/print/template-literal.js
+src/language-js/print/typescript.js
+
+--- COMMIT 274b24922 ---
+src/language-js/print/class.js
+src/language-js/print/estree.js
+src/language-js/print/flow.js
+src/language-js/print/function.js
+src/language-js/print/object.js
+src/language-js/print/type-annotation.js
+src/language-js/print/typescript.js
+
+--- COMMIT 87d905e0b ---
+src/language-markdown/embed.js
+src/language-markdown/mdx.js
+src/language-markdown/printer-markdown.js
+
+--- COMMIT be48d262e ---
+src/utils/front-matter/embed.js
+
+--- COMMIT cd4207210 ---
+src/language-css/embed.js
+src/language-css/printer-postcss.js
+src/language-html/embed.js
+src/language-markdown/embed.js
+src/utils/front-matter/clean.js
+src/utils/front-matter/embed.js
+src/utils/front-matter/index.js
+src/utils/front-matter/print.js
+
+--- COMMIT 8aeb4599e ---
+src/language-yaml/utils.js
+
+--- COMMIT 73b79fd92 ---
+src/language-yaml/utils.js
+
+--- COMMIT 267518dc4 ---
+src/language-yaml/utils.js
+
+--- COMMIT c02eea0fc ---
+src/language-js/embed/css.js
+
+--- COMMIT 00e3b7f43 ---
+src/language-markdown/print-preprocess.js
+
+--- COMMIT 397572ec2 ---
+src/language-js/embed/css.js
+
+--- COMMIT dd5ca937d ---
+src/language-html/embed/event-handler.js
+src/language-html/embed/permissions-policy.js
+
+--- COMMIT e2d0ba890 ---
+src/language-html/clean.js
+src/language-html/embed/attribute.js
+src/language-html/embed/parse-permissions-policy.js
+src/language-html/embed/permissions-policy.js
+
+--- COMMIT 9e60e840d ---
+src/language-js/embed/css.js
+src/language-js/embed/graphql.js
+src/language-js/embed/html.js
+src/language-js/embed/index.js
+src/language-js/embed/markdown.js
+
+--- COMMIT be9adeb38 ---
+src/language-html/embed/angular-attributes.js
+src/language-html/embed/angular-interpolation.js
+src/language-html/embed/attribute.js
+src/language-html/embed/class-names.js
+src/language-html/embed/event-handler.js
+src/language-html/embed/srcset.js
+src/language-html/embed/style.js
+src/language-html/embed/vue-attributes.js
+
+--- COMMIT 11540f637 ---
+src/language-html/embed/attribute.js
+
+--- COMMIT aa556151e ---
+src/language-html/embed/angular-attributes.js
+src/language-html/embed/angular-interpolation.js
+src/language-html/embed/print-vue-script-generic-attribute-value.js
+src/language-html/embed/vue-attributes.js
+src/language-html/embed/vue-bindings.js
+
+--- COMMIT 904b01471 ---
+src/language-js/parse/oxc.js
+
+--- COMMIT cfd85ee1b ---
+src/language-css/parse/parse-selector.js
+
+--- COMMIT 80a016b0f ---
+src/language-js/parse/babel.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 6437b6dad ---
+src/language-js/clean.js
+src/language-js/parse/babel.js
+src/language-js/parse/postprocess/index.js
+src/language-js/parse/postprocess/visit-node.js
+src/language-js/parse/utils/create-babel-parse-error.js
+src/language-js/print/assignment.js
+src/language-js/print/object.js
+src/language-js/print/template-literal.js
+src/language-js/print/type-annotation.js
+src/language-js/print/typescript.js
+src/language-js/utils/index.js
+src/language-js/utils/is-node-matches.js
+
+--- COMMIT 21e98808a ---
+src/language-css/clean.js
+src/language-css/embed.js
+src/language-css/parser-postcss.js
+src/language-css/pragma.js
+src/language-css/print/sequence.js
+src/language-html/clean.js
+src/language-html/embed.js
+src/language-html/parser-html.js
+src/language-html/utils/index.js
+src/language-markdown/clean.js
+src/language-markdown/embed.js
+src/language-markdown/pragma.js
+src/language-markdown/unified-plugins/front-matter.js
+src/utils/front-matter/index.js
+
+--- COMMIT 67329f410 ---
+src/document/utils/assert-doc.js
+src/language-html/print/tag.js
+src/language-js/parse/postprocess/index.js
+src/language-js/print/flow.js
+src/language-js/print/function.js
+src/language-js/utils/get-text-without-comments.js
+src/language-markdown/utils.js
+src/main/comments/attach.js
+src/main/create-print-pre-check-function.js
+src/main/range-util.js
+src/universal/assert.browser.js
+src/universal/assert.js
+src/universal/index.browser.js
+src/universal/index.js
+src/utils/create-language.js
+src/utils/infer-parser.js
+src/utils/narrow-emojis.evaluate.js
+src/utils/noop.js
+src/utils/print-string.js
+src/utils/universal-to-path.js
+
+--- COMMIT 07007103d ---
+src/language-css/loc.js
+src/language-graphql/loc.js
+src/language-handlebars/loc.js
+src/language-html/loc.js
+src/language-markdown/loc.js
+src/language-yaml/loc.js
+
+--- COMMIT 857b38001 ---
+src/config/editorconfig/editorconfig-to-prettier.js
+
+--- COMMIT e48f0eaf7 ---
+src/language-js/parse/postprocess/index.js
+src/language-js/parse/postprocess/visit-node.js
+
+--- COMMIT b35ef6a54 ---
+src/language-css/pragma.js
+src/language-graphql/pragma.js
+src/language-html/pragma.js
+src/language-markdown/clean.js
+src/language-markdown/pragma.js
+src/language-yaml/pragma.js
+src/utils/pragma/pragma.evaluate.js
+
+--- COMMIT 4ec2648e6 ---
+src/language-css/clean.js
+src/language-css/embed.js
+src/language-css/parser-postcss.js
+src/language-html/clean.js
+src/language-html/embed.js
+src/language-html/parser-html.js
+src/language-markdown/clean.js
+src/language-markdown/printer-markdown.js
+src/language-markdown/unified-plugins/front-matter.js
+src/utils/front-matter/clean.js
+src/utils/front-matter/parse.js
+src/utils/front-matter/print.js
+
+--- COMMIT 6df61307b ---
+src/language-html/embed/angular-attributes.js
+src/language-html/embed/vue-attributes.js
+
+--- COMMIT e1f0bdceb ---
+src/language-html/clean.js
+
+--- COMMIT c88587592 ---
+src/language-html/clean.js
+
+--- COMMIT 85e1c89e3 ---
+src/language-html/clean.js
+
+--- COMMIT 6ec66d80f ---
+src/language-js/print/semicolon.js
+
+--- COMMIT 72cfa18a4 ---
+src/language-html/embed/attribute.js
+src/language-html/embed/class-names.js
+src/language-html/embed/event-handler.js
+src/language-html/embed/style.js
+src/language-js/print/expression-statement.js
+src/language-js/print/semicolon.js
+
+--- COMMIT b7b2b0d43 ---
+src/language-js/print/object.js
+
+--- COMMIT 29622cc4f ---
+src/language-js/parse/angular.js
+src/language-js/print/angular.js
+
+--- COMMIT c9df58f5f ---
+src/language-graphql/parser-graphql.js
+src/language-handlebars/embed.js
+src/language-handlebars/parser-glimmer.js
+src/language-html/conditional-comment.js
+src/language-html/embed/angular-attributes.js
+src/language-html/embed/srcset.js
+src/language-html/print-preprocess.js
+src/language-js/embed/css.js
+src/language-js/embed/graphql.js
+src/language-js/embed/html.js
+src/language-js/embed/markdown.js
+src/language-js/parse/hermes.js
+src/language-js/print/jsx.js
+src/language-js/print/literal.js
+src/language-json/printer-estree-json.js
+src/language-markdown/mdx.js
+src/language-yaml/printer-yaml.js
+
+--- COMMIT 808505e90 ---
+src/language-js/parse/babel.js
+
+--- COMMIT fc3565dbd ---
+src/language-js/parse/oxc.js
+
+--- COMMIT a5296b3d7 ---
+src/language-js/print/call-expression.js
+src/language-js/utils/index.js
+src/language-js/utils/is-node-matches.js
+
+--- COMMIT 1664b5da2 ---
+src/language-css/printer-postcss.js
+src/language-css/utils/index.js
+
+--- COMMIT 669891bb0 ---
+src/language-html/constants.evaluate.js
+
+--- COMMIT 94b9a058e ---
+src/language-yaml/printer-yaml.js
+
+--- COMMIT 892430cee ---
+src/language-css/parser-postcss.js
+
+--- COMMIT 99cd3d742 ---
+src/utils/get-string-width.js
+src/utils/narrow-emojis.evaluate.js
+
+--- COMMIT 5067313d6 ---
+src/language-js/print/call-arguments.js
+src/language-js/print/call-expression.js
+src/language-js/print/misc.js
+src/language-js/print/typescript.js
+
+--- COMMIT afd57d324 ---
+src/index.d.ts
+src/main/parse.js
+
+--- COMMIT 0e4baf561 ---
+src/config/prettier-config/config-searcher.js
+
+--- COMMIT 1520a5887 ---
+src/language-js/print/binaryish.js
+
+--- COMMIT 479a54de6 ---
+src/language-js/needs-parens.js
+
+--- COMMIT c0f194c26 ---
+src/language-json/languages.evaluate.js
+
+--- COMMIT 5e93f1caa ---
+src/language-css/utils/index.js
+
+--- COMMIT 8643c8ff8 ---
+src/language-graphql/printer-graphql.js
+src/language-html/print/children.js
+src/language-js/print/comment.js
+src/language-markdown/printer-markdown.js
+
+--- COMMIT d64bd760e ---
+src/cli/options/normalize-cli-options.js
+src/cli/prettier-internal.js
+src/index.js
+
+--- COMMIT 4df75d090 ---
+src/language-js/print/call-arguments.js
+
+--- COMMIT 7e3288f4c ---
+src/language-js/utils/index.js
+
+--- COMMIT 53b83f205 ---
+src/language-css/clean.js
+src/language-css/print/misc.js
+
+--- COMMIT 0261517f7 ---
+src/language-js/parse/babel.js
+
+--- COMMIT 454a9cc45 ---
+src/language-css/parser-postcss.js
+
+--- COMMIT 1c18b7183 ---
+src/language-css/clean.js
+
+--- COMMIT fcf5b82cd ---
+src/language-handlebars/printer-glimmer.js
+
+--- COMMIT f25615390 ---
+src/language-css/clean.js
+src/language-css/print/misc.js
+
+--- COMMIT f25665273 ---
+src/language-css/parser-postcss.js
+
+--- COMMIT 1ff6e4c75 ---
+src/utils/get-string-width.js
+
+--- COMMIT f43b781b8 ---
+src/language-html/constants.evaluate.js
+
+--- COMMIT e30c8e618 ---
+src/language-js/print/type-annotation.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 95ef24d1f ---
+src/language-js/parse/babel.js
+src/language-js/print/estree.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT acd25a9aa ---
+src/language-js/comments/handle-comments.js
+src/language-js/comments/printer-methods.js
+src/language-js/needs-parens.js
+src/language-js/parse/flow.js
+src/language-js/parse/hermes.js
+src/language-js/print/array.js
+src/language-js/print/block.js
+src/language-js/print/flow.js
+src/language-js/print/jsx.js
+src/language-js/print/match.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 034f826e1 ---
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT d49d64c28 ---
+src/language-js/parse/oxc.js
+
+--- COMMIT 7c186a195 ---
+src/language-js/parse/babel.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 46526b49b ---
+src/language-markdown/printer-markdown.js
+
+--- COMMIT 37f6e0958 ---
+src/utils/get-interpreter.js
+
+--- COMMIT 4292cbf2e ---
+src/language-js/parse/oxc.js
+
+--- COMMIT 0926587a5 ---
+src/language-js/parse/oxc.js
+
+--- COMMIT 93bc1dfd0 ---
+src/language-js/parse/babel.js
+
+--- COMMIT e0055d2f0 ---
+src/language-js/print/call-arguments.js
+src/language-js/print/object.js
+
+--- COMMIT 84ee9016b ---
+src/language-js/print/jsx.js
+
+--- COMMIT 2e608cd8f ---
+src/language-yaml/print/mapping-item.js
+
+--- COMMIT 8d53e726a ---
+src/index.d.ts
+src/language-js/needs-parens.js
+
+--- COMMIT dd8d59b98 ---
+src/language-js/print/call-arguments.js
+
+--- COMMIT 7a91dc4a5 ---
+src/language-js/parse/espree.js
+
+--- COMMIT d63e3c301 ---
+src/language-js/parse/oxc.js
+
+--- COMMIT 17cdff607 ---
+src/language-js/parse/meriyah.js
+
+--- COMMIT ee90bbb75 ---
+src/language-js/parse/meriyah.js
+
+--- COMMIT 3b0f33539 ---
+src/language-js/parse/espree.js
+
+--- COMMIT 1bcdc07ac ---
+src/language-json/parser-json.js
+
+--- COMMIT 98b7dd03a ---
+src/language-js/parse/acorn.js
+
+--- COMMIT 079aebf8b ---
+src/language-js/parse/acorn.js
+src/language-js/parse/babel.js
+src/language-js/parse/oxc.js
+src/language-js/parse/postprocess/index.js
+src/language-js/parse/postprocess/merge-nestled-jsdoc-comments.js
+
+--- COMMIT 86fc1c109 ---
+src/language-js/parse/oxc.js
+
+--- COMMIT 80a3b919e ---
+src/index.d.ts
+src/language-css/languages.evaluate.js
+src/language-graphql/languages.evaluate.js
+src/language-handlebars/languages.evaluate.js
+src/language-html/languages.evaluate.js
+src/language-js/languages.evaluate.js
+src/language-json/languages.evaluate.js
+src/language-markdown/languages.evaluate.js
+src/language-yaml/languages.evaluate.js
+src/utils/create-language.js
+
+--- COMMIT b95cb103d ---
+src/language-js/parse/postprocess/index.js
+src/language-js/print/comment.js
+src/language-js/utils/is-indentable-block-comment.js
+
+--- COMMIT 7fb987541 ---
+src/utils/infer-parser.js
+
+--- COMMIT d49444352 ---
+src/cli/file-info.js
+src/common/get-file-info.js
+src/index.js
+
+--- COMMIT eaa40aa26 ---
+src/language-js/parse/acorn.js
+src/language-js/parse/babel.js
+src/language-js/parse/oxc.js
+src/language-js/parse/postprocess/index.js
+src/language-js/utils/is-type-cast-comment.js
+
+--- COMMIT 4d226d016 ---
+src/language-js/parse/utils/create-babel-parse-error.js
+src/language-json/parser-json.js
+
+--- COMMIT 276331902 ---
+src/language-html/utils/index.js
+
+--- COMMIT d9b33d299 ---
+src/language-css/print/misc.js
+
+--- COMMIT d8ab2b1f6 ---
+src/cli/format.js
+
+--- COMMIT 9f472a2a0 ---
+src/language-css/printer-postcss.js
+
+--- COMMIT 4bb056842 ---
+src/language-markdown/printer-markdown.js
+
+--- COMMIT 0f553baff ---
+src/language-js/print/object.js
+
+--- COMMIT 4df0a871c ---
+src/language-js/comments/printer-methods.js
+src/language-js/parse/flow.js
+src/language-js/parse/hermes.js
+src/language-js/parse/oxc.js
+src/language-js/parse/postprocess/index.js
+src/language-js/parse/typescript.js
+src/language-js/parse/utils/create-babel-parse-error.js
+src/main/range-util.js
+
+--- COMMIT f037a2674 ---
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 8e75fde18 ---
+src/language-js/parse/acorn.js
+src/language-js/parse/babel.js
+src/language-js/parse/espree.js
+src/language-js/parse/meriyah.js
+src/language-js/parse/oxc.js
+src/language-js/parse/typescript.js
+src/language-js/parse/utils/get-source-type.js
+src/language-js/parse/utils/jsx-regexp.evaluate.js
+src/language-js/parse/utils/source-types.js
+
+--- COMMIT 242b524eb ---
+src/language-js/print/function.js
+
+--- COMMIT 9e814108c ---
+src/language-js/comments/printer-methods.js
+src/language-js/parse/oxc.js
+src/language-js/parse/postprocess/index.js
+src/language-js/print/property.js
+src/language-js/utils/is-line-comment.js
+src/main/range-util.js
+
+--- COMMIT 3c1475b1e ---
+src/language-js/clean.js
+src/language-js/parse/postprocess/index.js
+src/language-js/print/enum.js
+src/language-js/print/flow.js
+src/language-js/print/object.js
+src/language-js/print/typescript.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 230bba53a ---
+src/language-js/parse/babel.js
+
+--- COMMIT a93038343 ---
+src/language-js/parse/oxc.js
+
+--- COMMIT c26d23c95 ---
+src/language-js/comments/printer-methods.js
+src/language-js/parse/oxc.js
+src/language-js/print/property.js
+src/main/range-util.js
+src/utils/try-combinations.js
+
+--- COMMIT abb43bf28 ---
+src/cli/index.js
+
+--- COMMIT a358006a9 ---
+src/language-js/clean.js
+src/language-js/comments/handle-comments.js
+src/language-js/parse/postprocess/index.js
+src/language-js/print/mapped-type.js
+src/language-js/print/type-parameters.js
+src/language-js/print/typescript.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 2604b3eeb ---
+src/language-html/embed.js
+src/language-html/utils/index.js
+
+--- COMMIT 441cb1e13 ---
+src/language-js/print/estree.js
+src/language-js/print/template-literal.js
+
+--- COMMIT bba5dc430 ---
+src/cli/format-results-cache.js
+
+--- COMMIT a5c6425b7 ---
+src/index.js
+src/main/core.js
+
+--- COMMIT b6aedcc37 ---
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT a962dfefa ---
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT cd2dc87d2 ---
+src/language-js/parse/flow.js
+src/language-js/parse/postprocess/index.js
+src/language-js/utils/is-line-comment.js
+
+--- COMMIT c2ad588ec ---
+src/language-js/parse/acorn.js
+src/language-js/parse/babel.js
+src/language-js/parse/espree.js
+src/language-js/parse/flow.js
+src/language-js/parse/meriyah.js
+src/language-js/parse/postprocess/index.js
+src/language-js/parse/typescript.js
+src/language-json/parser-json.js
+src/main/ast-to-doc.js
+
+--- COMMIT 2e78cb583 ---
+src/language-js/clean.js
+src/language-js/parse/acorn.js
+src/language-js/parse/babel.js
+src/language-js/parse/postprocess/index.js
+
+--- COMMIT 275fc2eb6 ---
+src/index.d.ts
+src/utils/infer-parser.js
+src/utils/universal-to-path.js
+
+--- COMMIT d75b21f4b ---
+src/index.js
+src/main/core.js
+
+--- COMMIT 2349a6ee6 ---
+src/language-js/print/assignment.js
+src/language-js/utils/index.js
+
+--- COMMIT b5378edee ---
+src/language-js/print/member-chain.js
+
+--- COMMIT 953a8cc6d ---
+src/cli/logger.js
+
+--- COMMIT 98a06cd5b ---
+src/language-js/needs-parens.js
+src/language-js/print/literal.js
+
+--- COMMIT d932cf70d ---
+src/language-js/parse/babel.js
+src/language-json/parser-json.js
+src/plugins/babel.js
+
+--- COMMIT 8f666df19 ---
+src/language-json/languages.evaluate.js
+src/language-yaml/languages.evaluate.js
+
+--- COMMIT d4fd92e26 ---
+src/experimental-cli/constants.evaluate.js
+src/experimental-cli/index.js
+src/experimental-cli/worker.js
+
+--- COMMIT 59c635b93 ---
+src/language-html/parser-html.js
+
+--- COMMIT 906565775 ---
+src/language-html/embed.js
+src/language-html/print-preprocess.js
+src/language-html/print/element.js
+src/language-html/utils/index.js
+
+--- COMMIT 38dc5dee1 ---
+src/config/prettier-config/loaders.js
+src/plugins/yaml.js
+
+--- COMMIT eaeb1e7c0 ---
+src/config/find-project-root.js
+src/config/prettier-config/config-searcher.js
+src/config/prettier-config/index.js
+src/config/searcher.js
+src/utils/is-directory.js
+src/utils/is-file.js
+
+--- COMMIT 45d349837 ---
+src/language-html/parser-html.js
+src/language-html/utils/html-tag-names.evaluate.js
+src/language-html/utils/html-tags.evaluate.js
+
+--- COMMIT d3332e06d ---
+src/language-css/loc.js
+src/language-css/print/comma-separated-value-group.js
+
+--- COMMIT c84b1a119 ---
+src/language-html/print/tag.js
+
+--- COMMIT e7202d63e ---
+src/cli/format.js
+src/cli/index.js
+src/cli/is-tty.js
+src/cli/logger.js
+src/cli/mockable.js
+src/cli/prettier-internal.js
+src/cli/utilities/clear-stream-text.js
+src/common/mockable.js
+src/index.js
+src/utils/create-mockable.js
+
+--- COMMIT 369817b61 ---
+src/cli/format.js
+src/common/mockable.js
+
+--- COMMIT a8557aa6d ---
+src/cli/format.js
+src/common/mockable.js
+
+--- COMMIT 21c6f4361 ---
+src/index.d.ts
+src/language-css/parser-postcss.js
+src/language-css/pragma.js
+src/language-graphql/parser-graphql.js
+src/language-graphql/pragma.js
+src/language-html/parser-html.js
+src/language-html/pragma.js
+src/language-js/parse/utils/create-parser.js
+src/language-js/pragma.js
+src/language-json/parser-json.js
+src/language-markdown/clean.js
+src/language-markdown/parser-markdown.js
+src/language-markdown/pragma.js
+src/language-yaml/parser-yaml.js
+src/language-yaml/pragma.js
+src/main/core-options.evaluate.js
+src/main/core.js
+src/utils/pragma/pragma.evaluate.js
+
+--- COMMIT b289ecbb1 ---
+src/language-js/clean.js
+src/language-js/comments/handle-comments.js
+src/language-js/embed/utils.js
+src/language-js/needs-parens.js
+src/language-js/parse/babel.js
+src/language-js/print/array.js
+src/language-js/print/arrow-function.js
+src/language-js/print/binaryish.js
+src/language-js/print/call-arguments.js
+src/language-js/print/estree.js
+src/language-js/print/function-parameters.js
+src/language-js/print/jsx.js
+src/language-js/print/object.js
+src/language-js/print/typescript.js
+src/language-js/traverse/visitor-keys.evaluate.js
+src/language-js/utils/index.js
+
+--- COMMIT 4b2db262b ---
+src/index.cjs
+src/index.js
+src/main/version.evaluate.cjs
+src/main/version.evaluate.js
+src/standalone.js
+
+--- COMMIT bd959e175 ---
+src/language-css/print/comma-separated-value-group.js
+
+--- COMMIT aa1462e42 ---
+src/config/prettier-config/load-external-config.js
+
+--- COMMIT 969714446 ---
+--- COMMIT c93393c0b ---
+src/cli/file-info.js
+src/cli/format.js
+src/index.d.ts
+src/utils/infer-parser.js
+
+--- COMMIT 7e892c461 ---
+src/cli/directory-ignorer.js
+src/cli/expand-patterns.js
+
+--- COMMIT d94700c70 ---
+src/utils/infer-parser.js
+
+--- COMMIT b3d1f8cdc ---
+src/index.d.ts
+src/language-html/languages.evaluate.js
+src/language-html/parser-html.js
+src/main/core-options.evaluate.js
+src/plugins/builtin-plugins-proxy.js
+
+--- COMMIT db1a46aac ---
+src/config/prettier-config/loaders.js
+
+--- COMMIT f3486cfbc ---
+src/language-js/print/angular.js
+
+--- COMMIT 9282520e0 ---
+src/language-graphql/pragma.js
+src/language-html/pragma.js
+src/language-js/pragma.js
+src/language-yaml/pragma.js
+src/utils/pragma/pragma.evaluate.js
+
+--- COMMIT fe536ff6b ---
+src/cli/file-info.js
+src/cli/print-support-info.js
+
+--- COMMIT 1b4a63c11 ---
+src/language-handlebars/printer-glimmer.js
+src/language-js/print/array.js
+src/language-js/print/arrow-function.js
+src/language-js/print/binaryish.js
+src/language-js/print/component.js
+src/language-js/print/enum.js
+src/language-js/print/estree.js
+src/language-js/print/flow.js
+src/language-js/print/function-parameters.js
+src/language-js/print/function.js
+src/language-js/print/hook.js
+src/language-js/print/template-literal.js
+src/language-js/print/type-annotation.js
+src/language-js/print/typescript.js
+src/language-yaml/print/block.js
+src/language-yaml/print/flow-mapping-sequence.js
+src/language-yaml/print/mapping-item.js
+src/language-yaml/printer-yaml.js
+
+--- COMMIT f406c9cab ---
+src/cli/find-cache-file.js
+
+--- COMMIT 91c563e32 ---
+src/language-markdown/print-preprocess.js
+
+--- COMMIT e51310d79 ---
+src/main/comments/attach.js
+
+--- COMMIT 5d8337e8e ---
+src/language-js/print/estree.js
+src/language-json/parser-json.js
+src/main/comments/attach.js
+
+--- COMMIT 959ec0048 ---
+src/language-handlebars/parser-glimmer.js
+
+--- COMMIT 13fbc5bff ---
+src/language-js/parse/espree.js
+src/language-js/parse/flow.js
+src/language-js/parse/postprocess/index.js
+src/language-js/parse/typescript.js
+
+--- COMMIT c58cf7ab5 ---
+src/language-markdown/constants.evaluate.js
+
+--- COMMIT 2b3710d80 ---
+src/main/ast-to-doc.js
+src/main/multiparser.js
+
+--- COMMIT 6968a93b2 ---
+src/document/utils.js
+
+--- COMMIT 39e9cabdf ---
+src/main/core.js
+
+--- COMMIT ac434f9ea ---
+src/document/debug.js
+
+--- COMMIT 568593a79 ---
+src/language-js/print/property.js
+
+--- COMMIT 0acd1cdff ---
+src/cli/format.js
+src/cli/logger.js
+src/cli/options/normalize-cli-options.js
+src/cli/prettier-internal.js
+src/index.js
+
+--- COMMIT c118e9db8 ---
+src/cli/cli-options.evaluate.js
+src/cli/format.js
+src/cli/logger.js
+src/cli/options/normalize-cli-options.js
+
+--- COMMIT 40a04dd21 ---
+src/language-js/needs-parens.js
+src/language-js/print/arrow-function.js
+src/language-js/print/estree.js
+
+--- COMMIT edbc835c9 ---
+src/language-js/print/binaryish.js
+src/language-js/print/type-annotation.js
+
+--- COMMIT 6a3c132be ---
+src/language-js/needs-parens.js
+
+--- COMMIT 43d4f962f ---
+src/language-js/comments/handle-comments.js
+src/language-js/needs-parens.js
+src/language-js/print/ternary.js
+src/language-js/print/type-annotation.js
+src/language-js/utils/index.js
+
+--- COMMIT 9dac37c60 ---
+src/cli/format.js
+
+--- COMMIT 1c616b292 ---
+src/language-js/languages.evaluate.js
+
+--- COMMIT 00645bcee ---
+src/language-js/needs-parens.js
+
+--- COMMIT 9eb1b341c ---
+src/language-html/print/tag.js
+src/language-js/comments/handle-comments.js
+src/language-js/loc.js
+src/language-js/parse/postprocess/index.js
+src/language-js/print/comment.js
+src/language-js/print/flow.js
+src/language-js/print/jsx.js
+src/language-js/print/module.js
+src/language-js/print/property.js
+src/language-js/utils/get-raw.js
+src/language-js/utils/index.js
+src/language-js/utils/is-line-comment.js
+
+--- COMMIT 9bff2daa5 ---
+src/language-js/comments/handle-comments.js
+
+--- COMMIT ff3b78521 ---
+src/language-js/print/call-arguments.js
+src/language-js/print/typescript.js
+src/language-js/utils/index.js
+
+--- COMMIT 73d26d777 ---
+src/language-js/needs-parens.js
+
+--- COMMIT ff3bb5088 ---
+src/language-js/needs-parens.js
+src/language-js/print/estree.js
+src/language-js/print/function.js
+
+--- COMMIT e01a08448 ---
+src/language-markdown/printer-markdown.js
+
+--- COMMIT ff7544227 ---
+src/common/get-file-info.js
+
+--- COMMIT 5dc7e8e54 ---
+src/config/resolve-config.js
+src/index.d.ts
+
+--- COMMIT e830ad36a ---
+src/index.d.ts
+src/main/plugins/load-plugin.js
+
+--- COMMIT 9cbc88f7a ---
+--- COMMIT 533dc8659 ---
+src/language-html/print/tag.js
+src/language-js/utils/get-text-without-comments.js
+src/language-markdown/utils.js
+src/utils/print-string.js
+
+--- COMMIT 64e7dab1f ---
+src/index.d.ts
+src/main/multiparser.js
+src/standalone.d.ts
+
+--- COMMIT 61c0129ce ---
+src/cli/format-results-cache.js
+
+--- COMMIT 9cf8ec23f ---
+src/language-yaml/languages.evaluate.js
+
+--- COMMIT 92ac6d036 ---
+src/index.d.ts
+
+--- COMMIT c13bfc75f ---
+src/config/prettier-config/loaders.js
+
+--- COMMIT eecb82dbc ---
+src/index.cjs
+
+--- COMMIT 97d8115d1 ---
+src/document/builders.js
+src/document/utils.js
+src/document/utils/assert-doc.js
+src/language-js/print/jsx.js
+
+--- COMMIT 10b25eecb ---
+src/utils/ignore.js
+
+--- COMMIT 36460be18 ---
+src/cli/format-results-cache.js
+
+--- COMMIT bef1d61a7 ---
+src/common/common-options.evaluate.js
+src/index.d.ts
+src/language-js/options.js
+src/language-js/print/mapped-type.js
+src/language-js/print/object.js
+
+--- COMMIT bbb65180e ---
+src/utils/ignore.js
+
+--- COMMIT a962a26ba ---
+src/cli/format-results-cache.js
+
+--- COMMIT c9726b96d ---
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 8e8260e53 ---
+src/language-html/ast.js
+src/language-html/print-preprocess.js
+src/language-html/print/angular-icu-expression.js
+src/language-html/printer-html.js
+
+--- COMMIT fc8d5b9f9 ---
+src/utils/ignore.js
+
+--- COMMIT eed53fc29 ---
+src/language-js/options.js
+src/language-js/print/binaryish.js
+src/language-js/print/type-annotation.js
+
+--- COMMIT 84de783ce ---
+src/config/prettier-config/config-searcher.js
+src/config/prettier-config/loaders.js
+src/index.d.ts
+
+--- COMMIT 66a77da2c ---
+src/language-html/embed/vue-attributes.js
+
+--- COMMIT a7ddbdb89 ---
+src/language-css/print/parenthesized-value-group.js
+
+--- COMMIT 730770e29 ---
+src/config/prettier-config/load-external-config.js
+
+--- COMMIT 0015a83d9 ---
+src/language-js/print/type-parameters.js
+
+--- COMMIT ed94e9415 ---
+src/language-handlebars/clean.js
+src/language-handlebars/embed.js
+src/language-handlebars/printer-glimmer.js
+
+--- COMMIT 88c210e84 ---
+src/language-markdown/constants.evaluate.js
+
+--- COMMIT 572bebe2d ---
+src/language-js/comments/handle-comments.js
+
+--- COMMIT e13614ffd ---
+src/document/printer.js
+
+--- COMMIT 10db357c5 ---
+src/language-js/print/typescript.js
+
+--- COMMIT ac46a4f16 ---
+src/language-markdown/constants.evaluate.js
+
+--- COMMIT f6fccadbc ---
+src/language-js/needs-parens.js
+
+--- COMMIT a3ba53729 ---
+src/config/prettier-config/load-external-config.js
+
+--- COMMIT c7066780e ---
+src/language-html/print/tag.js
+
+--- COMMIT 2c8440ebe ---
+src/language-js/traverse/visitor-keys.evaluate.js
+src/language-js/utils/index.js
+
+--- COMMIT 51d943abc ---
+src/language-js/comments/printer-methods.js
+src/language-js/print/call-arguments.js
+src/language-js/print/estree.js
+src/language-js/traverse/visitor-keys.evaluate.js
+src/language-js/utils/index.js
+
+--- COMMIT dc8df0ab8 ---
+src/language-markdown/constants.evaluate.js
+
+--- COMMIT 6b582a061 ---
+src/utils/print-string.js
+
+--- COMMIT c5648f7df ---
+src/language-js/parse/babel.js
+
+--- COMMIT 0260ed8bd ---
+src/language-js/print/typescript.js
+
+--- COMMIT 891dd331e ---
+src/language-js/parse/babel.js
+
+--- COMMIT c10d7d14f ---
+src/language-js/comments/handle-comments.js
+
+--- COMMIT fe4302d98 ---
+src/language-html/embed/vue-attributes.js
+src/language-html/embed/vue-bindings.js
+src/language-js/print/expression-statement.js
+src/language-js/print/semicolon.js
+src/language-js/utils/vue-event-binding.js
+
+--- COMMIT 02200375b ---
+src/language-js/print/class.js
+
+--- COMMIT d973283c1 ---
+src/language-js/print/class.js
+
+--- COMMIT b19139acb ---
+src/language-js/parse/typescript.js
+src/language-js/parse/utils/get-source-type.js
+
+--- COMMIT fb8661fee ---
+src/config/prettier-config/loaders.js
+
+--- COMMIT 0a4c1e303 ---
+src/language-markdown/print-whitespace.js
+src/language-markdown/utils.js
+
+--- COMMIT 43feccbf3 ---
+src/language-css/parse/parse-value.js
+src/language-css/print/comma-separated-value-group.js
+
+--- COMMIT 973f3b594 ---
+src/language-css/parser-postcss.js
+
+--- COMMIT db8c67e28 ---
+src/common/end-of-line.js
+src/language-markdown/printer-markdown.js
+
+--- COMMIT ab00c1c91 ---
+src/language-js/parse/babel.js
+src/language-js/print/module.js
+
+--- COMMIT 962360420 ---
+src/language-html/parser-html.js
+
+--- COMMIT 1ce5eeea7 ---
+src/language-yaml/print/mapping-item.js
+
+--- COMMIT 834786591 ---
+src/cli/expand-patterns.js
+src/cli/format-results-cache.js
+src/cli/utils.js
+src/language-css/print/comma-separated-value-group.js
+src/language-handlebars/printer-glimmer.js
+src/language-html/embed/attribute.js
+src/language-html/embed/print-vue-script-generic-attribute-value.js
+src/language-html/embed/srcset.js
+src/language-html/embed/utils.js
+src/language-html/embed/vue-attributes.js
+src/language-html/embed/vue-bindings.js
+src/language-html/embed/vue-v-for-directive.js
+src/language-html/parser-html.js
+src/language-html/print/tag.js
+src/language-html/printer-html.js
+src/language-html/utils/index.js
+src/language-js/comments/handle-comments.js
+src/language-js/comments/printer-methods.js
+src/language-js/loc.js
+src/language-js/needs-parens.js
+src/language-js/parse/acorn.js
+src/language-js/parse/babel.js
+src/language-js/parse/espree.js
+src/language-js/parse/typescript.js
+src/language-js/print/angular.js
+src/language-js/print/array.js
+src/language-js/print/arrow-function.js
+src/language-js/print/assignment.js
+src/language-js/print/binaryish.js
+src/language-js/print/block.js
+src/language-js/print/class.js
+src/language-js/print/component.js
+src/language-js/print/estree.js
+src/language-js/print/flow.js
+src/language-js/print/function-parameters.js
+src/language-js/print/function.js
+src/language-js/print/hook.js
+src/language-js/print/index.js
+src/language-js/print/interface.js
+src/language-js/print/jsx.js
+src/language-js/print/literal.js
+src/language-js/print/member-chain.js
+src/language-js/print/misc.js
+src/language-js/print/module.js
+src/language-js/print/object.js
+src/language-js/print/statement.js
+src/language-js/print/ternary-old.js
+src/language-js/print/ternary.js
+src/language-js/print/type-annotation.js
+src/language-js/print/type-parameters.js
+src/language-js/utils/create-type-check-function.js
+src/language-js/utils/index.js
+src/language-js/utils/is-block-comment.js
+src/language-js/utils/is-node-matches.js
+src/language-js/utils/is-type-cast-comment.js
+src/language-markdown/mdx.js
+src/language-markdown/print-paragraph.js
+src/language-markdown/print-sentence.js
+src/language-markdown/print-whitespace.js
+src/language-markdown/printer-markdown.js
+src/language-markdown/unified-plugins/front-matter.js
+src/language-markdown/unified-plugins/liquid.js
+src/language-markdown/unified-plugins/wiki-link.js
+src/language-yaml/print/block.js
+src/language-yaml/print/mapping-item.js
+src/language-yaml/printer-yaml.js
+src/main/comments/attach.js
+src/main/comments/print.js
+src/main/multiparser.js
+src/main/normalize-options.js
+src/main/support.js
+src/utils/has-newline.js
+src/utils/has-spaces.js
+src/utils/infer-parser.js
+src/utils/make-string.js
+src/utils/print-string.js
+src/utils/skip-newline.js
+
+--- COMMIT e3b8a16c7 ---
+src/language-js/parse/babel.js
+
+--- COMMIT 07b468917 ---
+src/cli/cli-options.evaluate.js
+src/cli/constants.evaluate.js
+src/cli/expand-patterns.js
+src/cli/file-info.js
+src/cli/find-cache-file.js
+src/cli/find-config-path.js
+src/cli/format-results-cache.js
+src/cli/format.js
+src/cli/logger.js
+src/cli/options/get-context-options.js
+src/cli/options/get-options-for-file.js
+src/cli/options/normalize-cli-options.js
+src/cli/options/parse-cli-arguments.js
+src/cli/print-support-info.js
+src/cli/usage.js
+src/cli/utils.js
+src/common/mockable.js
+src/config/editorconfig/index.js
+src/config/find-project-root.js
+src/config/prettier-config/index.js
+src/config/prettier-config/load-config.js
+src/config/prettier-config/loaders.js
+src/config/resolve-config.js
+src/config/searcher.js
+src/index.js
+src/language-css/languages.evaluate.js
+src/language-css/parse/parse-media-query.js
+src/language-css/parse/parse-selector.js
+src/language-css/parse/parse-value.js
+src/language-css/parser-postcss.js
+src/language-graphql/languages.evaluate.js
+src/language-graphql/parser-graphql.js
+src/language-handlebars/languages.evaluate.js
+src/language-handlebars/parser-glimmer.js
+src/language-html/embed/srcset.js
+src/language-html/languages.evaluate.js
+src/language-html/parser-html.js
+src/language-html/print-preprocess.js
+src/language-html/print/tag.js
+src/language-js/languages.evaluate.js
+src/language-js/parse/acorn.js
+src/language-js/parse/angular.js
+src/language-js/parse/babel.js
+src/language-js/parse/espree.js
+src/language-js/parse/flow.js
+src/language-js/parse/meriyah.js
+src/language-js/parse/typescript.js
+src/language-js/pragma.js
+src/language-js/print/flow.js
+src/language-js/print/function.js
+src/language-js/print/property.js
+src/language-js/traverse/visitor-keys.evaluate.js
+src/language-js/utils/get-text-without-comments.js
+src/language-json/languages.evaluate.js
+src/language-json/parser-json.js
+src/language-markdown/clean.js
+src/language-markdown/languages.evaluate.js
+src/language-markdown/parser-markdown.js
+src/language-markdown/printer-markdown.js
+src/language-markdown/utils.js
+src/language-yaml/languages.evaluate.js
+src/language-yaml/parser-yaml.js
+src/main/comments/attach.js
+src/main/core-options.evaluate.js
+src/main/core.js
+src/main/parse.js
+src/main/plugins/load-plugin.js
+src/main/range-util.js
+src/utils/get-interpreter.js
+src/utils/ignore.js
+src/utils/import-from-directory.js
+src/utils/import-from-file.js
+src/utils/is-directory.js
+src/utils/is-file.js
+src/utils/read-file.js
+
+--- COMMIT 4b9c16703 ---
+src/language-js/clean.js
+src/language-js/parse/babel.js
+src/language-js/print/literal.js
+src/language-js/traverse/visitor-keys.evaluate.js
+src/language-js/utils/index.js
+
+--- COMMIT 72b1ebb09 ---
+src/language-html/parser-html.js
+
+--- COMMIT d28d40ac0 ---
+src/document/printer.js
+src/document/public.d.ts
+src/language-js/print/jsx.js
+src/main/ast-to-doc.js
+src/main/core.js
+src/main/get-cursor-node.js
+src/utils/ast-utils.js
+
+--- COMMIT a4be6a0fd ---
+src/language-markdown/print-preprocess.js
+
+--- COMMIT 47fc261aa ---
+src/cli/format.js
+
+--- COMMIT 6168d1e99 ---
+src/language-markdown/printer-markdown.js
+
+--- COMMIT 5bb04801a ---
+src/cli/expand-patterns.js
+
+--- COMMIT 1bb69dfd1 ---
+src/language-js/parse/postprocess/index.js
+
+--- COMMIT d2c415dea ---
+src/language-js/parse/meriyah.js
+
+--- COMMIT e0117a165 ---
+src/cli/utils.js
+src/config/prettier-config/loaders.js
+src/document/utils.js
+src/index.js
+src/language-css/utils/index.js
+src/language-css/utils/stringify-node.js
+src/language-html/print/tag.js
+src/language-html/utils/index.js
+src/language-js/embed/utils.js
+src/language-js/print/comment.js
+src/language-js/print/decorators.js
+src/main/range-util.js
+
+--- COMMIT 3fd32a025 ---
+src/language-css/print/comma-separated-value-group.js
+src/language-css/print/parenthesized-value-group.js
+src/language-css/printer-postcss.js
+
+--- COMMIT 537e56adb ---
+--- COMMIT 5cd15f216 ---
+src/language-css/print/parenthesized-value-group.js
+
+--- COMMIT 206792ef6 ---
+src/language-html/printer-html.js
+
+--- COMMIT c921abee7 ---
+src/document/printer.js
+
+--- COMMIT 92253a3f4 ---
+src/language-js/comments/handle-comments.js
+
+--- COMMIT f675f9f3c ---
+src/language-js/print/arrow-function.js
+
+--- COMMIT f7cceb9be ---
+src/language-js/comments/handle-comments.js
+
+--- COMMIT bd3ad84c2 ---
+src/language-js/comments/handle-comments.js
+
+--- COMMIT 1dfe28f85 ---
+src/language-css/printer-postcss.js
+
+--- COMMIT 3cf3f5ac2 ---
+src/index.d.ts
+src/utils/get-preferred-quote.js
+src/utils/public.js
+
+--- COMMIT 44a35adfa ---
+src/utils/print-string.js
+
+--- COMMIT 77dead370 ---
+src/language-js/print/member-chain.js
+
+--- COMMIT e977d65b1 ---
+src/language-markdown/printer-markdown.js
+
+--- COMMIT 4a39c117d ---
+src/language-js/needs-parens.js
+
+--- COMMIT c60eb83d5 ---
+src/document/printer.js
+
+--- COMMIT 407f1a005 ---
+src/config/prettier-config/loaders.js
+
+--- COMMIT 06ece395b ---
+src/language-html/constants.evaluate.js
+
+--- COMMIT 060ef1b2a ---
+src/language-css/parser-postcss.js
+
+--- COMMIT 9102b73d8 ---
+src/language-js/needs-parens.js
+
+--- COMMIT 5ca2fc9be ---
+src/language-html/clean.js
+src/language-html/embed.js
+src/language-html/parser-html.js
+src/language-html/printer-html.js
+src/language-html/visitor-keys.js
+
+--- COMMIT bfcfdccdf ---
+src/language-js/needs-parens.js
+src/language-js/parse/babel.js
+
+--- COMMIT abab7e02c ---
+src/language-markdown/print-preprocess.js
+src/language-markdown/utils.js
+
+--- COMMIT 988b43b72 ---
+src/language-js/needs-parens.js
+src/language-js/utils/index.js
+
+--- COMMIT 09b32a4ec ---
+src/language-css/printer-postcss.js
+src/language-css/utils/index.js
+
+--- COMMIT 35cc36ccb ---
+src/common/ast-path.js
+src/language-html/embed/attribute.js
+src/language-html/embed/vue-attributes.js
+src/language-js/needs-parens.js
+src/language-js/print/call-expression.js
+src/language-js/print/type-parameters.js
+src/language-js/utils/index.js
+
+--- COMMIT 90f27a845 ---
+src/index.js
+src/main/core.js
+
+--- COMMIT 6d265ec10 ---
+src/main/range-util.js
+
+--- COMMIT f3c2dbda8 ---
+src/index.d.ts
+
+--- COMMIT c03a12ad2 ---
+src/cli/context.js
+src/cli/format.js
+src/cli/logger.js
+src/cli/usage.js
+src/common/end-of-line.js
+src/document/utils.js
+src/language-css/clean.js
+src/language-css/loc.js
+src/language-css/parse/parse-selector.js
+src/language-css/parse/parse-value.js
+src/language-css/parser-postcss.js
+src/language-css/print/misc.js
+src/language-css/printer-postcss.js
+src/language-css/utils/index.js
+src/language-css/utils/is-scss-nested-property-node.js
+src/language-graphql/pragma.js
+src/language-graphql/printer-graphql.js
+src/language-handlebars/parser-glimmer.js
+src/language-handlebars/printer-glimmer.js
+src/language-handlebars/utils.js
+src/language-html/conditional-comment.js
+src/language-html/constants.evaluate.js
+src/language-html/embed.js
+src/language-html/embed/angular-attributes.js
+src/language-html/embed/angular-control-flow-block-parameters.js
+src/language-html/embed/angular-interpolation.js
+src/language-html/embed/attribute.js
+src/language-html/embed/class-names.js
+src/language-html/embed/vue-bindings.js
+src/language-html/embed/vue-v-for-directive.js
+src/language-html/parser-html.js
+src/language-html/pragma.js
+src/language-html/print-preprocess.js
+src/language-html/print/element.js
+src/language-html/print/tag.js
+src/language-html/printer-html.js
+src/language-html/utils/index.js
+src/language-js/clean.js
+src/language-js/comments/printer-methods.js
+src/language-js/embed/css.js
+src/language-js/embed/graphql.js
+src/language-js/embed/html.js
+src/language-js/embed/markdown.js
+src/language-js/needs-parens.js
+src/language-js/parse/acorn.js
+src/language-js/parse/babel.js
+src/language-js/parse/meriyah.js
+src/language-js/parse/typescript.js
+src/language-js/print/angular.js
+src/language-js/print/estree.js
+src/language-js/print/jsx.js
+src/language-js/print/member-chain.js
+src/language-js/print/property.js
+src/language-js/print/template-literal.js
+src/language-js/print/type-parameters.js
+src/language-js/utils/is-type-cast-comment.js
+src/language-markdown/clean.js
+src/language-markdown/constants.evaluate.js
+src/language-markdown/mdx.js
+src/language-markdown/pragma.js
+src/language-markdown/print-preprocess.js
+src/language-markdown/printer-markdown.js
+src/language-markdown/unified-plugins/liquid.js
+src/language-markdown/unified-plugins/wiki-link.js
+src/language-markdown/utils.js
+src/language-yaml/embed.js
+src/language-yaml/pragma.js
+src/language-yaml/print/mapping-item.js
+src/language-yaml/printer-yaml.js
+src/language-yaml/utils.js
+src/main/comments/attach.js
+src/main/core.js
+src/main/range-util.js
+src/utils/front-matter/parse.js
+src/utils/get-indent-size.js
+src/utils/get-interpreter.js
+src/utils/get-max-continuous-count.js
+src/utils/get-min-not-present-continuous-count.js
+src/utils/get-string-width.js
+src/utils/infer-parser.js
+src/utils/make-string.js
+src/utils/print-number.js
+src/utils/skip.js
+src/utils/whitespace-utils.js
+
+--- COMMIT 1b981ad6e ---
+--- COMMIT d6daeec0a ---
+src/language-markdown/constants.evaluate.js
+src/language-markdown/printer-markdown.js
+
+--- COMMIT ccde7ca26 ---
+src/language-markdown/constants.evaluate.js
+src/language-markdown/utils.js
+
+--- COMMIT df8604b51 ---
+src/language-js/parse/typescript.js
+
+--- COMMIT 8f33827a5 ---
+src/language-js/clean.js
+src/language-js/print/assignment.js
+src/language-js/print/call-arguments.js
+src/language-js/print/class.js
+src/language-js/print/estree.js
+src/language-js/print/template-literal.js
+src/language-js/print/type-annotation.js
+src/language-js/print/typescript.js
+src/language-js/traverse/visitor-keys.evaluate.js
+src/language-js/utils/index.js
+
+--- COMMIT 32c4cd3fd ---
+src/language-js/parse/babel.js
+
+--- COMMIT c3d0b7f41 ---
+src/language-js/parse/babel.js
+src/language-js/print/block.js
+
+--- COMMIT adcbc8bed ---
+src/language-handlebars/clean.js
+src/language-handlebars/printer-glimmer.js
+src/language-handlebars/visitor-keys.evaluate.js
+
+--- COMMIT 16e4de477 ---
+src/utils/front-matter/parse.js
+src/utils/front-matter/print.js
+
+--- COMMIT d8d4732e5 ---
+src/language-js/parse/meriyah.js
+
+--- COMMIT efc3d053a ---
+src/language-js/print/assignment.js
+
+--- COMMIT 4a5b26f91 ---
+src/language-js/print/assignment.js
+src/main/range-util.js
+
+--- COMMIT 450b178d5 ---
+src/language-handlebars/printer-glimmer.js
+
+--- COMMIT b94811f98 ---
+src/document/utils.js
+
+--- COMMIT 590644170 ---
+src/language-css/clean.js
+src/utils/front-matter/parse.js
+src/utils/front-matter/print.js
+
+--- COMMIT b26f56bd3 ---
+src/cli/expand-patterns.js
+src/language-graphql/printer-graphql.js
+src/language-handlebars/printer-glimmer.js
+src/language-js/embed/html.js
+src/language-js/print/template-literal.js
+src/language-markdown/mdx.js
+src/language-markdown/printer-markdown.js
+src/language-yaml/printer-yaml.js
+src/main/core-options.evaluate.js
+src/utils/front-matter/parse.js
+
+--- COMMIT 8a88cdce6 ---
+src/language-html/embed.js
+src/language-html/embed/angular-attributes.js
+src/language-html/embed/angular-control-flow-block-parameters.js
+src/language-html/embed/angular-interpolation.js
+src/language-js/print/call-arguments.js
+
+--- COMMIT 41f1dffed ---
+src/language-markdown/printer-markdown.js
+
+--- COMMIT fb9f2c177 ---
+src/language-js/print/type-annotation.js
+
+--- COMMIT 5a5157742 ---
+src/language-js/print/array.js
+
+--- COMMIT 26f1cd924 ---
+src/language-js/print/call-expression.js
+
+--- COMMIT 55181669c ---
+src/language-js/parse/babel.js
+
+--- COMMIT da772ff1f ---
+src/config/prettier-config/config-searcher.js
+src/config/prettier-config/load-config.js
+src/config/prettier-config/loaders.js
+
+--- COMMIT 105bb7bef ---
+src/language-js/print/enum.js
+src/language-js/print/flow.js
+src/language-js/print/object.js
+
+--- COMMIT 36bdf9554 ---
+src/language-handlebars/clean.js
+src/language-handlebars/printer-glimmer.js
+src/language-handlebars/visitor-keys.evaluate.js
+
+--- COMMIT 5ceeccf38 ---
+src/document/printer.js
+
+--- COMMIT 063978a59 ---
+src/document/utils.js
+src/language-markdown/print-paragraph.js
+src/language-markdown/print-sentence.js
+src/language-markdown/printer-markdown.js
+
+--- COMMIT ae8dcc48f ---
+src/language-js/comments/handle-comments.js
+src/language-js/needs-parens.js
+src/language-js/parse/flow.js
+src/language-js/print/block.js
+src/language-js/print/component.js
+src/language-js/print/flow.js
+src/language-js/print/function-parameters.js
+src/language-js/print/hook.js
+src/language-js/print/misc.js
+src/language-js/print/module.js
+src/language-js/print/type-annotation.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 48c9bc4ae ---
+src/language-js/needs-parens.js
+
+--- COMMIT d970deed6 ---
+src/language-markdown/print-paragraph.js
+src/language-markdown/printer-markdown.js
+
+--- COMMIT f62bf4a19 ---
+src/language-js/embed/utils.js
+
+--- COMMIT d50a4e463 ---
+src/language-js/print/template-literal.js
+src/language-js/utils/index.js
+
+--- COMMIT 41baabd62 ---
+src/language-js/clean.js
+
+--- COMMIT 3ba739618 ---
+src/main/parser-and-printer.js
+
+--- COMMIT a8d9536ee ---
+src/cli/format.js
+src/cli/prettier-internal.js
+src/index.js
+src/main/core.js
+
+--- COMMIT 765fd0823 ---
+src/language-js/utils/index.js
+
+--- COMMIT 765aa10df ---
+src/language-js/print/class.js
+
+--- COMMIT 28a537ef2 ---
+src/language-js/parse/typescript.js
+
+--- COMMIT be0fcc7d9 ---
+src/language-js/clean.js
+
+--- COMMIT 5a946f4c5 ---
+src/language-js/print/jsx.js
+src/language-js/print/property.js
+src/language-js/utils/index.js
+
+--- COMMIT c4af35552 ---
+src/language-js/print/property.js
+
+--- COMMIT 57fdd9a78 ---
+src/language-js/utils/index.js
+
+--- COMMIT 2576e1186 ---
+src/language-js/print/call-arguments.js
+
+--- COMMIT 4aebc0ecc ---
+src/cli/format.js
+
+--- COMMIT f4b3b7b1e ---
+src/language-js/needs-parens.js
+src/language-js/print/flow.js
+
+--- COMMIT a9bb9ebaf ---
+src/main/core-options.evaluate.js
+src/main/normalize-options.js
+
+--- COMMIT 06c9d77bc ---
+src/language-js/utils/index.js
+
+--- COMMIT 99bc9d0b6 ---
+src/language-js/print/property.js
+
+--- COMMIT 7ceb185ee ---
+src/language-js/print/class.js
+src/language-js/print/property.js
+src/language-js/utils/index.js
+
+--- COMMIT a642ecb37 ---
+src/language-js/clean.js
+src/language-js/print/estree.js
+src/language-js/print/property.js
+src/language-js/utils/index.js
+
+--- COMMIT b7a2241cb ---
+src/language-js/needs-parens.js
+
+--- COMMIT e7cfd62d7 ---
+src/language-js/parse/babel.js
+
+--- COMMIT d170b8f31 ---
+src/utils/print-number.js
+
+--- COMMIT a6b0a1fb0 ---
+src/language-markdown/print/table.js
+src/language-markdown/printer-markdown.js
+
+--- COMMIT d467987b4 ---
+src/language-js/comments/handle-comments.js
+src/language-js/print/block.js
+src/language-js/print/estree.js
+
+--- COMMIT d49781f48 ---
+src/language-js/print/estree.js
+
+--- COMMIT 384e2b495 ---
+src/document/printer.js
+src/document/utils.js
+src/language-css/print/parenthesized-value-group.js
+src/language-js/print/binaryish.js
+
+--- COMMIT 76b8f9506 ---
+src/index.d.ts
+src/language-css/clean.js
+src/language-graphql/printer-graphql.js
+src/language-handlebars/clean.js
+src/language-html/clean.js
+src/language-js/clean.js
+src/language-json/printer-estree-json.js
+src/language-markdown/clean.js
+src/language-yaml/printer-yaml.js
+src/main/massage-ast.js
+
+--- COMMIT 8cbee2e21 ---
+src/language-handlebars/clean.js
+src/language-handlebars/visitor-keys.evaluate.js
+
+--- COMMIT 9fb32a1a6 ---
+src/language-js/print/estree.js
+src/language-js/print/flow.js
+src/language-js/print/function-parameters.js
+src/language-js/print/function.js
+src/language-js/print/type-annotation.js
+src/language-js/utils/index.js
+
+--- COMMIT 014ee5d47 ---
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT cc6435cc7 ---
+src/language-json/languages.evaluate.js
+
+--- COMMIT 678de0289 ---
+src/language-js/embed/utils.js
+
+--- COMMIT 2fe7f4193 ---
+src/language-js/embed/utils.js
+
+--- COMMIT 1cd4d9c16 ---
+src/language-json/languages.evaluate.js
+
+--- COMMIT c566c9df0 ---
+src/utils/infer-parser.js
+
+--- COMMIT be1740566 ---
+src/language-js/utils/index.js
+
+--- COMMIT 10762eeaa ---
+src/language-js/print/module.js
+src/language-js/print/typescript.js
+src/language-js/utils/get-text-without-comments.js
+
+--- COMMIT 70c9c56c6 ---
+src/language-js/parse/utils/create-babel-parse-error.js
+src/language-json/parser-json.js
+
+--- COMMIT 1e1942dc4 ---
+src/language-js/parse/babel.js
+
+--- COMMIT d386ff8f7 ---
+src/language-js/print/cast-expression.js
+
+--- COMMIT 5f16b6b66 ---
+src/language-graphql/loc.js
+src/language-graphql/parser-graphql.js
+src/language-js/loc.js
+
+--- COMMIT cb8004f3f ---
+src/language-js/utils/index.js
+
+--- COMMIT 0bfcb2d5a ---
+src/language-js/embed/css.js
+
+--- COMMIT 7e862bbc4 ---
+src/language-js/utils/index.js
+
+--- COMMIT ee0d667fa ---
+src/index.d.ts
+src/utils/infer-parser.js
+
+--- COMMIT 06c7e52da ---
+src/language-js/print/angular.js
+
+--- COMMIT f31f84a68 ---
+src/index.d.ts
+
+--- COMMIT 5cae451c1 ---
+src/language-graphql/printer-graphql.js
+
+--- COMMIT 5b215c3d2 ---
+src/language-js/comments/handle-comments.js
+src/language-js/print/estree.js
+src/language-js/print/expression-statement.js
+src/language-js/utils/index.js
+
+--- COMMIT ff9c0839a ---
+src/language-js/print/call-expression.js
+src/language-js/print/member-chain.js
+src/language-js/print/member.js
+src/language-js/utils/create-type-check-function.js
+src/language-js/utils/index.js
+
+--- COMMIT 6d784f318 ---
+src/common/mockable.js
+
+--- COMMIT 84c169ecc ---
+src/language-html/print/angular-control-flow-block.js
+
+--- COMMIT 1dc924f2f ---
+src/index.d.ts
+src/language-js/print/assignment.js
+src/language-js/print/property.js
+src/language-js/utils/index.js
+src/language-json/languages.evaluate.js
+src/language-json/parser-json.js
+src/main/comments/attach.js
+src/main/core-options.evaluate.js
+src/main/range-util.js
+src/plugins/builtin-plugins-proxy.js
+src/utils/print-string.js
+
+--- COMMIT 82db5fcd0 ---
+src/language-js/print/assignment.js
+
+--- COMMIT b9d0c993b ---
+src/language-js/print/jsx.js
+src/language-js/print/statement.js
+src/main/parser-and-printer.js
+
+--- COMMIT 2c3e42ba9 ---
+src/index.d.ts
+
+--- COMMIT f913c9acc ---
+--- COMMIT 4c3cf0c1d ---
+src/config/editorconfig/index.js
+src/config/find-project-root.js
+src/config/prettier-config/config-searcher.js
+src/config/prettier-config/index.js
+src/config/searcher.js
+
+--- COMMIT bc0be70cf ---
+src/config/editorconfig/editorconfig-to-prettier.js
+src/config/editorconfig/index.js
+src/config/prettier-config/config-searcher.js
+src/config/prettier-config/index.js
+src/config/prettier-config/load-config.js
+src/config/prettier-config/load-external-config.js
+src/config/prettier-config/loaders.js
+src/config/resolve-config.js
+src/config/resolve-editorconfig.js
+
+--- COMMIT 21895286a ---
+src/main/plugins/load-plugin.js
+
+--- COMMIT 8c7ea9c7e ---
+src/config/prettier-config-explorer/loaders.js
+
+--- COMMIT 0ff9efd01 ---
+src/config/prettier-config-explorer/loaders.js
+
+--- COMMIT 02c80dce7 ---
+src/language-js/print/member-chain.js
+
+--- COMMIT 1ea2fd059 ---
+src/cli/cli-options.evaluate.js
+src/cli/constants.evaluate.js
+src/cli/expand-patterns.js
+src/cli/file-info.js
+src/cli/find-cache-file.js
+src/cli/find-config-path.js
+src/cli/format-results-cache.js
+src/cli/format.js
+src/cli/index.js
+src/cli/logger.js
+src/cli/options/get-context-options.js
+src/cli/options/get-options-for-file.js
+src/cli/options/normalize-cli-options.js
+src/cli/options/parse-cli-arguments.js
+src/cli/print-support-info.js
+src/cli/usage.js
+src/cli/utils.js
+src/common/end-of-line.js
+src/common/errors.js
+src/common/get-file-info.js
+src/common/mockable.js
+src/config/find-project-root.js
+src/config/prettier-config-explorer/config-searcher.js
+src/config/prettier-config-explorer/index.js
+src/config/prettier-config-explorer/load-config.js
+src/config/prettier-config-explorer/load-external-config.js
+src/config/prettier-config-explorer/loaders.js
+src/config/resolve-config.js
+src/config/resolve-editorconfig.js
+src/document/builders.js
+src/document/debug.js
+src/document/printer.js
+src/document/public.js
+src/document/utils.js
+src/document/utils/get-doc-type.js
+src/document/utils/traverse-doc.js
+src/index.js
+src/language-css/index.js
+src/language-css/languages.evaluate.js
+src/language-css/loc.js
+src/language-css/parse/parse-media-query.js
+src/language-css/parse/parse-selector.js
+src/language-css/parse/parse-value.js
+src/language-css/parse/utils.js
+src/language-css/parser-postcss.js
+src/language-css/print/comma-separated-value-group.js
+src/language-css/print/misc.js
+src/language-css/print/parenthesized-value-group.js
+src/language-css/print/sequence.js
+src/language-css/printer-postcss.js
+src/language-css/utils/index.js
+src/language-graphql/index.js
+src/language-graphql/languages.evaluate.js
+src/language-graphql/loc.js
+src/language-graphql/parser-graphql.js
+src/language-graphql/printer-graphql.js
+src/language-handlebars/index.js
+src/language-handlebars/languages.evaluate.js
+src/language-handlebars/loc.js
+src/language-handlebars/parser-glimmer.js
+src/language-handlebars/printer-glimmer.js
+src/language-html/constants.evaluate.js
+src/language-html/embed.js
+src/language-html/embed/angular-attributes.js
+src/language-html/embed/attribute.js
+src/language-html/embed/srcset.js
+src/language-html/embed/utils.js
+src/language-html/embed/vue-attributes.js
+src/language-html/get-node-content.js
+src/language-html/index.js
+src/language-html/languages.evaluate.js
+src/language-html/loc.js
+src/language-html/parser-html.js
+src/language-html/print-preprocess.js
+src/language-html/print/angular-control-flow-block.js
+src/language-html/print/angular-icu-expression.js
+src/language-html/print/children.js
+src/language-html/print/element.js
+src/language-html/print/tag.js
+src/language-html/printer-html.js
+src/language-html/utils/index.js
+src/language-js/clean.js
+src/language-js/comments/handle-comments.js
+src/language-js/comments/printer-methods.js
+src/language-js/embed/css.js
+src/language-js/embed/graphql.js
+src/language-js/embed/html.js
+src/language-js/embed/markdown.js
+src/language-js/embed/utils.js
+src/language-js/languages.evaluate.js
+src/language-js/loc.js
+src/language-js/needs-parens.js
+src/language-js/parse/acorn.js
+src/language-js/parse/angular.js
+src/language-js/parse/babel.js
+src/language-js/parse/espree.js
+src/language-js/parse/flow.js
+src/language-js/parse/meriyah.js
+src/language-js/parse/postprocess/index.js
+src/language-js/parse/typescript.js
+src/language-js/parse/utils/create-parser.js
+src/language-js/pragma.js
+src/language-js/print/angular.js
+src/language-js/print/array.js
+src/language-js/print/arrow-function.js
+src/language-js/print/assignment.js
+src/language-js/print/binaryish.js
+src/language-js/print/block.js
+src/language-js/print/call-arguments.js
+src/language-js/print/call-expression.js
+src/language-js/print/cast-expression.js
+src/language-js/print/class.js
+src/language-js/print/comment.js
+src/language-js/print/decorators.js
+src/language-js/print/enum.js
+src/language-js/print/estree.js
+src/language-js/print/expression-statement.js
+src/language-js/print/flow.js
+src/language-js/print/function-parameters.js
+src/language-js/print/function.js
+src/language-js/print/html-binding.js
+src/language-js/print/index.js
+src/language-js/print/interface.js
+src/language-js/print/jsx.js
+src/language-js/print/literal.js
+src/language-js/print/mapped-type.js
+src/language-js/print/member-chain.js
+src/language-js/print/member.js
+src/language-js/print/misc.js
+src/language-js/print/module.js
+src/language-js/print/object.js
+src/language-js/print/property.js
+src/language-js/print/semicolon.js
+src/language-js/print/template-literal.js
+src/language-js/print/ternary-old.js
+src/language-js/print/ternary.js
+src/language-js/print/type-annotation.js
+src/language-js/print/type-parameters.js
+src/language-js/print/typescript.js
+src/language-js/printer.js
+src/language-js/traverse/visitor-keys.evaluate.js
+src/language-js/utils/index.js
+src/language-json/languages.evaluate.js
+src/language-json/parser-json.js
+src/language-json/printer-estree-json.js
+src/language-markdown/clean.js
+src/language-markdown/embed.js
+src/language-markdown/index.js
+src/language-markdown/languages.evaluate.js
+src/language-markdown/loc.js
+src/language-markdown/mdx.js
+src/language-markdown/parser-markdown.js
+src/language-markdown/pragma.js
+src/language-markdown/print-whitespace.js
+src/language-markdown/printer-markdown.js
+src/language-markdown/unified-plugins/html-to-jsx.js
+src/language-markdown/utils.js
+src/language-yaml/index.js
+src/language-yaml/languages.evaluate.js
+src/language-yaml/loc.js
+src/language-yaml/parser-yaml.js
+src/language-yaml/pragma.js
+src/language-yaml/print/flow-mapping-sequence.js
+src/language-yaml/print/mapping-item.js
+src/language-yaml/print/misc.js
+src/language-yaml/printer-yaml.js
+src/language-yaml/utils.js
+src/main/ast-to-doc.js
+src/main/comments/attach.js
+src/main/comments/print.js
+src/main/comments/utils.js
+src/main/core-options.evaluate.js
+src/main/core.js
+src/main/multiparser.js
+src/main/parse.js
+src/main/parser-and-printer.js
+src/main/plugins/index.js
+src/main/plugins/load-plugin.js
+src/main/range-util.js
+src/plugins/builtin-plugins-proxy.js
+src/plugins/estree.js
+src/standalone.js
+src/utils/ast-utils.js
+src/utils/get-interpreter.js
+src/utils/get-next-non-space-non-comment-character-index.js
+src/utils/ignore.js
+src/utils/import-from-directory.js
+src/utils/import-from-file.js
+src/utils/is-directory.js
+src/utils/is-file.js
+src/utils/is-next-line-empty.js
+src/utils/is-previous-line-empty.js
+src/utils/public.js
+src/utils/read-file.js
+src/utils/skip.js
+
+--- COMMIT 16766138f ---
+--- COMMIT 6a6b699a4 ---
+src/language-js/comments/handle-comments.js
+src/language-js/comments/printer-methods.js
+src/language-js/print/assignment.js
+src/language-js/print/function-parameters.js
+src/language-js/print/type-annotation.js
+src/language-js/utils/index.js
+
+--- COMMIT 176ff487b ---
+src/language-js/print/type-annotation.js
+
+--- COMMIT cb6fea81f ---
+src/language-js/print/template-literal.js
+
+--- COMMIT d541f0d69 ---
+src/language-html/embed.js
+
+--- COMMIT 65e72a2ba ---
+src/language-js/print/module.js
+
+--- COMMIT ea7b1d26e ---
+--- COMMIT aaef1bc31 ---
+src/language-js/print/flow.js
+
+--- COMMIT d761a9ab9 ---
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 7ffc3cc67 ---
+src/cli/logger.js
+
+--- COMMIT 153ffd510 ---
+src/language-html/ast.js
+src/language-html/clean.js
+src/language-html/parser-html.js
+src/language-html/print/angular-icu-expression.js
+src/language-html/print/element.js
+src/language-html/print/tag.js
+src/language-html/printer-html.js
+src/language-html/visitor-keys.js
+
+--- COMMIT f80a7dc8d ---
+--- COMMIT 2c689f3e3 ---
+src/language-handlebars/printer-glimmer.js
+
+--- COMMIT 44949eb5d ---
+src/main/plugins/load-plugin.js
+
+--- COMMIT ddf223a3f ---
+src/language-js/print/ternary-old.js
+src/language-js/print/ternary.js
+
+--- COMMIT 8227c0a69 ---
+src/language-html/print/children.js
+
+--- COMMIT 224f70fb0 ---
+src/language-js/print/member-chain.js
+
+--- COMMIT c97480c9a ---
+src/language-js/print/module.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 0d1ffb3a9 ---
+src/language-js/print/ternary-old.js
+
+--- COMMIT 80f2578b1 ---
+--- COMMIT 1e30f66f3 ---
+src/index.d.ts
+src/main/core-options.evaluate.js
+src/standalone.d.ts
+
+--- COMMIT 8e816ade2 ---
+src/cli/expand-patterns.js
+
+--- COMMIT 389225527 ---
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 47ca2c155 ---
+src/language-js/print/module.js
+
+--- COMMIT 7015f10d8 ---
+src/language-js/print/module.js
+
+--- COMMIT 4c3cfa7a8 ---
+src/language-js/parse/postprocess/index.js
+src/language-js/parse/typescript.js
+src/language-js/print/module.js
+
+--- COMMIT 5f0956bc3 ---
+src/common/mockable.js
+src/config/get-prettier-config-explorer.js
+src/config/prettier-config-explorer/config-searcher.js
+src/config/prettier-config-explorer/index.js
+src/config/prettier-config-explorer/load-config.js
+src/config/prettier-config-explorer/load-external-config.js
+src/config/prettier-config-explorer/loaders.js
+src/config/resolve-config.js
+src/utils/is-file.js
+
+--- COMMIT 117c04fcc ---
+src/cli/format.js
+src/cli/is-tty.js
+src/cli/prettier-internal.js
+src/config/get-prettier-config-explorer.js
+src/index.js
+
+--- COMMIT 96e812066 ---
+src/index.js
+
+--- COMMIT 0ba2d693b ---
+src/language-js/comments/handle-comments.js
+
+--- COMMIT 8ae13c13a ---
+src/utils/ignore.js
+
+--- COMMIT 1b2109674 ---
+src/config/find-project-root.js
+src/config/resolve-editorconfig.js
+src/utils/is-directory.js
+
+--- COMMIT e4a74c05f ---
+src/cli/format.js
+src/cli/options/get-options-for-file.js
+src/config/resolve-config.js
+
+--- COMMIT 99ecf47e1 ---
+src/language-markdown/constants.evaluate.js
+src/language-markdown/printer-markdown.js
+src/language-markdown/utils.js
+
+--- COMMIT a8bf66ae6 ---
+src/common/mockable.js
+
+--- COMMIT 8158a8948 ---
+src/language-js/parse/postprocess/index.js
+
+--- COMMIT eebf0e4b5 ---
+src/cli/options/normalize-cli-options.js
+src/document/debug.js
+src/document/printer.js
+src/index.d.ts
+src/language-css/printer-postcss.js
+src/language-handlebars/printer-glimmer.js
+src/language-html/embed/utils.js
+src/language-html/print/children.js
+src/language-html/print/tag.js
+src/language-js/embed/html.js
+src/language-js/needs-parens.js
+src/language-js/print/array.js
+src/language-js/print/assignment.js
+src/language-js/print/decorators.js
+src/language-js/print/flow.js
+src/language-js/print/function.js
+src/language-js/print/jsx.js
+src/language-js/print/module.js
+src/language-js/print/object.js
+src/language-js/print/ternary-old.js
+src/language-js/print/ternary.js
+src/language-js/print/type-parameters.js
+src/language-markdown/printer-markdown.js
+src/language-yaml/utils.js
+src/main/normalize-options.js
+src/utils/print-string.js
+
+--- COMMIT 6a1d4096b ---
+src/language-css/clean.js
+src/language-css/print/misc.js
+src/language-html/constants.evaluate.js
+src/language-html/embed/vue-bindings.js
+
+--- COMMIT 52375f57e ---
+src/language-markdown/constants.evaluate.js
+src/language-markdown/utils.js
+
+--- COMMIT 250e26340 ---
+src/language-markdown/constants.evaluate.js
+src/language-markdown/utils.js
+
+--- COMMIT ff57f5064 ---
+src/language-js/print/angular.js
+
+--- COMMIT b92e4c538 ---
+src/language-html/print/angular-control-flow-block-settings.evaluate.js
+src/language-html/print/angular-control-flow-block.js
+
+--- COMMIT c433415d4 ---
+src/language-html/utils/index.js
+
+--- COMMIT 22c423933 ---
+src/language-html/clean.js
+src/language-html/embed.js
+src/language-html/embed/angular-control-flow-block-parameters.js
+src/language-html/parser-html.js
+src/language-html/print/angular-control-flow-block.js
+src/language-html/print/tag.js
+src/language-html/printer-html.js
+src/language-html/visitor-keys.js
+
+--- COMMIT cd7931f47 ---
+src/language-html/print/angular-control-flow-block-settings.evaluate.js
+src/language-html/print/angular-control-flow-block.js
+
+--- COMMIT 0176a33db ---
+src/language-html/clean.js
+src/language-html/embed.js
+src/language-html/embed/angular-control-flow-block-parameters.js
+src/language-html/parser-html.js
+src/language-html/print/angular-control-flow-block-settings.evaluate.js
+src/language-html/print/angular-control-flow-block.js
+src/language-html/print/tag.js
+src/language-html/printer-html.js
+src/language-html/visitor-keys.js
+src/language-js/print/angular.js
+
+--- COMMIT b26efbc98 ---
+src/language-json/parser-json.js
+
+--- COMMIT a97e0b948 ---
+src/language-handlebars/html-void-elements.evaluate.js
+src/language-handlebars/parser-glimmer.js
+src/language-handlebars/utils.js
+src/language-handlebars/visitor-keys.evaluate.js
+
+--- COMMIT 36d1b8b09 ---
+src/language-js/parse/utils/create-babel-parse-error.js
+
+--- COMMIT d3fbb24fb ---
+src/utils/get-string-width.js
+
+--- COMMIT 1d45bce62 ---
+src/language-js/utils/index.js
+
+--- COMMIT f852b8010 ---
+src/language-js/print/assignment.js
+
+--- COMMIT c609058fd ---
+src/language-js/needs-parens.js
+
+--- COMMIT 4aa5fd1c7 ---
+src/language-js/comments/handle-comments.js
+src/language-js/needs-parens.js
+src/language-js/options.js
+src/language-js/print/assignment.js
+src/language-js/print/estree.js
+src/language-js/print/function.js
+src/language-js/print/ternary-old.js
+src/language-js/print/ternary.js
+src/language-js/print/type-annotation.js
+
+--- COMMIT 4b432496d ---
+src/language-js/parse/babel.js
+src/language-js/print/call-expression.js
+src/language-js/print/module.js
+src/language-js/utils/index.js
+
+--- COMMIT 7e67e4306 ---
+src/cli/format.js
+
+--- COMMIT edfe46051 ---
+src/language-js/parse/babel.js
+
+--- COMMIT d4d4b185e ---
+src/language-markdown/clean.js
+src/language-markdown/printer-markdown.js
+
+--- COMMIT f4491b127 ---
+src/language-css/printer-postcss.js
+
+--- COMMIT b78d7c7d2 ---
+src/language-js/needs-parens.js
+
+--- COMMIT fa8cb8543 ---
+src/language-js/print/type-annotation.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT c140ed6b5 ---
+src/index.d.ts
+
+--- COMMIT 9f06cdd5b ---
+src/cli/expand-patterns.js
+src/cli/format.js
+
+--- COMMIT f25a592f5 ---
+src/language-js/print/ternary.js
+
+--- COMMIT 0661f78a2 ---
+src/language-markdown/print-whitespace.js
+
+--- COMMIT 6bff776ef ---
+src/language-js/print/jsx.js
+
+--- COMMIT 77310c49e ---
+src/language-js/print/assignment.js
+src/language-js/print/estree.js
+src/language-js/print/literal.js
+src/language-js/utils/index.js
+
+--- COMMIT 4169dbb87 ---
+src/language-js/comments/handle-comments.js
+
+--- COMMIT c041f3fb4 ---
+src/language-js/embed/graphql.js
+src/language-js/embed/html.js
+src/language-js/embed/utils.js
+
+--- COMMIT 675490ae5 ---
+src/language-js/needs-parens.js
+src/language-js/print/call-arguments.js
+src/language-js/print/cast-expression.js
+src/language-js/print/flow.js
+src/language-js/print/template-literal.js
+src/language-js/print/ternary.js
+src/language-js/print/typescript.js
+src/language-js/traverse/visitor-keys.evaluate.js
+src/language-js/types/estree.d.ts
+src/language-js/utils/index.js
+
+--- COMMIT 825dbe3da ---
+src/config/editorconfig-to-prettier.js
+src/config/resolve-editorconfig.js
+
+--- COMMIT 6c833b444 ---
+src/common/get-file-info.js
+src/index.d.ts
+src/utils/ignore.js
+src/utils/read-file.js
+
+--- COMMIT ae6f9ac25 ---
+src/config/editorconfig-to-prettier.js
+src/config/resolve-editorconfig.js
+
+--- COMMIT bf7d90ae8 ---
+src/language-html/constants.evaluate.js
+
+--- COMMIT 7c512651f ---
+src/language-css/print/comma-separated-value-group.js
+
+--- COMMIT 273a393d1 ---
+src/language-css/loc.js
+
+--- COMMIT c0d464f3c ---
+src/language-css/loc.js
+src/language-css/parser-postcss.js
+
+--- COMMIT 98ae58140 ---
+src/cli/index.js
+
+--- COMMIT b9a3995e3 ---
+src/common/get-file-info.js
+src/index.d.ts
+src/utils/get-interpreter.js
+src/utils/ignore.js
+src/utils/infer-parser.js
+
+--- COMMIT b2c33a4ce ---
+src/common/get-file-info.js
+src/index.d.ts
+
+--- COMMIT 7e45a9270 ---
+src/config/resolve-config.js
+src/index.d.ts
+
+--- COMMIT 56752e00e ---
+src/config/resolve-config.js
+src/index.d.ts
+
+--- COMMIT 37139afea ---
+src/cli/index.js
+
+--- COMMIT 411ef345a ---
+src/language-js/comments/handle-comments.js
+
+--- COMMIT 958b355cc ---
+src/language-js/comments/handle-comments.js
+
+--- COMMIT 7c7ab7f7a ---
+src/cli/index.js
+
+--- COMMIT 0d04d7836 ---
+src/common/mockable.js
+src/config/get-prettier-config-explorer.js
+src/config/resolve-config.js
+
+--- COMMIT 6184a1ed4 ---
+src/language-js/parse/acorn.js
+src/language-js/parse/espree.js
+src/utils/try-combinations.js
+
+--- COMMIT 094b30c06 ---
+src/cli/index.js
+
+--- COMMIT a2a4564fa ---
+src/cli/format.js
+src/cli/index.js
+
+--- COMMIT a35008fb0 ---
+src/config/load-external-config.js
+
+--- COMMIT 941c6b3a3 ---
+src/cli/expand-patterns.js
+
+--- COMMIT f6c9e9b0b ---
+src/utils/create-language.js
+
+--- COMMIT 423011dca ---
+src/cli/expand-patterns.js
+
+--- COMMIT 90fab608a ---
+src/language-js/parse/typescript.js
+src/language-markdown/embed.js
+
+--- COMMIT 347c60730 ---
+src/document/public.d.ts
+src/index.d.ts
+
+--- COMMIT f75f717c4 ---
+src/language-js/print/call-expression.js
+
+--- COMMIT 8a3e73c6c ---
+src/language-css/print/parenthesized-value-group.js
+
+--- COMMIT 06a8e377a ---
+src/language-html/embed/srcset.js
+
+--- COMMIT bf0b3040b ---
+src/language-js/print/assignment.js
+
+--- COMMIT 29854ca8d ---
+src/language-js/comments/handle-comments.js
+
+--- COMMIT 12fd8891a ---
+src/language-js/parse/postprocess/index.js
+src/language-js/parse/postprocess/throw-ts-syntax-error.js
+src/language-js/parse/postprocess/typescript.js
+src/language-js/parse/typescript.js
+src/language-js/print/function-parameters.js
+src/language-js/print/object.js
+src/language-js/print/typescript.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT e98083c84 ---
+src/index.js
+src/main/normalize-options.js
+
+--- COMMIT 2b9efd5bf ---
+src/index.d.ts
+
+--- COMMIT 9b9dbf673 ---
+src/index.d.ts
+
+--- COMMIT ceed40539 ---
+src/index.d.ts
+
+--- COMMIT 5b38f6ec4 ---
+src/language-css/print/comma-separated-value-group.js
+
+--- COMMIT 7485c45bc ---
+src/language-html/embed/print-vue-script-generic-attribute-value.js
+src/language-html/embed/vue-attributes.js
+src/language-js/print/html-binding.js
+
+--- COMMIT 8da37cce0 ---
+src/language-js/print/function.js
+
+--- COMMIT fa43afcc6 ---
+src/language-js/clean.js
+
+--- COMMIT e15c64e71 ---
+src/language-json/languages.evaluate.js
+
+--- COMMIT f24cff38d ---
+src/language-markdown/constants.evaluate.js
+
+--- COMMIT e2f4ce38f ---
+src/main/ast-to-doc.js
+
+--- COMMIT fa4841561 ---
+src/cli/expand-patterns.js
+src/cli/find-cache-file.js
+src/cli/format-results-cache.js
+src/cli/format.js
+src/cli/index.js
+src/cli/options/get-context-options.js
+src/cli/options/get-options-for-file.js
+src/cli/options/minimist.js
+src/cli/options/normalize-cli-options.js
+src/cli/options/parse-cli-arguments.js
+src/cli/print-support-info.js
+src/cli/usage.js
+src/common/ast-path.js
+src/common/get-file-info.js
+src/common/parser-create-error.js
+src/config/get-prettier-config-explorer.js
+src/config/resolve-config.js
+src/document/invalid-doc-error.js
+src/document/printer.js
+src/document/public.d.ts
+src/document/utils.js
+src/index.cjs
+src/index.d.ts
+src/index.js
+src/language-css/clean.js
+src/language-css/loc.js
+src/language-css/parse/parse-value.js
+src/language-css/parser-postcss.js
+src/language-css/print/comma-separated-value-group.js
+src/language-css/print/misc.js
+src/language-css/print/parenthesized-value-group.js
+src/language-css/printer-postcss.js
+src/language-css/utils/has-string-or-function.js
+src/language-css/utils/index.js
+src/language-css/utils/is-scss-variable.js
+src/language-graphql/printer-graphql.js
+src/language-handlebars/parser-glimmer.js
+src/language-handlebars/printer-glimmer.js
+src/language-html/ast.js
+src/language-html/conditional-comment.js
+src/language-html/constants.evaluate.js
+src/language-html/embed.js
+src/language-html/embed/angular-attributes.js
+src/language-html/embed/angular-interpolation.js
+src/language-html/embed/attribute.js
+src/language-html/embed/srcset.js
+src/language-html/embed/style.js
+src/language-html/embed/utils.js
+src/language-html/embed/vue-attributes.js
+src/language-html/embed/vue-v-for-directive.js
+src/language-html/parser-html.js
+src/language-html/print-preprocess.js
+src/language-html/print/children.js
+src/language-html/print/element.js
+src/language-html/print/tag.js
+src/language-html/printer-html.js
+src/language-html/utils/html-elements-attributes.evaluate.js
+src/language-html/utils/index.js
+src/language-html/utils/is-vue-sfc-with-typescript-script.js
+src/language-js/clean.js
+src/language-js/comments/handle-comments.js
+src/language-js/embed/css.js
+src/language-js/embed/graphql.js
+src/language-js/embed/html.js
+src/language-js/embed/markdown.js
+src/language-js/embed/utils.js
+src/language-js/needs-parens.js
+src/language-js/parse/acorn.js
+src/language-js/parse/babel.js
+src/language-js/parse/meriyah.js
+src/language-js/parse/postprocess/index.js
+src/language-js/parse/postprocess/typescript.js
+src/language-js/parse/typescript.js
+src/language-js/print/angular.js
+src/language-js/print/array.js
+src/language-js/print/arrow-function.js
+src/language-js/print/assignment.js
+src/language-js/print/binaryish.js
+src/language-js/print/call-arguments.js
+src/language-js/print/class.js
+src/language-js/print/comment.js
+src/language-js/print/decorators.js
+src/language-js/print/estree.js
+src/language-js/print/expression-statement.js
+src/language-js/print/function-parameters.js
+src/language-js/print/function.js
+src/language-js/print/interface.js
+src/language-js/print/jsx.js
+src/language-js/print/mapped-type.js
+src/language-js/print/member-chain.js
+src/language-js/print/member.js
+src/language-js/print/misc.js
+src/language-js/print/module.js
+src/language-js/print/object.js
+src/language-js/print/property.js
+src/language-js/print/semicolon.js
+src/language-js/print/template-literal.js
+src/language-js/print/ternary.js
+src/language-js/print/type-annotation.js
+src/language-js/print/type-parameters.js
+src/language-js/print/typescript.js
+src/language-js/traverse/visitor-keys.evaluate.js
+src/language-js/utils/index.js
+src/language-js/utils/is-node-matches.js
+src/language-json/parser-json.js
+src/language-json/printer-estree-json.js
+src/language-markdown/constants.evaluate.js
+src/language-markdown/embed.js
+src/language-markdown/pragma.js
+src/language-markdown/print-preprocess.js
+src/language-markdown/print-whitespace.js
+src/language-markdown/printer-markdown.js
+src/language-markdown/utils.js
+src/language-yaml/print/block.js
+src/language-yaml/print/flow-mapping-sequence.js
+src/language-yaml/print/mapping-item.js
+src/language-yaml/printer-yaml.js
+src/language-yaml/utils.js
+src/language-yaml/visitor-keys.js
+src/main/ast-to-doc.js
+src/main/comments/attach.js
+src/main/comments/print.js
+src/main/comments/utils.js
+src/main/core.js
+src/main/create-print-pre-check-function.js
+src/main/get-cursor-node.js
+src/main/multiparser.js
+src/main/normalize-format-options.js
+src/main/normalize-options.js
+src/main/parse.js
+src/main/plugins/load-plugin.js
+src/main/range-util.js
+src/main/support.js
+src/standalone.d.ts
+src/standalone.js
+src/utils/create-get-visitor-keys.js
+src/utils/front-matter/parse.js
+src/utils/get-indent-size.js
+src/utils/get-max-continuous-count.js
+src/utils/get-min-not-present-continuous-count.js
+src/utils/has-newline.js
+src/utils/has-spaces.js
+src/utils/ignore.js
+src/utils/infer-parser.js
+src/utils/object-omit.js
+src/utils/print-string.js
+src/utils/public.js
+src/utils/unexpected-node-error.js
+src/utils/whitespace-utils.js
+
+--- COMMIT 1a0d9ed80 ---
+src/config/get-prettier-config-explorer.js
+
+--- COMMIT 25fa483e3 ---
+src/language-html/parser-html.js
+
+--- COMMIT ff7b02519 ---
+src/language-js/comments/handle-comments.js
+
+--- COMMIT fcb66949c ---
+src/language-js/print/binaryish.js
+
+--- COMMIT 6e6b16771 ---
+src/cli/utils.js
+src/config/get-prettier-config-explorer.js
+src/config/load-external-config.js
+src/language-css/parser-postcss.js
+src/language-js/parse/acorn.js
+src/language-js/parse/babel.js
+src/language-js/parse/espree.js
+src/language-js/parse/meriyah.js
+src/language-js/parse/typescript.js
+src/language-json/parser-json.js
+src/language-markdown/mdx.js
+src/language-markdown/parser-markdown.js
+src/language-markdown/unified-plugins/front-matter.js
+src/language-markdown/unified-plugins/liquid.js
+src/language-markdown/unified-plugins/wiki-link.js
+src/language-yaml/parser-yaml.js
+src/utils/read-file.js
+
+--- COMMIT 54586e00b ---
+src/cli/format.js
+src/common/errors.js
+
+--- COMMIT f4d1c0763 ---
+src/plugins/builtin-plugins-proxy.js
+
+--- COMMIT 7ad852636 ---
+src/language-js/parse/babel.js
+src/language-js/print/module.js
+
+--- COMMIT 6cff2148a ---
+src/language-js/print/type-parameters.js
+
+--- COMMIT 8f0e93436 ---
+src/language-js/print/call-arguments.js
+
+--- COMMIT 9b19afda8 ---
+src/language-js/print/object.js
+
+--- COMMIT c0f6f2da8 ---
+src/cli/format.js
+
+--- COMMIT 22bfc5db3 ---
+src/language-js/comments/handle-comments.js
+
+--- COMMIT 3febd6e13 ---
+src/language-css/print/misc.js
+src/language-js/parse/typescript.js
+src/language-markdown/pragma.js
+
+--- COMMIT 05a32d377 ---
+src/utils/get-string-width.js
+
+--- COMMIT 8108864d7 ---
+src/language-js/print/array.js
+
+--- COMMIT 54404fc96 ---
+src/cli/cli-options.evaluate.js
+src/cli/context.js
+src/cli/file-info.js
+src/cli/index.js
+src/cli/options/create-minimist-options.js
+src/cli/options/get-context-options.js
+src/cli/options/parse-cli-arguments.js
+src/config/resolve-config.js
+src/index.d.ts
+src/index.js
+src/main/core-options.evaluate.js
+src/main/normalize-options.js
+src/main/plugins/index.js
+src/main/plugins/search-plugins.js
+src/main/support.js
+src/utils/is-directory.js
+
+--- COMMIT b86e42cc8 ---
+src/cli/cli-options.evaluate.js
+
+--- COMMIT dcc081db0 ---
+src/cli/expand-patterns.js
+src/cli/utils.js
+
+--- COMMIT 42589a13c ---
+src/utils/import-from-file.js
+
+--- COMMIT f62450725 ---
+src/cli/format.js
+
+--- COMMIT 4562c116b ---
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 5df907357 ---
+src/language-js/print/estree.js
+src/language-js/print/html-binding.js
+src/language-js/print/index.js
+src/language-js/printer.js
+src/plugins/estree.js
+
+--- COMMIT 2eaf5763e ---
+src/language-js/needs-parens.js
+src/language-js/print/flow.js
+src/language-js/print/type-annotation.js
+src/language-js/print/typescript.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 7f64e920d ---
+src/language-js/print/arrow-function.js
+src/language-js/print/function.js
+src/language-js/printer-estree.js
+
+--- COMMIT 27f7723bf ---
+src/language-js/needs-parens.js
+
+--- COMMIT d6f30ad3d ---
+src/plugins/acorn.js
+src/plugins/angular.js
+src/plugins/babel.js
+src/plugins/estree.js
+src/plugins/flow.js
+src/plugins/glimmer.js
+src/plugins/graphql.js
+src/plugins/html.js
+src/plugins/markdown.js
+src/plugins/meriyah.js
+src/plugins/postcss.js
+src/plugins/typescript.js
+src/plugins/yaml.js
+
+--- COMMIT 8edd605f1 ---
+src/index.d.ts
+src/language-css/index.js
+src/language-graphql/index.js
+src/language-handlebars/index.js
+src/language-html/index.js
+src/language-js/traverse/visitor-keys.evaluate.js
+src/language-markdown/index.js
+src/language-yaml/index.js
+src/main/normalize-format-options.js
+src/main/parser-and-printer.js
+src/main/plugins/load-builtin-plugins.js
+src/plugins/acorn.js
+src/plugins/angular.js
+src/plugins/babel.js
+src/plugins/builtin-plugins-proxy.js
+src/plugins/flow.js
+src/plugins/meriyah.js
+src/plugins/typescript.js
+src/utils/create-parsers.js
+
+--- COMMIT e234b73a9 ---
+src/language-js/print/array.js
+
+--- COMMIT ab9792cc0 ---
+src/language-js/print/flow.js
+src/language-js/print/function.js
+
+--- COMMIT cfb3b87ef ---
+src/language-js/parse/typescript.js
+src/language-js/print/type-parameters.js
+src/language-js/utils/index.js
+
+--- COMMIT b5043bcca ---
+src/cli/format.js
+src/main/normalize-format-options.js
+
+--- COMMIT 7f292bd8f ---
+src/language-js/print/type-annotation.js
+
+--- COMMIT 578f093d3 ---
+src/cli/cli-options.evaluate.js
+src/common/get-file-info.js
+src/index.d.ts
+src/utils/ignore.js
+
+--- COMMIT bec997e85 ---
+src/language-js/print/jsx.js
+
+--- COMMIT ecfa324b6 ---
+src/language-html/utils/index.js
+
+--- COMMIT 686320a88 ---
+src/language-js/parse/postprocess/index.js
+
+--- COMMIT 1e50206d2 ---
+src/language-js/print/mapped-type.js
+
+--- COMMIT 4a949a2f2 ---
+src/language-js/print/type-parameters.js
+
+--- COMMIT cddb59d21 ---
+src/main/normalize-format-options.js
+
+--- COMMIT f95b0c029 ---
+src/language-js/print/flow.js
+src/language-js/print/mapped-type.js
+src/language-js/print/type-parameters.js
+src/language-js/print/typescript.js
+src/language-js/traverse/visitor-keys.evaluate.js
+src/language-js/utils/index.js
+
+--- COMMIT e4349cae7 ---
+src/language-html/embed/srcset.js
+
+--- COMMIT 78b0a6bb8 ---
+src/main/core.js
+src/main/multiparser.js
+src/main/normalize-format-options.js
+src/main/parse.js
+src/main/parser-and-printer.js
+src/main/parser.js
+
+--- COMMIT 1d320ff85 ---
+src/cli/format.js
+src/cli/is-tty.js
+src/common/mockable.js
+src/config/get-prettier-config-explorer.js
+src/main/plugins/search-plugins.js
+
+--- COMMIT 42584d48d ---
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 4965a790c ---
+src/language-js/parse/babel.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT a95040709 ---
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 0af711b66 ---
+src/index.d.ts
+
+--- COMMIT 5a267fa4b ---
+src/index.d.ts
+
+--- COMMIT a78e514d7 ---
+src/document/printer.js
+
+--- COMMIT df7771caf ---
+src/cli/expand-patterns.js
+src/cli/find-config-path.js
+src/cli/format.js
+src/cli/options/get-options-for-file.js
+src/main/normalize-format-options.js
+
+--- COMMIT 233ae12d2 ---
+src/cli/expand-patterns.js
+
+--- COMMIT d70f7b989 ---
+src/cli/cli-options.evaluate.js
+src/cli/constants.evaluate.js
+src/cli/options/get-context-options.js
+src/cli/prettier-internal.js
+src/cli/utils.js
+src/common/common-options.evaluate.js
+src/index.js
+src/language-css/options.js
+src/language-graphql/options.js
+src/language-html/options.js
+src/language-js/options.js
+src/language-markdown/options.js
+src/language-yaml/options.js
+src/main/core-options.evaluate.js
+src/main/option-categories.js
+src/main/support.js
+src/utils/arrayify.js
+
+--- COMMIT 97fda8c11 ---
+src/cli/options/get-context-options.js
+src/cli/print-support-info.js
+src/cli/utils.js
+src/index.js
+src/main/support.js
+
+--- COMMIT cffb81291 ---
+src/cli/print-support-info.js
+src/main/support.js
+src/utils/object-omit.js
+
+--- COMMIT 75cd9992f ---
+src/language-html/constants.evaluate.js
+
+--- COMMIT 3f1153ba2 ---
+src/language-js/needs-parens.js
+
+--- COMMIT 9500403c1 ---
+src/language-css/parse/parse-value.js
+src/language-css/utils/get-function-arguments-text.js
+src/language-css/utils/get-value-root.js
+src/language-css/utils/has-string-or-function.js
+
+--- COMMIT d0eb18598 ---
+src/language-js/embed.js
+src/language-js/embed/css.js
+src/language-js/embed/graphql.js
+src/language-js/embed/html.js
+src/language-js/embed/index.js
+src/language-js/embed/markdown.js
+src/language-js/embed/utils.js
+src/language-js/printer-estree.js
+
+--- COMMIT 3614c17d2 ---
+src/language-html/embed.js
+src/language-html/embed/angular-attributes.js
+src/language-html/embed/angular-interpolation.js
+src/language-html/embed/attribute.js
+src/language-html/embed/class-names.js
+src/language-html/embed/srcset.js
+src/language-html/embed/style.js
+src/language-html/embed/utils.js
+src/language-html/embed/vue-attributes.js
+src/language-html/embed/vue-bindings.js
+src/language-html/embed/vue-v-for-directive.js
+src/language-html/syntax-attribute.js
+src/language-html/syntax-vue.js
+
+--- COMMIT b7ab34073 ---
+src/language-js/needs-parens.js
+src/language-js/print/flow.js
+src/language-js/print/ternary.js
+src/language-js/print/type-annotation.js
+src/language-js/print/type-parameters.js
+src/language-js/print/typescript.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT bae1eb4a1 ---
+src/language-html/embed.js
+src/language-html/print-preprocess.js
+src/language-html/syntax-vue.js
+src/language-html/utils/index.js
+src/language-html/utils/is-vue-sfc-with-typescript-script.js
+
+--- COMMIT 919670df6 ---
+src/language-css/print/misc.js
+src/language-css/print/parenthesized-value-group.js
+
+--- COMMIT 3c7e2173e ---
+src/language-js/print/expression-statement.js
+src/language-js/print/html-binding.js
+src/language-js/print/semicolon.js
+src/language-js/printer-estree.js
+src/language-js/utils/index.js
+
+--- COMMIT 9329924de ---
+--- COMMIT 1bf47c1e9 ---
+src/language-html/print-preprocess.js
+
+--- COMMIT 00e59ed00 ---
+src/common/ast-path.js
+
+--- COMMIT 4edb68ac5 ---
+src/language-js/print/flow.js
+
+--- COMMIT dd779dae5 ---
+--- COMMIT f9fae7f34 ---
+src/language-js/parse/postprocess/typescript.js
+
+--- COMMIT 94660f6cf ---
+src/language-html/get-node-content.js
+src/language-html/parser-html.js
+
+--- COMMIT 71339e360 ---
+src/language-js/parse/postprocess/index.js
+
+--- COMMIT 368620a65 ---
+src/language-js/comments/handle-comments.js
+src/language-js/printer-estree.js
+src/main/comments/attach.js
+
+--- COMMIT ad9fd35b1 ---
+src/main/ast-to-doc.js
+src/main/comments/print.js
+
+--- COMMIT 5f4a98e3b ---
+src/main/parser.js
+
+--- COMMIT fc81cc13c ---
+src/common/load-builtin-plugins.js
+src/common/load-plugins.js
+src/index.js
+src/main/plugins/index.js
+src/main/plugins/load-builtin-plugins.js
+src/main/plugins/load-plugin.js
+src/main/plugins/load-plugins.js
+src/main/plugins/search-plugins.js
+src/standalone.js
+src/utils/is-directory.js
+
+--- COMMIT e154250e1 ---
+src/language-html/embed.js
+src/language-html/syntax-vue.js
+src/language-js/parse/babel.js
+src/language-js/print/binaryish.js
+src/main/comments/attach.js
+src/plugins/babel.js
+
+--- COMMIT 6d21de11f ---
+src/common/load-builtin-plugins.js
+src/document/public.d.ts
+src/index.js
+src/language-css/index.js
+src/language-css/parser-postcss.js
+src/language-css/parsers.js
+src/language-graphql/index.js
+src/language-graphql/parser-graphql.js
+src/language-graphql/parsers.js
+src/language-handlebars/index.js
+src/language-handlebars/parser-glimmer.js
+src/language-handlebars/parsers.js
+src/language-html/index.js
+src/language-html/parser-html.js
+src/language-html/parsers.js
+src/language-js/index.js
+src/language-js/parse/acorn-and-espree.js
+src/language-js/parse/acorn.js
+src/language-js/parse/angular.js
+src/language-js/parse/babel.js
+src/language-js/parse/espree.js
+src/language-js/parse/flow.js
+src/language-js/parse/meriyah.js
+src/language-js/parse/parsers.js
+src/language-js/parse/typescript.js
+src/language-js/printer-estree.js
+src/language-json/index.js
+src/language-json/printer-estree-json.js
+src/language-markdown/index.js
+src/language-markdown/parser-markdown.js
+src/language-markdown/parsers.js
+src/language-yaml/index.js
+src/language-yaml/parser-yaml.js
+src/language-yaml/parsers.js
+src/languages.js
+src/main/normalize-format-options.js
+src/plugins/acorn.js
+src/plugins/angular.js
+src/plugins/babel.js
+src/plugins/estree.js
+src/plugins/flow.js
+src/plugins/glimmer.js
+src/plugins/graphql.js
+src/plugins/html.js
+src/plugins/markdown.js
+src/plugins/meriyah.js
+src/plugins/postcss.js
+src/plugins/typescript.js
+src/plugins/yaml.js
+src/standalone.js
+src/utils/create-parsers.js
+
+--- COMMIT 413a76d79 ---
+src/plugins/estree.js
+src/standalone.js
+
+--- COMMIT 8ddaa4c53 ---
+src/language-css/print/parenthesized-value-group.js
+
+--- COMMIT 8e16d66bc ---
+src/language-css/print/parenthesized-value-group.js
+src/language-css/printer-postcss.js
+
+--- COMMIT b61ef0d23 ---
+src/language-css/print/parenthesized-value-group.js
+src/language-css/printer-postcss.js
+
+--- COMMIT c6e026ea2 ---
+src/language-css/printer-postcss.js
+
+--- COMMIT 9d08be890 ---
+src/language-html/parser-html.js
+
+--- COMMIT 6718d466b ---
+src/language-js/print/flow.js
+src/language-js/print/typescript.js
+src/language-js/utils/index.js
+src/language-js/utils/is-flow-keyword-type.js
+
+--- COMMIT a3b352ce9 ---
+src/language-js/print/binaryish.js
+
+--- COMMIT addc34092 ---
+src/language-js/print/decorators.js
+src/language-js/print/flow.js
+src/language-js/print/module.js
+src/language-js/print/typescript.js
+src/language-js/printer-estree.js
+
+--- COMMIT 21727ccf3 ---
+src/language-js/print/flow.js
+src/language-js/print/type-annotation.js
+src/language-js/print/typescript.js
+
+--- COMMIT cfc8bbc66 ---
+--- COMMIT 44aef0b1b ---
+src/language-js/parse/postprocess/typescript.js
+
+--- COMMIT 019ebe520 ---
+src/language-js/parse/postprocess/index.js
+src/language-js/parse/postprocess/typescript.js
+src/language-js/parse/typescript.js
+src/language-js/print/type-parameters.js
+
+--- COMMIT f85e7b07b ---
+src/language-js/parse/postprocess/index.js
+
+--- COMMIT 7c2baf355 ---
+src/main/ast-to-doc.js
+src/main/comments/attach.js
+src/main/core.js
+src/main/multiparser.js
+src/main/parser.js
+
+--- COMMIT 5b80d2961 ---
+src/language-css/print/comma-separated-value-group.js
+src/language-css/print/css-units.evaluate.js
+src/language-css/print/misc.js
+src/language-css/print/parenthesized-value-group.js
+src/language-css/print/sequence.js
+src/language-css/printer-postcss.js
+src/language-css/utils/print-unit.js
+
+--- COMMIT 883324dbb ---
+--- COMMIT d797f0cff ---
+src/language-js/parse/postprocess/typescript.js
+src/language-js/print/class.js
+
+--- COMMIT 3fc6298c0 ---
+src/language-graphql/get-visitor-keys.js
+src/language-graphql/visitor-keys.js
+
+--- COMMIT 1fb02e85d ---
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT e2c5da38f ---
+src/language-css/parser-postcss.js
+src/language-graphql/parser-graphql.js
+src/language-handlebars/parser-glimmer.js
+src/language-html/parser-html.js
+src/language-js/parse/acorn-and-espree.js
+src/language-js/parse/angular.js
+src/language-js/parse/babel.js
+src/language-js/parse/flow.js
+src/language-js/parse/meriyah.js
+src/language-js/parse/typescript.js
+src/language-markdown/parser-markdown.js
+src/language-yaml/parser-yaml.js
+src/utils/create-parsers.js
+
+--- COMMIT 6c9ba400f ---
+src/standalone.js
+src/utils/create-parsers.js
+
+--- COMMIT 18baca62c ---
+src/language-css/parser-postcss.d.ts
+src/language-graphql/parser-graphql.d.ts
+src/language-handlebars/parser-glimmer.d.ts
+src/language-html/parser-html.d.ts
+src/language-js/parse/acorn-and-espree.d.ts
+src/language-js/parse/angular.d.ts
+src/language-js/parse/babel.d.ts
+src/language-js/parse/flow.d.ts
+src/language-js/parse/meriyah.d.ts
+src/language-js/parse/typescript.d.ts
+src/language-markdown/parser-markdown.d.ts
+src/language-yaml/parser-yaml.d.ts
+
+--- COMMIT a07927aa1 ---
+src/document/utils.js
+src/language-js/print/decorators.js
+src/language-js/printer-estree.js
+
+--- COMMIT 4585fb051 ---
+src/language-js/needs-parens.js
+src/language-js/print/angular.js
+src/language-js/utils/index.js
+src/main/comments/attach.js
+src/main/get-cursor-node.js
+src/utils/ast-utils.js
+src/utils/is-non-empty-array.js
+src/utils/is-object.js
+
+--- COMMIT 06aa1a350 ---
+src/language-html/utils/index.js
+
+--- COMMIT 921eaf469 ---
+src/language-js/print/function-parameters.js
+src/language-js/print/function.js
+
+--- COMMIT b5210fd39 ---
+src/language-js/utils/create-type-check-function.js
+src/language-js/utils/index.js
+src/language-js/utils/is-block-comment.js
+
+--- COMMIT 5365fe4fc ---
+src/language-handlebars/printer-glimmer.js
+src/language-html/printer-html.js
+src/language-js/print/jsx.js
+src/language-markdown/printer-markdown.js
+src/utils/get-preferred-quote.js
+src/utils/print-string.js
+
+--- COMMIT 8f679c2fd ---
+src/language-html/printer-html.js
+src/language-html/utils/index.js
+src/language-markdown/printer-markdown.js
+
+--- COMMIT 80419fa69 ---
+src/language-js/needs-parens.js
+
+--- COMMIT 9bfebb406 ---
+src/cli/format.js
+
+--- COMMIT f1b18f231 ---
+src/language-js/needs-parens.js
+
+--- COMMIT 8865ade20 ---
+src/cli/format.js
+src/common/errors.js
+
+--- COMMIT 57b37a3c2 ---
+src/document/printer.js
+src/main/ast-to-doc.js
+
+--- COMMIT 9d328e630 ---
+src/main/ast-to-doc.js
+src/main/core.js
+
+--- COMMIT 88b67b57e ---
+src/language-js/parse/acorn.js
+src/language-js/parse/babel.js
+src/language-js/parse/espree.js
+src/language-js/parse/flow.js
+src/language-js/parse/meriyah.js
+src/language-js/parse/postprocess/index.js
+src/language-js/parse/postprocess/typescript.js
+src/language-js/parse/typescript.js
+src/language-js/parse/utils/wrap-babel-expression.js
+src/language-js/print/binaryish.js
+src/language-js/utils/index.js
+src/language-json/parser-json.js
+
+--- COMMIT 134f6078e ---
+src/document/builders.js
+src/document/index.js
+src/document/public.d.ts
+src/document/public.js
+src/index.cjs
+src/index.d.ts
+src/index.js
+src/standalone.js
+
+--- COMMIT 8036248b0 ---
+src/language-js/comments/printer-methods.js
+src/language-js/parse/postprocess/index.js
+src/language-js/print/decorators.js
+src/language-js/print/typescript.js
+src/language-js/printer-estree.js
+src/language-js/utils/is-ignored.js
+src/main/ast-to-doc.js
+src/main/comments/print.js
+src/main/core.js
+src/main/multiparser.js
+src/main/print-ignored.js
+
+--- COMMIT cb25bd31f ---
+src/language-html/pragma.js
+
+--- COMMIT aee8e3b0c ---
+src/language-html/embed.js
+src/language-html/utils/index.js
+
+--- COMMIT 375e3f838 ---
+src/language-html/parser-html.js
+
+--- COMMIT 1482ee270 ---
+src/common/get-file-info.js
+src/language-html/parser-html.js
+src/language-html/utils/index.js
+src/language-markdown/embed.js
+src/main/infer-parser.js
+src/main/normalize-format-options.js
+src/utils/infer-parser-by-language.js
+src/utils/infer-parser.js
+
+--- COMMIT a6dcfe907 ---
+src/main/infer-parser.js
+
+--- COMMIT c79b3eec5 ---
+src/language-css/loc.js
+src/language-js/parse/postprocess/index.js
+src/main/core.js
+src/main/get-cursor-node.js
+
+--- COMMIT f8fed37dc ---
+src/language-html/parser-html.js
+src/language-html/utils/index.js
+src/language-markdown/embed.js
+src/utils/infer-parser-by-language.js
+
+--- COMMIT d0ecad9c3 ---
+src/language-css/parser-postcss.d.ts
+src/language-graphql/parser-graphql.d.ts
+src/language-handlebars/parser-glimmer.d.ts
+src/language-html/parser-html.d.ts
+src/language-js/parse/acorn-and-espree.d.ts
+src/language-js/parse/angular.d.ts
+src/language-js/parse/babel.d.ts
+src/language-js/parse/flow.d.ts
+src/language-js/parse/meriyah.d.ts
+src/language-js/parse/typescript.d.ts
+src/language-markdown/parser-markdown.d.ts
+src/language-yaml/parser-yaml.d.ts
+
+--- COMMIT b9f02a9eb ---
+src/cli/prettier-internal.js
+src/cli/usage.js
+src/common/get-file-info.js
+src/index.js
+src/main/core.js
+src/main/infer-parser.js
+src/main/multiparser.js
+src/main/normalize-format-options.js
+src/main/normalize-options.js
+
+--- COMMIT 0ed81d2b5 ---
+src/common/ast-path.js
+
+--- COMMIT 595a2beeb ---
+src/language-handlebars/clean.js
+src/language-handlebars/printer-glimmer.js
+src/language-html/print-preprocess.js
+src/language-html/utils/index.js
+src/language-js/print/jsx.js
+src/utils/html-whitespace-utils.js
+src/utils/whitespace-utils.js
+
+--- COMMIT 4a26d88f9 ---
+--- COMMIT bc098779c ---
+src/language-js/needs-parens.js
+
+--- COMMIT 5f68f8662 ---
+src/language-json/parser-json.js
+
+--- COMMIT 745e0d522 ---
+src/language-js/comments/printer-methods.js
+
+--- COMMIT 24652d918 ---
+src/language-js/parse/babel.js
+src/language-js/parse/postprocess/typescript.js
+src/language-js/print/type-parameters.js
+
+--- COMMIT 813df18df ---
+src/cli/prettier-internal.js
+src/cli/utils.js
+src/document/index.d.ts
+src/index.d.ts
+src/language-css/parser-postcss.d.ts
+src/language-graphql/parser-graphql.d.ts
+src/language-handlebars/parser-glimmer.d.ts
+src/language-html/parser-html.d.ts
+src/language-js/parse/acorn-and-espree.d.ts
+src/language-js/parse/angular.d.ts
+src/language-js/parse/babel.d.ts
+src/language-js/parse/flow.d.ts
+src/language-js/parse/meriyah.d.ts
+src/language-js/parse/typescript.d.ts
+src/language-markdown/parser-markdown.d.ts
+src/language-yaml/parser-yaml.d.ts
+src/standalone.d.ts
+
+--- COMMIT 47830dbed ---
+src/language-js/parse/postprocess/index.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 06a7bd1d0 ---
+src/language-css/parse/parse-media-query.js
+src/language-css/parse/parse-selector.js
+src/language-css/parse/parse-value.js
+src/language-css/parse/utils.js
+src/language-css/parser-postcss.js
+
+--- COMMIT 5d04f01c8 ---
+src/language-js/parse/acorn.js
+src/language-js/parse/babel.js
+src/language-js/parse/espree.js
+src/language-js/parse/meriyah.js
+src/language-js/parse/typescript.js
+src/utils/try-combinations.js
+
+--- COMMIT b6766551c ---
+src/language-js/print/typescript.js
+
+--- COMMIT f83b69111 ---
+src/cli/expand-patterns.js
+src/cli/format.js
+src/cli/utils.js
+
+--- COMMIT b0208fc3b ---
+src/main/comments/attach.js
+src/main/core.js
+src/main/multiparser.js
+
+--- COMMIT 0d6c8f681 ---
+src/language-js/print/typescript.js
+
+--- COMMIT 4fb03a7f2 ---
+src/cli/format.js
+src/language-css/parser-postcss.js
+src/language-graphql/parser-graphql.js
+src/language-handlebars/parser-glimmer.js
+src/language-html/conditional-comment.js
+src/language-html/parser-html.js
+src/language-js/parse/angular.js
+src/language-js/parse/babel.js
+src/language-js/parse/flow.js
+src/language-js/parse/meriyah.js
+src/language-js/parse/postprocess/typescript.js
+src/language-js/parse/typescript.js
+src/language-json/parser-json.js
+src/language-yaml/parser-yaml.js
+src/main/parser.js
+
+--- COMMIT be474c789 ---
+src/language-markdown/clean.js
+src/language-markdown/parser-markdown.js
+src/language-markdown/printer-markdown.js
+src/language-markdown/unified-plugins/loose-items.js
+
+--- COMMIT de00f5bec ---
+src/language-js/print/semicolon.js
+src/language-js/print/statement.js
+src/language-js/printer-estree.js
+
+--- COMMIT 222d84f9e ---
+src/language-js/print/assignment.js
+src/language-js/print/literal.js
+src/language-js/print/misc.js
+src/language-js/printer-estree.js
+src/language-js/utils/index.js
+
+--- COMMIT 282a4019c ---
+src/common/util.js
+src/index.cjs
+src/index.js
+src/language-css/clean.js
+src/language-css/loc.js
+src/language-css/printer-postcss.js
+src/language-graphql/printer-graphql.js
+src/language-handlebars/printer-glimmer.js
+src/language-html/clean.js
+src/language-html/print/tag.js
+src/language-html/utils/index.js
+src/language-js/comments/handle-comments.js
+src/language-js/embed/css.js
+src/language-js/parse/babel.js
+src/language-js/print/array.js
+src/language-js/print/assignment.js
+src/language-js/print/block.js
+src/language-js/print/class.js
+src/language-js/print/decorators.js
+src/language-js/print/flow.js
+src/language-js/print/function-parameters.js
+src/language-js/print/function.js
+src/language-js/print/interface.js
+src/language-js/print/jsx.js
+src/language-js/print/literal.js
+src/language-js/print/member-chain.js
+src/language-js/print/module.js
+src/language-js/print/object.js
+src/language-js/print/property.js
+src/language-js/print/template-literal.js
+src/language-js/print/ternary.js
+src/language-js/print/type-parameters.js
+src/language-js/print/typescript.js
+src/language-js/printer-estree.js
+src/language-js/utils/index.js
+src/language-markdown/clean.js
+src/language-markdown/embed.js
+src/language-markdown/printer-markdown.js
+src/language-yaml/printer-yaml.js
+src/language-yaml/utils.js
+src/main/comments/attach.js
+src/main/comments/print.js
+src/main/core.js
+src/standalone.js
+src/utils/create-group-id-mapper.js
+src/utils/front-matter/is-front-matter.js
+src/utils/get-alignment-size.js
+src/utils/get-indent-size.js
+src/utils/get-max-continuous-count.js
+src/utils/get-min-not-present-continuous-count.js
+src/utils/get-next-non-space-non-comment-character-index.js
+src/utils/get-next-non-space-non-comment-character.js
+src/utils/get-preferred-quote.js
+src/utils/has-newline-in-range.js
+src/utils/has-newline.js
+src/utils/has-spaces.js
+src/utils/is-next-line-empty.js
+src/utils/is-previous-line-empty.js
+src/utils/make-string.js
+src/utils/print-number.js
+src/utils/print-string.js
+src/utils/public.js
+src/utils/skip-inline-comment.js
+src/utils/skip-newline.js
+src/utils/skip-trailing-comment.js
+src/utils/skip.js
+
+--- COMMIT 83124d7fd ---
+src/language-css/parser-postcss.js
+
+--- COMMIT 5cdc3ab2d ---
+src/language-js/clean.js
+src/language-js/comments/printer-methods.js
+src/language-js/needs-parens.js
+src/language-js/parse/postprocess/index.js
+src/language-js/print/assignment.js
+src/language-js/print/jsx.js
+src/language-js/print/misc.js
+src/language-js/print/ternary.js
+src/language-js/printer-estree.js
+src/language-js/utils/index.js
+
+--- COMMIT cb901d0f0 ---
+src/cli/expand-patterns.js
+src/cli/format.js
+src/cli/prettier-internal.js
+src/common/create-ignorer.js
+src/common/get-file-info.js
+src/index.js
+src/utils/ignore.js
+src/utils/read-file.js
+
+--- COMMIT d6d77b908 ---
+src/language-js/parse/babel.js
+src/language-js/print/typescript.js
+
+--- COMMIT 81d56f9ba ---
+src/index.js
+src/main/core.js
+src/standalone.js
+
+--- COMMIT add84358d ---
+src/language-js/parse/babel.js
+
+--- COMMIT 6b40e2e51 ---
+src/common/util-shared.js
+src/common/util.js
+src/language-js/comments/handle-comments.js
+src/language-js/print/array.js
+src/language-js/print/binaryish.js
+src/language-js/print/block.js
+src/language-js/print/call-arguments.js
+src/language-js/print/class.js
+src/language-js/print/function-parameters.js
+src/language-js/print/function.js
+src/language-js/print/jsx.js
+src/language-js/print/member-chain.js
+src/language-js/print/module.js
+src/language-js/print/object.js
+src/language-js/print/property.js
+src/language-js/print/type-annotation.js
+src/language-js/print/type-parameters.js
+src/language-js/print/typescript.js
+src/language-js/printer-estree.js
+src/main/ast-to-doc.js
+src/main/comments/attach.js
+src/main/comments/print.js
+src/main/comments/utils.js
+src/main/core.js
+src/main/multiparser.js
+src/main/range-util.js
+
+--- COMMIT e0fb24146 ---
+src/common/util.js
+src/utils/text/skip-inline-comment.js
+src/utils/text/skip-newline.js
+src/utils/text/skip-trailing-comment.js
+src/utils/text/skip.js
+
+--- COMMIT e9ae01a6d ---
+src/common/util-shared.js
+src/common/util.js
+src/language-css/printer-postcss.js
+src/language-graphql/printer-graphql.js
+src/language-js/print/member-chain.js
+src/language-js/utils/index.js
+src/language-yaml/printer-yaml.js
+src/main/comments.js
+
+--- COMMIT caf6f6c64 ---
+src/common/util-shared.js
+src/common/util.js
+
+--- COMMIT b96dc57cd ---
+src/common/util-shared.js
+src/common/util.js
+src/language-js/comments/handle-comments.js
+src/language-js/parse/babel.js
+src/language-js/print/function.js
+src/language-js/print/member-chain.js
+src/utils/text/get-next-non-space-non-comment-character-index.js
+
+--- COMMIT c05723e7b ---
+src/common/util.js
+src/language-js/comments/handle-comments.js
+src/language-js/print/function-parameters.js
+
+--- COMMIT 62827ab4d ---
+src/language-js/print/type-parameters.js
+
+--- COMMIT be84156d4 ---
+src/language-js/clean.js
+src/language-js/parse/postprocess/index.js
+src/language-js/printer-estree.js
+src/language-js/traverse/visitor-keys.evaluate.js
+src/language-js/utils/index.js
+
+--- COMMIT 474b8dd03 ---
+src/common/ast-path.js
+src/language-js/print/class.js
+src/language-js/print/misc.js
+src/language-js/print/type-annotation.js
+src/language-js/printer-estree.js
+
+--- COMMIT b1ef30dd1 ---
+--- COMMIT 070309010 ---
+src/language-js/comments/printer-methods.js
+src/language-js/print/binaryish.js
+src/language-js/print/call-arguments.js
+src/language-js/print/function.js
+src/language-js/print/jsx.js
+src/language-js/print/statement.js
+src/language-js/print/ternary.js
+src/language-js/utils/index.js
+
+--- COMMIT 6bb24b2c5 ---
+src/language-js/print/type-parameters.js
+src/language-js/print/typescript.js
+
+--- COMMIT 9842b29ca ---
+src/language-js/comments.js
+src/language-js/utils/is-type-cast-comment.js
+
+--- COMMIT 4d80f5cf1 ---
+src/language-js/print/flow.js
+
+--- COMMIT bc18fa439 ---
+src/language-js/needs-parens.js
+
+--- COMMIT d94c813f8 ---
+src/language-js/print/block.js
+src/language-js/print/statement.js
+src/language-js/printer-estree.js
+
+--- COMMIT bad0906a8 ---
+src/language-js/print/statement.js
+
+--- COMMIT 5d4380372 ---
+src/language-js/parse/babel.js
+
+--- COMMIT ac91baff0 ---
+src/language-js/print/class.js
+
+--- COMMIT 29a7b3ed8 ---
+src/language-js/print/array.js
+src/language-js/print/block.js
+src/language-js/print/call-arguments.js
+src/language-js/print/class.js
+src/language-js/print/function-parameters.js
+src/language-js/print/function.js
+src/language-js/print/jsx.js
+src/language-js/print/module.js
+src/language-js/print/object.js
+src/language-js/print/type-parameters.js
+src/language-js/print/typescript.js
+src/language-js/printer-estree.js
+src/main/comments.js
+
+--- COMMIT 39dadc9fa ---
+src/language-js/parse/babel.js
+src/language-js/parse/postprocess/typescript.js
+src/language-js/print/typescript.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 6eb9359b0 ---
+src/language-js/parse/postprocess/index.js
+src/language-js/print/typescript.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 20e891544 ---
+src/language-js/print/class.js
+src/language-js/print/misc.js
+src/language-js/print/typescript.js
+
+--- COMMIT 6d7cdbaf9 ---
+src/language-js/parse/angular.js
+
+--- COMMIT 3cec46000 ---
+src/language-js/print/enum.js
+src/language-js/print/misc.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT a7d835902 ---
+src/language-js/print/interface.js
+
+--- COMMIT cf421a9eb ---
+src/language-js/parse/postprocess/typescript.js
+src/language-js/print/typescript.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT e01f86aa0 ---
+src/language-css/parser-postcss.js
+
+--- COMMIT a26e8ace4 ---
+src/common/get-file-info.js
+
+--- COMMIT fe4eee632 ---
+src/language-handlebars/printer-glimmer.js
+
+--- COMMIT 549a59dd7 ---
+--- COMMIT 1dafaa039 ---
+src/language-js/needs-parens.js
+src/language-js/print/array.js
+src/language-js/print/flow.js
+src/language-js/print/type-annotation.js
+src/language-js/print/typescript.js
+src/language-js/printer-estree.js
+src/language-js/traverse/visitor-keys.evaluate.js
+src/language-js/utils/index.js
+
+--- COMMIT 627c9a7f8 ---
+src/language-js/needs-parens.js
+src/language-js/print/array.js
+src/language-js/print/class.js
+src/language-js/print/flow.js
+src/language-js/print/function.js
+src/language-js/print/misc.js
+src/language-js/print/object.js
+src/language-js/print/type-annotation.js
+src/language-js/print/type-parameters.js
+src/language-js/print/typescript.js
+src/language-js/printer-estree.js
+src/language-js/utils/index.js
+
+--- COMMIT 37fb53acf ---
+src/language-handlebars/printer-glimmer.js
+
+--- COMMIT f65700ff8 ---
+src/language-graphql/printer-graphql.js
+
+--- COMMIT 58ae337fe ---
+src/language-js/print/array.js
+
+--- COMMIT 22d66b894 ---
+src/language-js/print/function.js
+src/language-js/print/typescript.js
+
+--- COMMIT 24f617cf1 ---
+src/language-js/print/type-annotation.js
+src/language-js/print/typescript.js
+
+--- COMMIT 310a5b1ba ---
+src/language-handlebars/html-void-elements.evaluate.js
+src/language-handlebars/utils.js
+
+--- COMMIT 0baca3daf ---
+src/language-js/parse/angular.js
+
+--- COMMIT cfa5f27af ---
+src/language-js/printer-estree.js
+
+--- COMMIT 62195dd1f ---
+src/cli/expand-patterns.js
+
+--- COMMIT 0550b4108 ---
+src/language-js/needs-parens.js
+src/language-js/print/statement.js
+src/language-js/utils/index.js
+
+--- COMMIT a0c20d810 ---
+src/language-css/index.js
+src/language-css/parsers.js
+src/language-graphql/index.js
+src/language-graphql/parsers.js
+src/language-handlebars/index.js
+src/language-handlebars/parsers.js
+src/language-html/index.js
+src/language-html/parsers.js
+src/language-js/index.js
+src/language-js/parse/parsers.js
+src/language-markdown/index.js
+src/language-markdown/parsers.js
+src/language-yaml/index.js
+src/language-yaml/parsers.js
+src/utils/create-parsers.js
+
+--- COMMIT 289fcbc3d ---
+src/language-handlebars/parser-glimmer.js
+
+--- COMMIT bca85bb5c ---
+src/language-js/print/block.js
+src/language-js/print/class.js
+src/language-js/print/statement.js
+src/language-js/printer-estree.js
+
+--- COMMIT b33265403 ---
+--- COMMIT 4ad916089 ---
+src/language-html/parser-html.js
+
+--- COMMIT 773227c80 ---
+src/language-js/print/class.js
+src/language-js/print/enum.js
+src/language-js/print/flow.js
+src/language-js/print/function.js
+src/language-js/print/interface.js
+src/language-js/print/misc.js
+src/language-js/print/module.js
+src/language-js/print/type-annotation.js
+src/language-js/print/typescript.js
+src/language-js/printer-estree.js
+
+--- COMMIT 0918a24ce ---
+src/language-js/parse/babel.js
+src/language-js/parse/utils/wrap-babel-expression.js
+src/language-js/print-preprocess.js
+src/language-js/printer-estree.js
+src/language-json/parser-json.js
+src/language-json/printer-estree-json.js
+src/main/range-util.js
+
+--- COMMIT 06ea1ac0d ---
+src/language-js/print/jsx.js
+src/language-js/print/typescript.js
+
+--- COMMIT 52140cc6a ---
+src/language-js/print/statement.js
+
+--- COMMIT 01a924195 ---
+src/document/builders.js
+src/document/utils/assert-doc.js
+src/document/utils/traverse-doc.js
+
+--- COMMIT 91282c184 ---
+src/language-js/print/jsx.js
+
+--- COMMIT 8cb3e77cf ---
+src/language-js/print/typescript.js
+
+--- COMMIT fe269898c ---
+src/language-js/print/literal.js
+
+--- COMMIT f5fc86595 ---
+src/language-js/print/function.js
+src/language-js/print/object.js
+
+--- COMMIT cd728eaee ---
+src/language-js/print/literal.js
+src/language-js/printer-estree.js
+
+--- COMMIT 0cd7e1044 ---
+--- COMMIT aaf919014 ---
+src/language-js/print/literal.js
+src/language-js/print/misc.js
+src/language-js/printer-estree.js
+
+--- COMMIT 9e09a78cf ---
+src/language-css/clean.js
+src/language-css/printer-postcss.js
+
+--- COMMIT 0c5d4f345 ---
+src/language-css/parser-postcss.js
+src/language-css/printer-postcss.js
+
+--- COMMIT b77d912c0 ---
+src/language-handlebars/utils.js
+
+--- COMMIT 2f7234494 ---
+src/language-js/print/array.js
+src/language-js/print/enum.js
+src/language-js/print/object.js
+
+--- COMMIT acb7354f8 ---
+--- COMMIT f8e1ad806 ---
+src/language-js/needs-parens.js
+
+--- COMMIT 18264762f ---
+src/main/ast-to-doc.js
+src/main/comments.js
+
+--- COMMIT 23b0381a3 ---
+src/language-js/print/misc.js
+src/language-js/print/type-annotation.js
+
+--- COMMIT 468c514ba ---
+src/language-js/clean.js
+src/language-js/comments/handle-comments.js
+src/language-js/embed.js
+src/language-js/needs-parens.js
+src/language-js/print/array.js
+src/language-js/print/binaryish.js
+src/language-js/print/call-arguments.js
+src/language-js/print/function-parameters.js
+src/language-js/print/function.js
+src/language-js/print/jsx.js
+src/language-js/print/typescript.js
+src/language-js/printer-estree.js
+src/language-js/utils/index.js
+
+--- COMMIT f65768d00 ---
+--- COMMIT 41cee0636 ---
+src/language-css/parser-postcss.js
+src/language-css/printer-postcss.js
+
+--- COMMIT af3d6fa80 ---
+src/language-js/printer-estree-json.js
+
+--- COMMIT efa6aa68b ---
+src/language-css/printer-postcss.js
+
+--- COMMIT a5bd5579c ---
+src/language-js/print/class.js
+
+--- COMMIT 369bf2a1c ---
+src/language-js/needs-parens.js
+
+--- COMMIT 6d7abe46e ---
+src/language-js/print/function.js
+
+--- COMMIT f8ccbd303 ---
+src/language-js/print/assignment.js
+src/language-js/print/binaryish.js
+src/language-js/utils/index.js
+
+--- COMMIT e301b1f9c ---
+src/language-js/print/jsx.js
+
+--- COMMIT 9afa8544e ---
+--- COMMIT 3e7c02b18 ---
+src/language-js/print/ternary.js
+
+--- COMMIT ef707da0a ---
+src/language-js/comments.js
+
+--- COMMIT 4176837f7 ---
+src/language-js/comments/handle-comments.js
+src/language-js/needs-parens.js
+src/language-js/print/assignment.js
+src/language-js/utils/index.js
+
+--- COMMIT d798b5548 ---
+src/language-js/needs-parens.js
+
+--- COMMIT b6027f891 ---
+src/language-js/print/array.js
+src/language-js/print/flow.js
+src/language-js/print/typescript.js
+
+--- COMMIT 201e02e14 ---
+src/language-js/comments.js
+
+--- COMMIT 32d46d9fa ---
+src/language-js/print/type-parameters.js
+
+--- COMMIT bbb54ac28 ---
+src/language-js/print/decorators.js
+src/language-js/utils/index.js
+
+--- COMMIT 4551fe6f6 ---
+src/language-css/printer-postcss.js
+
+--- COMMIT 3aaafa7ec ---
+src/common/ast-path.js
+src/language-css/printer-postcss.js
+src/language-css/utils/index.js
+src/language-handlebars/printer-glimmer.js
+src/language-html/print/element.js
+src/language-html/utils/index.js
+src/language-js/print/member.js
+src/language-markdown/print-whitespace.js
+src/language-markdown/printer-markdown.js
+src/language-markdown/utils.js
+src/language-yaml/print/block.js
+src/language-yaml/utils.js
+
+--- COMMIT a51568db8 ---
+--- COMMIT 57a109af0 ---
+src/language-js/needs-parens.js
+
+--- COMMIT a6b6184d7 ---
+src/language-js/needs-parens.js
+src/language-js/print/function.js
+src/language-js/utils/index.js
+
+--- COMMIT 27f6e8bdb ---
+src/language-js/print/enum-members.js
+src/language-js/print/enum.js
+src/language-js/print/flow.js
+src/language-js/print/typescript.js
+
+--- COMMIT 2a9c166a3 ---
+--- COMMIT 9fd8dbed8 ---
+src/document/printer.js
+
+--- COMMIT 985b895c4 ---
+src/language-js/print/statement.js
+
+--- COMMIT 617f07776 ---
+src/language-js/print/property.js
+
+--- COMMIT b728e0bf4 ---
+src/language-js/print/class.js
+src/language-js/print/flow.js
+src/language-js/print/interface.js
+src/language-js/print/module.js
+src/language-js/print/type-annotation.js
+
+--- COMMIT b9af47991 ---
+src/language-css/get-visitor-keys.js
+src/language-css/printer-postcss.js
+src/language-graphql/get-visitor-keys.js
+src/language-graphql/printer-graphql.js
+src/language-handlebars/get-visitor-keys.js
+src/language-handlebars/printer-glimmer.js
+src/language-html/get-visitor-keys.js
+src/language-html/printer-html.js
+src/language-js/print/flow.js
+src/language-js/print/module.js
+src/language-json/get-visitor-keys.js
+src/language-json/printer-estree-json.js
+src/language-markdown/get-visitor-keys.js
+src/language-markdown/printer-markdown.js
+src/language-yaml/get-visitor-keys.js
+src/language-yaml/printer-yaml.js
+
+--- COMMIT a3b4e9d52 ---
+src/language-js/print/flow.js
+
+--- COMMIT 132c85eea ---
+src/language-js/parse/postprocess/index.js
+
+--- COMMIT b164d42ea ---
+src/language-handlebars/printer-glimmer.js
+src/language-markdown/printer-markdown.js
+
+--- COMMIT daeb90f1c ---
+--- COMMIT b50dfd197 ---
+src/language-css/printer-postcss.js
+
+--- COMMIT 44db370ca ---
+src/language-markdown/clean.js
+src/language-markdown/printer-markdown.js
+
+--- COMMIT 40d0f2705 ---
+src/language-handlebars/printer-glimmer.js
+
+--- COMMIT fefc9e142 ---
+src/language-js/parse/postprocess/typescript.js
+
+--- COMMIT f2701a3d6 ---
+src/language-js/parse/babel.js
+src/language-js/parse/postprocess/typescript.js
+
+--- COMMIT a8869bef5 ---
+--- COMMIT 1cf760a18 ---
+src/language-js/print/class.js
+src/language-js/print/statement.js
+src/language-js/print/typescript.js
+src/language-js/printer-estree.js
+
+--- COMMIT 3e4925084 ---
+src/language-js/needs-parens.js
+src/language-js/parse/postprocess/index.js
+src/language-js/print/flow.js
+src/language-js/print/literal.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 1f9206f21 ---
+--- COMMIT e4240aeaf ---
+src/language-js/parse/postprocess/index.js
+src/language-js/print/statement.js
+
+--- COMMIT 9676a23ab ---
+src/language-css/printer-postcss.js
+
+--- COMMIT 817460b93 ---
+--- COMMIT e82ca7c37 ---
+src/language-js/print/enum-members.js
+src/language-js/print/flow.js
+src/language-js/print/typescript.js
+
+--- COMMIT b0c310299 ---
+src/language-js/print/array.js
+
+--- COMMIT 925fa3f8e ---
+src/language-css/printer-postcss.js
+src/language-html/print/tag.js
+src/language-js/print/binaryish.js
+src/language-js/print/block.js
+src/language-js/print/jsx.js
+src/language-js/print/object.js
+src/language-js/print/statement.js
+src/language-js/printer-estree.js
+src/language-markdown/printer-markdown.js
+
+--- COMMIT f8f0c41b2 ---
+src/language-js/parse/babel.js
+src/language-js/parse/postprocess/ts-syntax-kind.evaluate.js
+src/language-js/parse/postprocess/typescript.js
+src/language-js/parse/typescript.js
+src/language-js/print/class.js
+
+--- COMMIT d98e4efc9 ---
+src/language-js/embed/html.js
+
+--- COMMIT 4a1e32a9d ---
+src/language-css/parser-postcss.js
+
+--- COMMIT ce6ee07f1 ---
+src/language-js/print/array.js
+src/language-js/print/flow.js
+src/language-js/print/type-annotation.js
+src/language-js/print/typescript.js
+
+--- COMMIT 2f4233bc8 ---
+src/language-css/clean.js
+
+--- COMMIT ff43f661e ---
+src/document/invalid-doc-error.js
+
+--- COMMIT bcbc6daee ---
+src/language-js/print/type-annotation.js
+
+--- COMMIT 9689357e5 ---
+src/language-js/printer-estree.js
+src/utils/create-get-visitor-keys.js
+
+--- COMMIT fd376000e ---
+src/language-js/utils/index.js
+
+--- COMMIT 6959f30a8 ---
+src/cli/expand-patterns.js
+src/cli/logger.js
+src/cli/usage.js
+src/common/end-of-line.js
+src/common/util.js
+src/document/printer.js
+src/language-css/clean.js
+src/language-css/loc.js
+src/language-css/parser-postcss.js
+src/language-css/printer-postcss.js
+src/language-graphql/printer-graphql.js
+src/language-handlebars/clean.js
+src/language-handlebars/printer-glimmer.js
+src/language-html/conditional-comment.js
+src/language-html/parser-html.js
+src/language-html/printer-html.js
+src/language-html/syntax-vue.js
+src/language-html/utils/index.js
+src/language-js/clean.js
+src/language-js/comments/printer-methods.js
+src/language-js/embed/html.js
+src/language-js/embed/markdown.js
+src/language-js/print/template-literal.js
+src/language-markdown/clean.js
+src/language-markdown/printer-markdown.js
+src/main/core.js
+src/utils/front-matter/parse.js
+
+--- COMMIT f9a71da43 ---
+src/language-markdown/printer-markdown.js
+
+--- COMMIT decc3bae6 ---
+src/common/util.js
+src/language-markdown/clean.js
+src/language-markdown/printer-markdown.js
+
+--- COMMIT 24b2ce5d5 ---
+src/language-js/parse/postprocess/ts-syntax-kind.evaluate.js
+src/language-js/parse/postprocess/typescript.js
+
+--- COMMIT 76bf81b5f ---
+src/language-js/parse/postprocess/typescript.js
+
+--- COMMIT 68ea88149 ---
+src/language-js/parse/postprocess/typescript.js
+
+--- COMMIT b697a596a ---
+src/language-js/parse/babel.js
+src/language-js/parse/postprocess/typescript.js
+src/language-js/print/typescript.js
+
+--- COMMIT 39e546600 ---
+src/language-js/parse/babel.js
+
+--- COMMIT 0d808c5ad ---
+src/language-js/parse/postprocess/index.js
+
+--- COMMIT e83bd73d8 ---
+src/main/core.js
+src/main/massage-ast.js
+
+--- COMMIT a66236a3e ---
+src/language-js/parse/postprocess/index.js
+src/language-js/parse/postprocess/typescript.js
+src/language-js/parse/typescript.js
+
+--- COMMIT 68a13957f ---
+src/cli/format-results-cache.js
+src/cli/format.js
+src/cli/options/get-options-for-file.js
+src/language-css/printer-postcss.js
+src/language-js/parse/meriyah.js
+src/language-js/print/array.js
+src/language-js/print/function-parameters.js
+src/main/ast-to-doc.js
+src/main/support.js
+src/utils/infer-parser-by-language.js
+
+--- COMMIT 1de926ac7 ---
+src/language-js/parse/babel.js
+src/language-js/print/module.js
+
+--- COMMIT 9eafbf685 ---
+src/cli/expand-patterns.js
+src/language-css/clean.js
+src/language-graphql/printer-graphql.js
+src/language-html/embed.js
+src/language-html/printer-html.js
+src/language-html/utils/index.js
+src/language-js/print/jsx.js
+src/language-markdown/printer-markdown.js
+src/language-yaml/printer-yaml.js
+
+--- COMMIT fb55c39c0 ---
+src/language-js/needs-parens.js
+
+--- COMMIT 8ae1fb69b ---
+src/language-js/print/jsx.js
+
+--- COMMIT ff0529ac2 ---
+src/language-js/loc.js
+src/language-js/needs-parens.js
+src/language-js/parse/postprocess/typescript.js
+src/language-js/print/call-arguments.js
+src/language-js/print/decorators.js
+src/language-js/print/template-literal.js
+src/language-js/print/ternary.js
+src/language-js/print/typescript.js
+src/language-js/utils/index.js
+
+--- COMMIT 59eda43d7 ---
+src/common/util.js
+src/document/debug.js
+src/language-css/loc.js
+src/language-css/parser-postcss.js
+src/language-css/printer-postcss.js
+src/language-css/utils/index.js
+src/language-handlebars/printer-glimmer.js
+src/language-html/parser-html.js
+src/language-html/print-preprocess.js
+src/language-html/print/tag.js
+src/language-html/utils/index.js
+src/language-js/clean.js
+src/language-js/comments/handle-comments.js
+src/language-js/comments/printer-methods.js
+src/language-js/embed.js
+src/language-js/needs-parens.js
+src/language-js/parse/babel.js
+src/language-js/parse/postprocess/index.js
+src/language-js/print/array.js
+src/language-js/print/assignment.js
+src/language-js/print/class.js
+src/language-js/print/decorators.js
+src/language-js/print/function.js
+src/language-js/print/interface.js
+src/language-js/print/jsx.js
+src/language-js/print/member-chain.js
+src/language-js/print/misc.js
+src/language-js/print/statement.js
+src/language-js/print/type-annotation.js
+src/language-js/print/typescript.js
+src/language-js/utils/index.js
+src/language-json/printer-estree-json.js
+src/language-markdown/clean.js
+src/language-markdown/printer-markdown.js
+src/language-yaml/print/flow-mapping-sequence.js
+src/language-yaml/print/mapping-item.js
+src/language-yaml/utils.js
+src/main/comments.js
+src/main/core.js
+src/main/options-normalizer.js
+src/main/options.js
+src/main/range-util.js
+src/main/support.js
+src/utils/infer-parser-by-language.js
+src/utils/text/skip-newline.js
+src/utils/text/skip.js
+
+--- COMMIT 6c688b7e2 ---
+src/language-js/parse/acorn.js
+src/language-js/parse/babel.js
+src/language-js/parse/espree.js
+src/language-js/parse/meriyah.js
+src/language-js/parse/typescript.js
+src/language-js/parse/utils/get-source-type.js
+src/utils/try-combinations.js
+
+--- COMMIT bf6cf1c96 ---
+src/language-js/index.js
+src/language-js/languages.evaluate.js
+src/language-js/parse/babel.js
+src/language-json/index.js
+src/language-json/languages.evaluate.js
+src/language-json/parser-json.js
+src/language-json/printer-estree-json.js
+src/language-json/visitor-keys.js
+src/languages.js
+
+--- COMMIT 67e121a20 ---
+src/language-js/needs-parens.js
+
+--- COMMIT 931661a7a ---
+src/language-js/needs-parens.js
+src/language-js/print/call-arguments.js
+src/language-js/print/template-literal.js
+src/language-js/print/ternary.js
+src/language-js/print/typescript.js
+src/language-js/utils/index.js
+
+--- COMMIT a3dfbf70f ---
+src/cli/constants.evaluate.js
+src/cli/options/get-context-options.js
+src/cli/usage.js
+src/common/common-options.js
+src/index.js
+src/language-css/options.js
+src/language-css/utils/css-units.evaluate.js
+src/language-css/utils/print-unit.js
+src/language-graphql/options.js
+src/language-html/options.js
+src/language-html/parser-html.js
+src/language-html/utils/array-to-map.js
+src/language-html/utils/html-elements-attributes.evaluate.js
+src/language-html/utils/html-elements-attributes.js
+src/language-html/utils/html-tag-names.evaluate.js
+src/language-html/utils/html-tag-names.js
+src/language-html/utils/map-object.js
+src/language-js/options.js
+src/language-markdown/constants.evaluate.js
+src/language-markdown/options.js
+src/language-markdown/printer-markdown.js
+src/language-markdown/unified-plugins/html-to-jsx.js
+src/language-markdown/utils.js
+src/language-yaml/options.js
+src/main/core-options.evaluate.js
+src/main/support.js
+
+--- COMMIT 40f3bced1 ---
+src/language-js/loc.js
+src/language-js/print/decorators.js
+
+--- COMMIT 098b8411b ---
+src/language-js/pragma.js
+
+--- COMMIT 106c00924 ---
+src/index.cjs
+
+--- COMMIT b7223354a ---
+src/main/parser.js
+
+--- COMMIT 930cf29d1 ---
+src/cli/expand-patterns.js
+src/cli/prettier-internal.js
+src/index.js
+
+--- COMMIT 284cdf4c3 ---
+src/cli/format.js
+
+--- COMMIT 81b8726d0 ---
+src/document/builders.js
+src/document/debug.js
+src/document/utils.js
+src/document/utils/traverse-doc.js
+
+--- COMMIT bb04cf072 ---
+--- COMMIT ca246afac ---
+src/cli/format-results-cache.js
+src/cli/format.js
+
+--- COMMIT 768246488 ---
+src/language-js/comments/printer-methods.js
+src/main/comments.js
+
+--- COMMIT 76068c4f8 ---
+src/language-js/parse/typescript.js
+
+--- COMMIT 2d23d33a4 ---
+src/cli/options/get-context-options.js
+src/cli/usage.js
+src/common/common-options.js
+src/language-css/languages.evaluate.js
+src/language-graphql/languages.evaluate.js
+src/language-handlebars/languages.evaluate.js
+src/language-html/languages.evaluate.js
+src/language-html/options.js
+src/language-js/languages.evaluate.js
+src/language-js/options.js
+src/language-markdown/languages.evaluate.js
+src/language-yaml/languages.evaluate.js
+src/main/core-options.js
+src/main/options.js
+src/main/support.js
+
+--- COMMIT e67d8d6c1 ---
+src/language-js/comments/printer-methods.js
+src/language-js/needs-parens.js
+src/language-js/parse/babel.js
+src/language-js/print/call-expression.js
+src/language-js/print/comment.js
+src/language-js/print/flow.js
+src/language-js/print/function.js
+src/language-js/print/misc.js
+src/language-js/printer-estree.js
+src/language-js/utils/index.js
+
+--- COMMIT 9cf73d361 ---
+src/cli/context.js
+src/cli/expand-patterns.js
+src/cli/format-results-cache.js
+src/cli/format.js
+src/cli/logger.js
+src/cli/options/get-context-options.js
+src/cli/options/get-options-for-file.js
+src/cli/options/minimist.js
+src/cli/utils.js
+src/common/ast-path.js
+src/common/end-of-line.js
+src/common/util.js
+src/document/builders.js
+src/document/invalid-doc-error.js
+src/document/printer.js
+src/document/utils.js
+src/language-css/loc.js
+src/language-css/parser-postcss.js
+src/language-css/printer-postcss.js
+src/language-css/utils/index.js
+src/language-css/utils/is-scss-nested-property-node.js
+src/language-graphql/parser-graphql.js
+src/language-graphql/printer-graphql.js
+src/language-handlebars/parser-glimmer.js
+src/language-handlebars/printer-glimmer.js
+src/language-html/parser-html.js
+src/language-html/print/tag.js
+src/language-html/printer-html.js
+src/language-html/utils/index.js
+src/language-js/embed/css.js
+src/language-js/parse/acorn.js
+src/language-js/parse/espree.js
+src/language-js/parse/meriyah.js
+src/language-js/parse/typescript.js
+src/language-js/print/angular.js
+src/language-js/print/binaryish.js
+src/language-js/print/call-arguments.js
+src/language-js/print/comment.js
+src/language-js/print/flow.js
+src/language-js/print/function.js
+src/language-js/print/jsx.js
+src/language-js/print/member-chain.js
+src/language-js/print/module.js
+src/language-js/print/statement.js
+src/language-js/print/typescript.js
+src/language-js/printer-estree-json.js
+src/language-js/printer-estree.js
+src/language-js/utils/index.js
+src/language-markdown/mdx.js
+src/language-markdown/printer-markdown.js
+src/language-yaml/parser-yaml.js
+src/language-yaml/print/mapping-item.js
+src/language-yaml/printer-yaml.js
+src/language-yaml/utils.js
+src/main/comments.js
+src/main/create-print-pre-check-function.js
+src/main/multiparser.js
+src/main/options-normalizer.js
+src/main/options.js
+src/main/parser.js
+src/main/range-util.js
+src/utils/create-get-visitor-keys.js
+src/utils/get-interpreter.js
+src/utils/text/skip-inline-comment.js
+src/utils/text/skip-newline.js
+src/utils/text/skip-trailing-comment.js
+src/utils/text/skip.js
+src/utils/uniq-by-key.js
+
+--- COMMIT 0e06cc4d6 ---
+src/document/utils.js
+
+--- COMMIT 14c58aafd ---
+src/language-js/utils/index.js
+
+--- COMMIT cac9222e5 ---
+src/language-html/ast.js
+src/language-html/conditional-comment.js
+src/language-html/parser-html.js
+
+--- COMMIT 9e32250ee ---
+src/language-graphql/print/description.js
+src/language-graphql/printer-graphql.js
+
+--- COMMIT 5d539d1a1 ---
+src/language-handlebars/printer-glimmer.js
+src/language-handlebars/utils.js
+
+--- COMMIT ebb8e1328 ---
+src/language-markdown/print-preprocess.js
+src/language-markdown/print-whitespace.js
+src/language-markdown/printer-markdown.js
+src/language-markdown/utils.js
+
+--- COMMIT 92a6af22e ---
+src/language-css/printer-postcss.js
+src/language-css/utils/index.js
+src/language-handlebars/printer-glimmer.js
+src/language-handlebars/utils.js
+src/language-js/needs-parens.js
+src/language-js/print/binaryish.js
+src/language-js/print/block.js
+src/language-js/print/call-arguments.js
+src/language-js/print/class.js
+src/language-js/print/decorators.js
+src/language-js/print/flow.js
+src/language-js/print/function-parameters.js
+src/language-js/print/function.js
+src/language-js/print/jsx.js
+src/language-js/print/member-chain.js
+src/language-js/print/member.js
+src/language-js/print/misc.js
+src/language-js/print/object.js
+src/language-js/print/property.js
+src/language-js/print/ternary.js
+src/language-js/print/type-annotation.js
+src/language-js/print/type-parameters.js
+src/language-js/print/typescript.js
+src/language-js/printer-estree-json.js
+src/language-js/printer-estree.js
+src/language-js/utils/index.js
+src/language-yaml/print/misc.js
+
+--- COMMIT 0029f2df7 ---
+src/cli/options/get-options-for-file.js
+src/cli/options/normalize-cli-options.js
+src/cli/prettier-internal.js
+src/index.js
+src/main/options-normalizer.js
+src/main/options.js
+
+--- COMMIT f6fdb2adc ---
+src/common/ast-path.js
+src/language-yaml/print/flow-mapping-sequence.js
+src/language-yaml/print/mapping-item.js
+src/language-yaml/print/misc.js
+src/language-yaml/printer-yaml.js
+src/language-yaml/utils.js
+
+--- COMMIT 927a214ca ---
+src/language-markdown/embed.js
+src/language-markdown/print-preprocess.js
+src/language-markdown/printer-markdown.js
+src/language-markdown/visitor-keys.js
+
+--- COMMIT 8df3b5ee6 ---
+src/language-markdown/clean.js
+src/language-markdown/print-preprocess.js
+src/language-markdown/printer-markdown.js
+
+--- COMMIT 001d8b01b ---
+src/language-js/print/html-binding.js
+
+--- COMMIT 6615d0756 ---
+src/language-js/print/template-literal.js
+
+--- COMMIT 6d6e5177d ---
+src/language-js/print/template-literal.js
+src/language-js/utils/index.js
+
+--- COMMIT 31138aadb ---
+src/language-js/print/angular.js
+
+--- COMMIT 3ca842d81 ---
+src/language-js/print/angular.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 28b7f2bff ---
+src/language-js/print/array.js
+src/language-js/print/type-annotation.js
+
+--- COMMIT effe30a3b ---
+src/cli/format.js
+src/main/core.js
+
+--- COMMIT 2c1532b82 ---
+--- COMMIT f38111fec ---
+src/language-markdown/print-preprocess.js
+
+--- COMMIT a545d6f58 ---
+--- COMMIT 8c93abf55 ---
+src/document/printer.js
+src/language-css/printer-postcss.js
+src/language-graphql/printer-graphql.js
+src/language-handlebars/printer-glimmer.js
+src/language-html/embed.js
+src/language-html/printer-html.js
+src/language-html/utils/index.js
+src/language-js/needs-parens.js
+src/language-js/parse/postprocess/index.js
+src/language-js/print/flow.js
+src/language-js/print/statement.js
+src/language-js/print/typescript.js
+src/language-js/printer-estree.js
+src/language-markdown/printer-markdown.js
+src/language-yaml/printer-yaml.js
+
+--- COMMIT 572452acf ---
+src/language-js/pragma.js
+
+--- COMMIT 72c811bfa ---
+src/language-html/parser-html.js
+src/language-markdown/printer-markdown.js
+
+--- COMMIT b893eeefb ---
+src/language-html/clean.js
+src/language-html/print-preprocess.js
+
+--- COMMIT bfb09bf21 ---
+src/language-css/printer-postcss.js
+
+--- COMMIT f3d179053 ---
+src/common/load-plugins.js
+src/common/util.js
+src/document/utils.js
+src/language-css/parser-postcss.js
+src/language-html/parser-html.js
+
+--- COMMIT 4ed2d3c4b ---
+src/cli/format.js
+src/document/printer.js
+src/language-css/clean.js
+src/language-css/parser-postcss.js
+src/language-html/print/children.js
+src/language-js/clean.js
+src/language-js/utils/index.js
+
+--- COMMIT f32daf742 ---
+--- COMMIT 2bbbe1a8d ---
+src/language-markdown/printer-markdown.js
+
+--- COMMIT f2c50456b ---
+src/common/create-ignorer.js
+src/language-handlebars/printer-glimmer.js
+src/language-html/parser-html.js
+src/language-html/syntax-attribute.js
+src/language-js/comments/handle-comments.js
+src/language-js/comments/printer-methods.js
+src/language-js/loc.js
+src/language-js/print/function-parameters.js
+src/language-js/print/jsx.js
+src/language-js/types/estree.d.ts
+src/language-js/utils/index.js
+src/language-js/utils/is-block-comment.js
+src/language-js/utils/is-node-matches.js
+src/language-js/utils/is-type-cast-comment.js
+src/main/multiparser.js
+src/main/options-normalizer.js
+src/main/support.js
+src/utils/text/skip-newline.js
+
+--- COMMIT 3f21a973e ---
+src/index.cjs
+src/index.js
+src/main/support.js
+src/main/version.evaluate.cjs
+src/main/version.evaluate.js
+src/standalone.js
+
+--- COMMIT 6d4d01125 ---
+src/document/builders.js
+src/language-js/embed.js
+src/language-js/embed/html.js
+src/language-js/print/assignment.js
+src/language-js/print/call-arguments.js
+src/language-js/print/call-expression.js
+src/language-js/print/function.js
+src/language-js/print/member-chain.js
+src/language-js/print/member.js
+src/language-js/print/template-literal.js
+src/language-js/printer-estree.js
+src/main/comments.js
+
+--- COMMIT 38611cb16 ---
+src/language-handlebars/printer-glimmer.js
+
+--- COMMIT 04faada98 ---
+src/language-js/embed.js
+src/language-js/embed/css.js
+src/language-js/embed/graphql.js
+src/language-js/embed/html.js
+src/language-js/embed/markdown.js
+
+--- COMMIT 16c9d8baf ---
+src/index.cjs
+
+--- COMMIT 824690fcc ---
+src/language-css/parsers.js
+src/language-graphql/parsers.js
+src/language-handlebars/parsers.js
+src/language-html/parsers.js
+src/language-js/parse/parsers.js
+src/language-markdown/parsers.js
+src/language-yaml/parsers.js
+src/main/core.js
+src/main/multiparser.js
+src/main/options.js
+src/main/parser.js
+src/utils/create-parsers.js
+
+--- COMMIT 6d551ab0e ---
+src/language-css/utils/index.js
+
+--- COMMIT 63be4c7f8 ---
+src/language-css/printer-postcss.js
+
+--- COMMIT d22f01010 ---
+src/language-css/parser-postcss.js
+
+--- COMMIT 5b962d6f1 ---
+src/common/util.js
+src/language-html/parser-html.js
+src/language-html/utils/index.js
+src/language-markdown/embed.js
+src/utils/infer-parser-by-language.js
+
+--- COMMIT 9bacc7577 ---
+src/cli/context.js
+src/cli/utils.js
+src/common/ast-path.js
+src/common/util.js
+src/document/invalid-doc-error.js
+src/document/printer.js
+src/document/utils.js
+src/index.js
+src/language-css/clean.js
+src/language-css/loc.js
+src/language-css/parser-postcss.js
+src/language-css/printer-postcss.js
+src/language-css/utils/print-unit.js
+src/language-handlebars/utils.js
+src/language-html/parser-html.js
+src/language-js/comments/handle-comments.js
+src/language-js/parse/postprocess/index.js
+src/language-js/print/array.js
+src/language-js/print/binaryish.js
+src/language-js/print/call-arguments.js
+src/language-js/print/function.js
+src/language-js/print/jsx.js
+src/language-js/print/member-chain.js
+src/language-js/print/object.js
+src/language-js/print/template-literal.js
+src/language-js/utils/index.js
+src/language-markdown/print-preprocess.js
+src/language-markdown/printer-markdown.js
+src/language-markdown/unified-plugins/loose-items.js
+src/language-markdown/utils.js
+src/language-yaml/print/flow-mapping-sequence.js
+src/language-yaml/utils.js
+src/main/massage-ast.js
+src/main/options-normalizer.js
+src/main/parser.js
+src/utils/get-last.js
+
+--- COMMIT be5f45749 ---
+src/language-js/needs-parens.js
+
+--- COMMIT 1f46accde ---
+src/language-js/parse/postprocess/index.js
+src/language-js/print/comment.js
+src/language-js/utils/is-indentable-block-comment.js
+
+--- COMMIT 61d4cb081 ---
+src/common/ast-path.js
+src/main/create-print-pre-check-function.js
+
+--- COMMIT 47350dba0 ---
+src/common/ast-path.js
+
+--- COMMIT 3f21de658 ---
+src/language-js/comments/handle-comments.js
+src/language-js/comments/printer-methods.js
+src/language-js/print/jsx.js
+src/language-js/printer-estree.js
+src/language-js/utils/index.js
+
+--- COMMIT e92dcbd1a ---
+src/language-css/embed.js
+src/language-css/printer-postcss.js
+src/language-css/utils/index.js
+src/language-graphql/printer-graphql.js
+src/language-handlebars/printer-glimmer.js
+src/language-handlebars/utils.js
+src/language-html/embed.js
+src/language-html/print/children.js
+src/language-html/print/element.js
+src/language-html/print/tag.js
+src/language-html/printer-html.js
+src/language-js/comments.js
+src/language-js/embed.js
+src/language-js/embed/css.js
+src/language-js/embed/graphql.js
+src/language-js/embed/html.js
+src/language-js/embed/markdown.js
+src/language-js/needs-parens.js
+src/language-js/print/angular.js
+src/language-js/print/array.js
+src/language-js/print/assignment.js
+src/language-js/print/binaryish.js
+src/language-js/print/block.js
+src/language-js/print/call-arguments.js
+src/language-js/print/call-expression.js
+src/language-js/print/class.js
+src/language-js/print/comment.js
+src/language-js/print/decorators.js
+src/language-js/print/flow.js
+src/language-js/print/function-parameters.js
+src/language-js/print/function.js
+src/language-js/print/html-binding.js
+src/language-js/print/interface.js
+src/language-js/print/jsx.js
+src/language-js/print/literal.js
+src/language-js/print/member-chain.js
+src/language-js/print/member.js
+src/language-js/print/misc.js
+src/language-js/print/module.js
+src/language-js/print/object.js
+src/language-js/print/property.js
+src/language-js/print/statement.js
+src/language-js/print/template-literal.js
+src/language-js/print/ternary.js
+src/language-js/print/type-annotation.js
+src/language-js/print/type-parameters.js
+src/language-js/print/typescript.js
+src/language-js/printer-estree-json.js
+src/language-js/printer-estree.js
+src/language-js/utils/index.js
+src/language-markdown/embed.js
+src/language-yaml/embed.js
+src/language-yaml/print/block.js
+src/language-yaml/print/flow-mapping-sequence.js
+src/language-yaml/print/misc.js
+src/language-yaml/printer-yaml.js
+src/language-yaml/utils.js
+src/main/ast-to-doc.js
+src/main/comments.js
+src/main/create-print-pre-check-function.js
+src/main/multiparser.js
+
+--- COMMIT 299503f9b ---
+src/common/ast-path.js
+src/language-markdown/printer-markdown.js
+
+--- COMMIT e2337dce2 ---
+src/language-handlebars/parser-glimmer.js
+
+--- COMMIT 87d724f41 ---
+src/language-graphql/printer-graphql.js
+src/language-js/needs-parens.js
+src/language-js/print/call-arguments.js
+src/language-js/print/function.js
+src/language-js/print/literal.js
+src/language-js/print/module.js
+src/language-js/print/property.js
+src/language-js/print/statement.js
+src/language-js/print/template-literal.js
+src/language-js/utils/index.js
+
+--- COMMIT d2a0c778e ---
+src/language-js/print/comment.js
+src/main/comments.js
+
+--- COMMIT d0953f34d ---
+src/language-js/comments.js
+
+--- COMMIT bd5f91545 ---
+src/language-js/parse/postprocess/typescript.js
+
+--- COMMIT 5766433a6 ---
+src/document/printer.js
+
+--- COMMIT 2a70ee49a ---
+src/language-js/print/type-parameters.js
+src/language-js/print/typescript.js
+
+--- COMMIT 39a89c651 ---
+src/language-js/print/function.js
+
+--- COMMIT bfc91d9f8 ---
+src/language-js/traverse/union-visitor-keys.js
+src/language-js/traverse/visitor-keys.evaluate.js
+
+--- COMMIT 40ffe244a ---
+src/language-js/parse/acorn.js
+src/language-js/parse/espree.js
+src/language-js/utils/index.js
+
+--- COMMIT 05922176b ---
+src/document/printer.js
