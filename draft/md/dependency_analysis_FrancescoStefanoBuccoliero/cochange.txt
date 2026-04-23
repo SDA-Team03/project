@@ -1,3 +1,9 @@
+--- COMMIT 96bbaeda0 ---
+src/language-js/print/function-parameters.js
+
+--- COMMIT 881360b92 ---
+src/language-html/print/angular-control-flow-block.js
+
 --- COMMIT ed739f0d6 ---
 src/language-html/print/angular-control-flow-block.js
 
@@ -6075,11 +6081,3 @@ src/language-js/print/function.js
 --- COMMIT bfc91d9f8 ---
 src/language-js/traverse/union-visitor-keys.js
 src/language-js/traverse/visitor-keys.evaluate.js
-
---- COMMIT 40ffe244a ---
-src/language-js/parse/acorn.js
-src/language-js/parse/espree.js
-src/language-js/utils/index.js
-
---- COMMIT 05922176b ---
-src/document/printer.js
