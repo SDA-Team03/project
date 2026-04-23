@@ -1,6 +1,4 @@
-Need to install the following packages:
-madge@8.0.0
-Ok to proceed? (y) Processed 520 files (1.6s) (13 warnings)
+Processed 520 files (1.6s) (13 warnings)
 
 ../package.json
 cli/cli-options.evaluate.js
