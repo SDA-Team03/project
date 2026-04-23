@@ -15,7 +15,7 @@ and clear. The parameters shown are:
 # Top 3 modules with most dependencies
 In order to find the modules with most dependencies the survey must be based on the efferent coupling "Ce".
 The command, usable on the file *dependency_metrics.txt*, is the following:<br>
-`grep "\.js" dependency_metrics.txt | sort -k5 -nr | head -n 3`
+`grep "src/.*\.js" dependency_metrics.txt | sort -k5 -nr | head -n 3`
 
 |type    |name                                                                  | N     |Ca     |Ce  |I(%) |       
 |------- |----------------------------------------------------------------------| ------|-------|----|-----| 
@@ -29,7 +29,7 @@ The reason why those are the 3 files with the most dependencies is that they are
 
 As before, using the same logic, the command to find the 3 modules with the least amount of dependencies (lowest Ce) is slightly different:
 
-`grep "\.js" dependency_metrics.txt | sort -k5 -n | head -n 3`
+`grep "src/.*\.js" dependency_metrics.txt | sort -k5 -n | head -n 3`
 
 
 |type   |name                                                                   |     N|   Ca |   Ce |I(%) |       
