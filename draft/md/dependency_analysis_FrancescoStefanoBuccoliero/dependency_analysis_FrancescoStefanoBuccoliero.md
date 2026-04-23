@@ -14,7 +14,7 @@ To evaluate the formal correctness of the architecture, a circular dependency ch
 
 To identify hidden dependencies that are not visible in the source code, the last 1000 commits were analyzed to find patterns of simultaneous file modifications.
 
-*command used:* `git log tags/3.8.0 -n 1000 --name-only --format="format:--- COMMIT %h ---" -- src/ > cochange.txt`
+*command used:* `git log tags/3.8.2 -n 1000 --name-only --format="format:--- COMMIT %h ---" -- src/ > cochange.txt`
 
 ### High Efferent Coupling (Fan-out)
 **Most Dependencies (Hubs):** A few files stand out for importing dozens of other modules:
