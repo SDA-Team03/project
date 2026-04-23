@@ -31,14 +31,6 @@ As before, using the same logic, the command to find the 3 modules with the leas
 
 `grep "\.js" dependency_metrics.txt | sort -k5 -n | head -n 3`
 
-folder  node_modules/wcwidth.js                                                                         2      1      0     0%
-module  node_modules/@babel/helper-string-parser/lib/index.js                                           1      1      0     0%
-module  node_modules/@babel/helper-validator-identifier/lib/index.js                                    1      2      0     0%
-
-
-
-
-
 
 |type   |name                                                                   |     N|   Ca |   Ce |I(%) |       
 |-------|-----------------------------------------------------------------------|------|------|------|-----| 
