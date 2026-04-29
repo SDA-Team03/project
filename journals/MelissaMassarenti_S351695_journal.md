@@ -13,4 +13,5 @@
 | 16/04/2026 | **Dependency Discovery**: Generated and analyzed initial dependency graphs to assess system complexity. | `dependency-cruiser`, `madge` | 1.5 |
 | 16/04/2026 | **Entrypoint Inspection**: Extracted imports from `src/index.js` to map top-level module coupling. | `madge` | 0.5 |
 | 18/04/2026 | **Update of current work**: update of current work in the `draft` repository |  | 1.0 |
-| **Total** | | | **5.0h** |
+| 29/04/2026 | **Pattern Analysis**: identify some of the most evident pattern used in the project | `grep` `find` `ls` | 2.5 |
+| **Total** | | | **7.5h** |
