@@ -16,3 +16,11 @@
 | Activity                                                   |     Tools Used     |
 | :--------------------------------------------------------- | :----------------- |
 | Analyze `src` folder to count imports number               | `madge`, `graphiz` |
+
+
+## [30/04/2026] - [Design Patterns] - 4 hours
+
+| Activity                                                   | Tools Used  |
+| :--------------------------------------------------------- | :---------- |
+| Analyze `src` directory to evaluate Design Patterns        |      -      |
+| Generate graph for found design patterns                   |  `mermaid`  |
