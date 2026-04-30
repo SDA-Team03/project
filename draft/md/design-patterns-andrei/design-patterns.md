@@ -140,18 +140,90 @@ graph TD
 
 
 ## **Which classes play which role?**
-- **Context:** Il **Prettier Core**. È l'orchestratore che riceve il file originale e decide quale "strumento" usare. È la classe o il modulo principale che riceve il comando di formattazione. Non sa 'come' formattare un linguaggio specifico, sa solo che deve farlo.
-- **Strategy Interface:** È il **Plugin Contract**.  È l'insieme di regole (API) che ogni plugin deve rispettare. Prettier si aspetta che ogni strategia esponga metodi standard come `parse` e `print`.
-- **Concrete Strategy:** Sono i moduli (**Plugin specifici**) dedicati ai singoli linguaggi (*JavaScript, CSS, HTML*). Ognuno di essi implementa la propria logica interna per gestire le regole sintattiche del linguaggio specifico."
+
+- **Context:** The **Prettier Core**. This is the orchestrator that receives the original file and decides which "tool" to use. It is the main class or module that receives the formatting command. It doesn't know *how* to format a specific language; it only knows that it must be done.
+- **Strategy Interface:** The **Plugin Contract**. This is the set of rules (API) that every plugin must follow. Prettier expects every strategy to expose standard methods such as `parse` and `print`.
+- **Concrete Strategy:** These are the **specific Plugin modules** dedicated to individual languages (*JavaScript, CSS, HTML*). Each one implements its own internal logic to handle the syntactic rules of that specific language.
+
+
+---
 
 ## **Why is the pattern used?**
-"Il pattern viene scelto per risolvere il problema dell'**accoppiamento rigido** e della **scaldabilità**:
-- **Disaccoppiamento:** Il motore di Prettier non ha bisogno di conoscere i dettagli del CSS o del Markdown. Questo rende il 'core' pulito e facile da mantenere.
-- **Principio Open/Closed:** Possiamo aggiungere il supporto a nuovi linguaggi (Open) senza dover modificare il codice sorgente del motore principale (Closed). Basta creare una nuova 'strategia' e inserirla nel sistema.
-- **Selezione a Runtime:** Prettier decide quale strategia usare solo nel momento in cui vede l'estensione del file, rendendo il sistema estremamente flessibile."
+
+The pattern is chosen to solve the issues of **tight coupling** and **scalability**:
+
+- **Decoupling:** The Prettier engine does not need to know the details of CSS or Markdown. This keeps the "core" clean and easy to maintain.
+- **Open/Closed Principle:** We can add support for new languages (**Open**) without having to modify the source code of the main engine (**Closed**). You simply create a new "strategy" and plug it into the system.
+- **Runtime Selection:** Prettier decides which strategy to use only at the moment it identifies the file extension, making the system extremely flexible.
+
+---
 
 ## **Alternative (Monolithic approach):**
-"L'alternativa sarebbe un **approccio monolitico procedurale**, ovvero un unico, gigantesco file pieno di istruzioni condizionali (`if/else` o `switch`).
-- **Pro dell'alternativa:** Potrebbe essere leggermente più veloce in termini di millisecondi perché evita il caricamento dinamico dei moduli.
-- **Contro (Il motivo per cui Prettier la scarta):** Man mano che aggiungiamo linguaggi, il codice diventerebbe impossibile da gestire. Inoltre, non permetterebbe la creazione di plugin esterni da parte della community, poiché tutta la logica sarebbe 'cablata' dentro il programma principale, impedendo l'estensibilità che rende Prettier lo standard del settore."
 
+The alternative would be a **procedural monolithic approach**, meaning a single, giant file filled with conditional statements (`if/else` or `switch`).
+
+- **Pros of the alternative:** It might be slightly faster in terms of milliseconds because it avoids dynamic module loading.
+- **Cons (Why Prettier rejects it):** As more languages are added, the code would become impossible to manage. Furthermore, it would prevent the community from creating external plugins, as all logic would be "hard-wired" into the main program, blocking the extensibility that makes Prettier the industry standard.
+
+
+
+# Composite Pattern
+"Prettier does not directly print the AST as text; instead, it uses an 'Intermediate Representation' called `Doc`. A `Doc` can be a simple string or a complex structure containing other structures (such as groups, indentations, etc.). This allows the printer engine to treat simple text and complex blocks in exactly the same way."
+
+
+```mermaid
+graph TD
+    subgraph Theory ["Composite Pattern (UML Theory)"]
+        Component["&laquo;interface&raquo;<br/>Component<br/>+operation()"]
+        Leaf["Leaf<br/>+operation()"]
+        CompositeNode["Composite<br/>+operation()<br/>+add(Component)<br/>+remove(Component)"]
+    end
+
+    subgraph Practice ["Prettier Implementation (Practice)"]
+        DocType["Doc<br/>(Union Type)"]
+        StringLine["String / Line / Trim<br/>(Leaf Nodes)"]
+        GroupIndent["Group / Indent / Array<br/>(Composite Nodes)"]
+    end
+
+    %% Mapping Theory to Practice
+    Component -.-> DocType
+    Leaf -.-> StringLine
+    CompositeNode -.-> GroupIndent
+
+    %% Relationships
+    Leaf -->|Implements| Component
+    CompositeNode -->|Implements| Component
+    CompositeNode -->|Contains| Component
+    
+    StringLine -->|Is a| DocType
+    GroupIndent -->|Is a| DocType
+    GroupIndent -->|Contains| DocType
+```
+
+## **Which classes play which role?**
+
+- **Component:** The **`Doc`** type (defined in `src/document/builders/index.js` via JSDoc/TypeScript). It is not a rigid class, but rather an interface/union type representing any formatting fragment. It establishes the common contract for the printer engine.
+    
+- **Leaf:** Base elements that do not contain other `Doc` objects inside them. These can be text strings (`String`), or simple layout commands like `line`, `trim`, or `cursor` (created by functions in the `src/document/builders.js` file).
+    
+- **Composite:** Complex structures such as `group`, `indent`, `align`, `fill`, or simple `Arrays`. These objects contain other `Doc` objects (their "children") within them, allowing for infinitely nested hierarchical structures.
+    
+
+## **Why is the pattern used? Which problem does it solve?**
+
+Prettier's main innovation is its Intermediate Representation (IR). Instead of converting AST nodes directly into the final text, it first builds a tree of `Doc` instructions.
+
+- **Uniformity:** The main printing function (in `src/document/printer/printer.js`) analyzes the document in a single evaluation cycle. Thanks to this pattern, the system treats a simple string (Leaf) or a massive nested group (Composite) with the same core logic.
+    
+- **Line Wrapping Management (The main problem):** By building a preemptive `Doc` tree, Prettier can calculate the "width" of a `group` node before printing it. If the group's content fits within the maximum character limit (e.g., 80 columns), it is printed entirely on one line (flat). If it doesn't fit, the group "breaks" and its children are wrapped. This recursive and preemptive measurement would be impossible if text were generated on-the-fly, node by node.
+    
+- **Simplicity for Plugins:** Those who write or maintain plugins for individual languages do not need to worry about line length. They only need to "translate" the AST into a `Doc` structure by joining pieces through functions called builders (`concat`, `group`, `indent`).
+    
+
+## **Is there an alternative, what would be pros & cons?**
+
+The main alternative is a **Single-Pass String Builder** approach (direct string generation in a single pass while navigating the AST).
+
+- **Pros (Alternative):** It would be a marginally faster system and consume less memory, as it would avoid allocating the entire intermediate `Doc` tree before producing the final string.
+    
+- **Cons (Why Prettier does NOT use it):** It would make advanced formatting (intelligent wrapping) a maintenance nightmare. To decide whether a function's arguments should stay on a single line or wrap, the code would be flooded with lookahead logic and endless `if (currentTextLength + nextNodeLength > 80)` statements. The Composite approach allows Prettier to separate the formatting intent (the `Doc` structure) from the actual spatial calculation on the screen (performed by the printer).
